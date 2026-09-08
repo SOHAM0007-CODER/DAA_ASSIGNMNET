@@ -1,0 +1,50 @@
+g++ -std=c++11 knapsack.cpp && ./a.exe
+
+Enter number of items: 5
+Enter knapsack capacity: 60
+
+Enter weight and profit of each item: 
+Item 1:
+  Weight: 20
+  Profit: 60
+
+Item 2:
+  Weight: 20
+  Profit: 100
+
+Item 3:
+  Weight: 5 
+  Profit: 30
+
+Item 4:
+  Weight: 30
+  Profit: 120
+
+Item 5:
+  Weight: 15
+  Profit: 40
+
+Item sorted by Weight/Profit Ratio
+
+Item    Weight      Profit      P/W Ratio      
+---------------------------------------------------
+3       5.00        30.00       6.00           
+2       20.00       100.00      5.00           
+4       30.00       120.00      4.00           
+1       20.00       60.00       3.00           
+5       15.00       40.00       2.67     
+      
+-----------------------------------------------------
+Item    Fraction    Weight Taken   Profit Taken   
+-----------------------------------------------------
+3       1.00        5.00           30.00          
+2       1.00        20.00          100.00         
+4       1.00        30.00          120.00         
+1       0.25        5.00           15.00          
+
+---------------------------------------------
+Knapsack Capacity : 60.00
+Total Weight Used : 60.00
+Remaining Capacity: 0.00
+Maximum Profit    : 265.00
+---------------------------------------------
