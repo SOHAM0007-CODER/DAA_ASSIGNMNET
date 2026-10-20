@@ -21,3 +21,7 @@ In the fractional variant, items can be broken down into smaller fractions if th
    ```
 3. Enter the number of items and the knapsack capacity.
 4. Input the weight and profit for each item as prompted.
+
+## Input file
+`input.txt` contains the exact values from output.txt: 5 items, capacity 60,
+then each item's weight and profit. Expected maximum profit: 265.00.

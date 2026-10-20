@@ -21,3 +21,10 @@ Finally, it displays the top 10 players and computes the execution time of the m
    ```bash
    ./Assignment1
    ```
+
+## Input file
+`input.txt` contains the CSV records for the 10 players visible in the saved
+output. The same records are restored as `IPL2025Batters.csv`, which the
+existing C++ code reads automatically; it has no keyboard-input prompts.
+This is a reconstructed sample, not the unavailable original full dataset.
+Keep the CSV beside the program and run from this folder. Runtime varies.

@@ -1,0 +1,4 @@
+3 5
+Medicine 2 30
+Food 3 40
+Blankets 4 50

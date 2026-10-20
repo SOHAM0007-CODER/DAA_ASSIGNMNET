@@ -22,3 +22,14 @@ The sorting is facilitated by custom comparators passed as function pointers to 
    ./Assignment2
    ```
 4. Enter your sorting preference when prompted (`rating`, `year`, or `popularity`).
+
+## Input file
+`input.txt` contains `rating`, the sorting choice identified by the saved
+output. `movies.csv` reconstructs the 50 movie records visible in that output;
+it is a sample, not the unavailable original full dataset. Keep the CSV beside
+the program and run from this folder.
+
+The saved Output.txt comes from a different program version: it shows an
+ascending table of 50 movies, whereas the current C++ code prints the top
+10 in descending order. The source and saved output are preserved unchanged;
+these input files cannot make the current program reproduce that old format.

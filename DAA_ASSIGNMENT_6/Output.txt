@@ -1,0 +1,9 @@
+Enter number of items and truck capacity: Enter each item: name weight utility
+
+Selected items:
+Name Weight Utility
+Medicine 2 30
+Food 3 40
+Total weight: 5 kg
+Unused capacity: 0 kg
+Maximum utility: 70

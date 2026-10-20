@@ -1,0 +1,12 @@
+Enter number of cities (2-25): Enter fuel price (whole INR per litre): Enter number of directed roads: Enter: from to distanceKm fuelMlPerKm travelMinutes
+Enter start city and maximum total travel minutes:
+Optimal route: 1 -> 3 -> 2 -> 4 -> 1
+Minimum fuel cost: 550.000 INR
+Total distance: 55 km
+Total fuel: 5.500 litres
+Total travel time: 75 minutes
+Time limit: 90 minutes
+Optimality proven by LC Branch and Bound.
+Expanded nodes: 3
+Pruned child nodes: 5
+Peak queued nodes: 2

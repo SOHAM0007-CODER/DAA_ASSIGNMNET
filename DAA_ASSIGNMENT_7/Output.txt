@@ -1,0 +1,10 @@
+Enter number of courses: Enter course names in ID order (one word each): Enter number of conflicting course pairs: Enter each pair of course IDs sharing a student:
+
+Exam timetable:
+ID Course Slot
+1 DAA 1
+2 DBMS 2
+3 OS 3
+4 CN 1
+Slots used: 3
+Greedy gives a valid schedule; minimum slots are not always guaranteed.
