@@ -1,0 +1,30 @@
+Enter number of cities and stages: 4 3
+Enter stage of each city: 1 2 2 3
+Enter fuel price (INR per litre): 100
+Enter number of roads: 4
+Enter: from to baseTime trafficDelay weatherDelay fuel open(1/0)
+Road 1: 1 2 5 0 0 2 1
+Road 2: 1 3 8 0 0 1 1
+Road 3: 2 4 5 0 0 2 1
+Road 4: 3 4 8 0 0 1 1
+
+1. Delivery batch  2. Update road  3. Show roads  0. Exit
+1
+Enter number of requests: 2
+Enter source destination mode(1=fastest, 2=cheapest): 1 4 1
+Fastest delivery
+Optimal route: 1 -> 2 -> 4
+Road IDs: 1 3
+Total time: 10.00 minutes
+Total fuel: 4.00 litres
+Total fuel cost: 400.00 INR
+Enter source destination mode(1=fastest, 2=cheapest): 1 4 2
+Cheapest delivery
+Optimal route: 1 -> 3 -> 4
+Road IDs: 2 4
+Total time: 16.00 minutes
+Total fuel: 2.00 litres
+Total fuel cost: 200.00 INR
+
+1. Delivery batch  2. Update road  3. Show roads  0. Exit
+0

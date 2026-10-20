@@ -21,7 +21,7 @@ through each predefined stage.
 - [SwiftCargo.cpp](SwiftCargo.cpp): Separate C++ source code.
 - [Assignment report](DAA_Assignment_No_5_Soham_Kulkarni.pdf): Theory,
   pseudocode, complexity analysis and results; no C++ implementation.
-- [Output screenshot](output.png): A sample run in Windows PowerShell.
+- [Program output](Output.txt): A text transcript of a sample run in Windows PowerShell.
 
 ## How to Run
 Compile and run in Windows PowerShell:
@@ -59,7 +59,7 @@ must contain at least one city. All road values must be nonnegative.
 - `0`: Exit.
 
 ## Sample Input
-This small example matches the output screenshot. Enter the values in order:
+This small example matches `Output.txt`. Enter the values in order:
 
 ```text
 4 3
@@ -83,7 +83,7 @@ This small example matches the output screenshot. Enter the values in order:
 | Fastest | 1 -> 2 -> 4 | 10 minutes | 4 litres | 400 INR |
 | Cheapest | 1 -> 3 -> 4 | 16 minutes | 2 litres | 200 INR |
 
-![SwiftCargo sample output](output.png)
+[View the complete sample output](Output.txt)
 
 ## Complexity and Assumptions
 - One delivery request: **O(V + E)** time.
