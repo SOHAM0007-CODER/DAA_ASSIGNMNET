@@ -1,112 +1,78 @@
-#include <bits/stdc++.h>
-#include<chrono>
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <string>
+#include <iomanip>
+#include <chrono>
+#include <stdexcept>
 using namespace std;
+struct Player { string name, team; int runs, season; };
+long long comparisons = 0, merges = 0;
 
-struct Player
-{
-    string name;
-    string team;
-    int runs;
-};
-
-void merge(vector<Player>& arr, int left, int mid, int right)
-{
-    int n1 = mid - left + 1;
-    int n2 = right - mid;
-
-    vector<Player> L(n1), R(n2);
-
-    for (int i = 0; i < n1; i++)
-        L[i] = arr[left + i];
-
-    for (int j = 0; j < n2; j++)
-        R[j] = arr[mid + 1 + j];
-
-    int i = 0, j = 0, k = left;
-
-    while (i < n1 && j < n2)
-    {
-        if (L[i].runs >= R[j].runs)
-            arr[k++] = L[i++];
-        else
-            arr[k++] = R[j++];
+// Read quoted CSV fields, including commas and doubled quotes inside titles.
+vector<string> csvFields(const string& line) {
+    vector<string> fields; string field; bool quoted = false;
+    for (size_t i = 0; i < line.size(); i++) {
+        char c = line[i];
+        if (c == '"') {
+            if (quoted && i + 1 < line.size() && line[i + 1] == '"') {
+                field += '"'; i++;
+            } else quoted = !quoted;
+        } else if (c == ',' && !quoted) { fields.push_back(field); field.clear(); }
+        else if (c != '\r') field += c;
     }
-
-    while (i < n1)
-        arr[k++] = L[i++];
-
-    while (j < n2)
-        arr[k++] = R[j++];
+    if (quoted) throw runtime_error("Unclosed CSV quote");
+    fields.push_back(field); return fields;
 }
 
-void mergeSort(vector<Player>& arr, int left, int right)
-{
-    if (left >= right)
-        return;
-
+void mergeSort(vector<Player>& a, int left, int right) {
+    if (left >= right) return;
     int mid = left + (right - left) / 2;
-
-    mergeSort(arr, left, mid);
-    mergeSort(arr, mid + 1, right);
-    merge(arr, left, mid, right);
+    mergeSort(a, left, mid); mergeSort(a, mid + 1, right);
+    vector<Player> temp; temp.reserve(right - left + 1);
+    int i = left, j = mid + 1;
+    while (i <= mid && j <= right) {
+        comparisons++;
+        // Left record wins ties: stable, descending order of runs.
+        if (a[i].runs >= a[j].runs) temp.push_back(a[i++]);
+        else temp.push_back(a[j++]);
+    }
+    while (i <= mid) temp.push_back(a[i++]);
+    while (j <= right) temp.push_back(a[j++]);
+    for (size_t k = 0; k < temp.size(); k++) a[left + k] = temp[k];
+    merges++;
 }
-
-int main()
-{
-    vector<Player> players;
-
-    ifstream file("IPL2025Batters.csv");
-
-    if (!file)
-    {
-        cout << "File not found!";
-        return 0;
+int main(int argc, char* argv[]) {
+    string filename = argc > 1 ? argv[1] : "IPLBatters.csv";
+    ifstream file(filename); if (!file) { cerr << "Cannot open " << filename << '\n'; return 1; }
+    vector<Player> a; string line; getline(file, line); int row = 1;
+    while (getline(file, line)) {
+        row++; if (line.empty() || line == "\r") continue;
+        try {
+            vector<string> f = csvFields(line);
+            if (f.size() != 4) throw runtime_error("Expected name,team,runs,season");
+            Player p = {f[0], f[1], stoi(f[2]), stoi(f[3])};
+            if (p.name.empty() || p.runs < 0) throw runtime_error("Invalid player");
+            a.push_back(p);
+        } catch (const exception& e) { cerr << "CSV row " << row << ": " << e.what() << '\n'; return 1; }
     }
-
-    string line;
-    getline(file, line);
-
-    auto stripQuotes = [](string s)
-    {
-        if (!s.empty() && s.front() == '"') s.erase(0, 1);
-        if (!s.empty() && s.back() == '"') s.pop_back();
-        return s;
-    };
-
-    while (getline(file, line))
-    {
-        stringstream ss(line);
-
-        string name, team, runs;
-
-        getline(ss, name, ',');
-        getline(ss, team, ',');
-        getline(ss, runs, ',');
-
-        name = stripQuotes(name);
-        team = stripQuotes(team);
-        runs = stripQuotes(runs);
-
-        players.push_back({name, team, stoi(runs)});
+    auto start = chrono::steady_clock::now();
+    if (!a.empty()) mergeSort(a, 0, static_cast<int>(a.size()) - 1);
+    auto finish = chrono::steady_clock::now();
+    cout << "ASSIGNMENT 1: IPL BATTING - MERGE SORT\n"
+         << "Dataset: " << filename << "\nRecord: player + team + season (2008-2024)\n"
+         << "Sort parameter: Runs | Order: Descending | Display: ALL records\n\n";
+    cout << "Rank | Player | Team | Season | Runs\n" << string(100, '-') << '\n';
+    long long total = 0;
+    for (size_t i = 0; i < a.size(); i++) {
+        cout << i + 1 << " | " << a[i].name << " | " << a[i].team << " | "
+             << a[i].season << " | " << a[i].runs << '\n'; total += a[i].runs;
     }
-
-    file.close();
-
-    auto start = chrono::high_resolution_clock::now();
-    if (!players.empty())
-        mergeSort(players, 0, static_cast<int>(players.size()) - 1);
-    auto end = chrono::high_resolution_clock::now();
-
-    cout << "IPL 2025 Players Sorted By Runs\n";
-
-    for (const Player& player : players)
-    {
-        cout << player.name << " | " << player.team << " | "
-             << player.runs << " runs\n";
-    }
-
-    cout << "Total players: " << players.size() << "\n";
-    chrono::duration<double, milli> elapsed = end - start;
-    cout << "Merge Sort time: " << elapsed.count() << " ms\n";
-    return 0;
+    cout << string(100, '-') << "\nRecords loaded / displayed: " << a.size() << " / " << a.size()
+         << "\nTotal batting runs across records: " << total;
+    if (!a.empty()) cout << "\nHighest runs: " << a.front().runs << " | Lowest runs: " << a.back().runs;
+    cout << "\nKey comparisons: " << comparisons << " | Merge operations: " << merges
+         << fixed << setprecision(3) << "\nSorting time (excluding file I/O and printing): "
+         << chrono::duration<double, milli>(finish - start).count() << " ms\n"
+         << "Time: O(N log N) | Auxiliary memory: O(N)\n";
 }

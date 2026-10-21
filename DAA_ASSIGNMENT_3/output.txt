@@ -1,50 +1,31 @@
-g++ -std=c++11 knapsack.cpp && ./a.exe
+ASSIGNMENT 3: FLOOD RELIEF BOAT - FRACTIONAL KNAPSACK
+Enter item count and boat capacity (kg):
+Enter each bulk lot: name weight utility (one-word names)
 
-Enter number of items: 5
-Enter knapsack capacity: 60
+SUPPLY AND DIVISIBILITY TABLE
+Supply | Weight kg | Utility | Utility/kg | Divisibility
+Blankets | 20.00 | 60.00 | 3.00 | Divisible bulk lot
+Food | 20.00 | 100.00 | 5.00 | Divisible bulk lot
+BabyFood | 5.00 | 30.00 | 6.00 | Divisible bulk lot
+Medicine | 30.00 | 120.00 | 4.00 | Divisible bulk lot
+Water | 15.00 | 40.00 | 2.67 | Divisible bulk lot
+A fraction means part of a bulk lot, not cutting an individual blanket or sealed medicine.
 
-Enter weight and profit of each item: 
-Item 1:
-  Weight: 20
-  Profit: 60
+GREEDY LOADING TABLE (highest utility/kg first)
+Supply | Ratio | Fraction | Loaded % | Weight loaded kg | Utility gained | Decision
+BabyFood | 6.00 | 1.00 | 100.00 | 5.00 | 30.00 | Whole lot
+Food | 5.00 | 1.00 | 100.00 | 20.00 | 100.00 | Whole lot
+Medicine | 4.00 | 1.00 | 100.00 | 30.00 | 120.00 | Whole lot
+Blankets | 3.00 | 0.25 | 25.00 | 5.00 | 15.00 | Partial lot
+Water | 2.67 | 0.00 | 0.00 | 0.00 | 0.00 | Not loaded
 
-Item 2:
-  Weight: 20
-  Profit: 100
-
-Item 3:
-  Weight: 5 
-  Profit: 30
-
-Item 4:
-  Weight: 30
-  Profit: 120
-
-Item 5:
-  Weight: 15
-  Profit: 40
-
-Item sorted by Weight/Profit Ratio
-
-Item    Weight      Profit      P/W Ratio      
----------------------------------------------------
-3       5.00        30.00       6.00           
-2       20.00       100.00      5.00           
-4       30.00       120.00      4.00           
-1       20.00       60.00       3.00           
-5       15.00       40.00       2.67     
-      
------------------------------------------------------
-Item    Fraction    Weight Taken   Profit Taken   
------------------------------------------------------
-3       1.00        5.00           30.00          
-2       1.00        20.00          100.00         
-4       1.00        30.00          120.00         
-1       0.25        5.00           15.00          
-
----------------------------------------------
-Knapsack Capacity : 60.00
-Total Weight Used : 60.00
-Remaining Capacity: 0.00
-Maximum Profit    : 265.00
----------------------------------------------
+ITEMS IN THE BOAT
+BabyFood: 5.00 kg (100.00% of lot)
+Food: 20.00 kg (100.00% of lot)
+Medicine: 30.00 kg (100.00% of lot)
+Blankets: 5.00 kg (25.00% of lot)
+Boat capacity: 60.00 kg
+Total weight used: 60.00 kg
+Remaining capacity: 0.00 kg
+Maximum utility: 265.00
+Time: O(N log N) | Storage: O(N)

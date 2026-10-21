@@ -1,32 +1,49 @@
-# DAA Assignment 4: Dijkstra's Algorithm
+# DAA Assignment 4: Dijkstra - detailed emergency routes
 
-## Description
-This assignment provides an implementation of **Dijkstra's Algorithm** in C++ to find the single-source shortest path in a weighted graph. The algorithm identifies the shortest path from a starting node to a destination node, ensuring the optimal cost is calculated. 
+Prints roads, each finalized node and successful relaxations, distances and parents for all nodes, destination route and cumulative leg costs. Sample cost is 10 initially and 5 after updating road 2-3 to cost 1.
 
-Additionally, the program allows dynamic updates to the graph's edge weights, recalculating the optimal path immediately after any updates.
+## Compile and run (PowerShell)
 
-## Features
-- **Shortest Path Calculation:** Finds the minimum cost path and reconstructs the optimal path sequence.
-- **Dynamic Edge Updates:** Users can update the weight of an existing connection and immediately observe the effect on the shortest path.
-- **Adjacency Matrix Representation:** The graph is represented using a 2D matrix structure.
-- **Robust Input Validation:** Ensures edges and weights are within valid boundaries.
+```powershell
+g++ -std=c++11 "Dijkstra's .cpp" -o Assignment4.exe
+.\Assignment4.exe
+```
 
-## How to Run
-1. Compile the code:
-   ```bash
-   g++ "Dijkstra's .cpp" -o Dijkstra
-   ```
-   *(Note: Ensure correct handling of spaces and special characters in the filename or rename it to `Dijkstra.cpp`)*
-2. Run the application:
-   ```bash
-   ./Dijkstra
-   ```
-3. Input the number of nodes and connections (edges).
-4. Provide the edge details: `Node1 Node2 Weight`.
-5. Enter the source and destination nodes to find the path.
-6. Follow the on-screen prompts if you wish to update any connections dynamically.
+Use the saved input:
 
-## Input file
-`input.txt` contains the values from output.png: 5 nodes, 7 connections,
-source 0, destination 4, and N for no update. Expected minimum cost: 10;
-path: 0 -> 2 -> 1 -> 3 -> 4. Node IDs start at 0 in this program.
+```powershell
+Get-Content input.txt | .\Assignment4.exe
+```
+
+## Input
+
+First line: nodes connections. Then from to nonnegativeCost for each undirected road. Then source destination (zero-based IDs). Y introduces an update row from to newCost; N finishes.
+
+## Output
+
+`Output.txt` is the actual captured output of the current program and saved input. The PDF includes theory, pseudocode, input details and the full output; C++ source stays separate. Sorting runtimes vary by machine and run.
+
+## Complexity
+
+O(V^2) per run and O(V^2) matrix storage; maximum 1,000 nodes.
+
+## Viva notes and scope
+
+Requires nonnegative weights, including updates. A selected hospital/destination is entered manually. No GPS or live feed is connected. Output.txt is current; output.png is a historical screenshot.
+
+## Saved sample input
+
+```text
+5 7
+0 1 4
+0 2 2
+1 2 1
+1 3 5
+2 3 8
+2 4 10
+3 4 2
+0 4
+Y
+2 3 1
+N
+```

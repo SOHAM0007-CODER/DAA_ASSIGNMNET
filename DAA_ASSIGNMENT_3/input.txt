@@ -1,7 +1,6 @@
-5
-60
-20 60
-20 100
-5 30
-30 120
-15 40
+5 60
+Blankets 20 60
+Food 20 100
+BabyFood 5 30
+Medicine 30 120
+Water 15 40

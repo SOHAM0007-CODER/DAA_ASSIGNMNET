@@ -1,48 +1,43 @@
-# DAA Assignment 6: Simple 0/1 Knapsack
+# DAA Assignment 6: 0/1 Knapsack - named truck packages
 
-Choose whole relief packages that maximize total utility without exceeding
-one truck's capacity. For each item, dynamic programming compares taking it
-once with leaving it. The program prints the selected items and maximum utility.
+Prints every package with weight, utility, whole-package divisibility and take/leave decision. Prints the full DP table for n<=8 and W<=20, followed by named truck contents and totals. The sample selects Food, BabyFood and Medicine: utility 143, weight 13 of 15 kg.
 
-## Files
-- `ReliefKnapsack.cpp`: simplified C++ source.
-- `input.txt`: sample values.
-- `Output.txt`: captured result.
-- `DAA_Assignment_No_6_Soham_Kulkarni.pdf`: report, without C++ code.
-- `Greedy_Counterexample_Input.txt`: optional example where ratio greedy fails.
-
-## Compile and Run
+## Compile and run (PowerShell)
 
 ```powershell
-g++ -std=c++11 ReliefKnapsack.cpp -o ReliefKnapsack.exe
-.\ReliefKnapsack.exe
+g++ -std=c++11 "ReliefKnapsack.cpp" -o Assignment6.exe
+.\Assignment6.exe
 ```
 
-## Sample Input
+Use the saved input:
+
+```powershell
+Get-Content input.txt | .\Assignment6.exe
+```
+
+## Input
+
+First line: numberOfItems integerCapacity. Each item: name positiveIntegerWeight nonnegativeIntegerUtility. One-word names. A package is taken at most once or left; fractions are forbidden.
+
+## Output
+
+`Output.txt` is the actual captured output of the current program and saved input. The PDF includes theory, pseudocode, input details and the full output; C++ source stays separate. Sorting runtimes vary by machine and run.
+
+## Complexity
+
+O(N*(W+1)) time and space, pseudo-polynomial in capacity. Limits: n<=200, W<=10000.
+
+## Viva notes and scope
+
+Implements one truck without explicit mandatory perishability priority. Multiple trucks and real-time allocation are extensions. Utility does not guarantee mandatory selection.
+
+## Saved sample input
 
 ```text
-3 5
-Medicine 2 30
-Food 3 40
-Blankets 4 50
+5 15
+Blankets 5 30
+Food 6 48
+BabyFood 3 35
+Medicine 4 60
+Water 7 28
 ```
-
-`3 5` means three items and a 5 kg truck. Each row is `name weight utility`.
-Medicine and Food weigh 5 kg and give maximum utility **70**. Names are single
-words. Utility is an importance score, not a currency value.
-
-## How It Works
-`dp[i][w]` stores the best utility using the first i items and capacity w.
-Compare leaving item i with its utility plus the best value for the remaining
-capacity using earlier items. Trace the table backwards to recover the selection.
-Each item is indivisible and used at most once. Ties keep the previous choice.
-
-Time and space: O(N(W+1)), commonly O(NW) for positive W. The full table is
-pseudo-polynomial in numeric capacity and keeps reconstruction simple.
-Limits: 1-200 items, capacity 0-10000 kg, positive whole-number weights and
-nonnegative integer utilities up to 1000000000. Invalid input terminates.
-
-The PDF compares brute force, DP and greedy and discusses priority, changing
-supplies and multiple trucks. This uploaded simple program handles the core
-single-truck problem. Larger importance scores can encourage critical items
-but do not force them to be selected. These example scores are illustrative.

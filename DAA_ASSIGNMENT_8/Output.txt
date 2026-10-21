@@ -1,6 +1,52 @@
-Enter number of cities (2-25): Enter fuel price (whole INR per litre): Enter number of directed roads: Enter: from to distanceKm fuelMlPerKm travelMinutes
+ASSIGNMENT 8: SWIFTSHIP - LC BRANCH AND BOUND TSP
+Enter number of cities (2-25):
+Enter fuel price (whole INR per litre):
+Enter number of directed roads:
+Enter: from to distanceKm fuelMlPerKm travelMinutes
 Enter start city and maximum total travel minutes:
-Optimal route: 1 -> 3 -> 2 -> 4 -> 1
+
+DIRECTED ROAD TABLE
+From -> To | Distance km | Consumption mL/km | Fuel L | Cost INR | Time min
+1 -> 2 | 10 | 100 | 1.000 | 100.000 | 30
+1 -> 3 | 15 | 100 | 1.500 | 150.000 | 15
+1 -> 4 | 25 | 200 | 5.000 | 500.000 | 20
+2 -> 1 | 20 | 200 | 4.000 | 400.000 | 20
+2 -> 3 | 10 | 100 | 1.000 | 100.000 | 30
+2 -> 4 | 15 | 100 | 1.500 | 150.000 | 15
+3 -> 1 | 20 | 200 | 4.000 | 400.000 | 20
+3 -> 2 | 15 | 100 | 1.500 | 150.000 | 15
+3 -> 4 | 10 | 100 | 1.000 | 100.000 | 30
+4 -> 1 | 10 | 100 | 1.000 | 100.000 | 30
+4 -> 2 | 20 | 200 | 4.000 | 400.000 | 20
+4 -> 3 | 20 | 200 | 4.000 | 400.000 | 20
+Objective: minimum fuel cost | Starting city: 1 | Deadline: 90 minutes
+
+INITIAL BOUNDS
+Root cost lower bound:
+400.000 INR
+Root travel-time lower bound:
+65 minutes
+Initial feasible seed cost:
+550.000 INR
+Greedy seeds give upper bounds only; LC search proves the result.
+
+SEARCH TRACE (first 20 expanded nodes)
+Node | Partial route | Paid INR | Elapsed min | Lower bound INR
+1 | 1 | 0.000 | 0 | 400.000
+2 | 1 2 | 100.000 | 30 | 400.000
+3 | 1 3 | 150.000 | 15 | 500.000
+
+Optimal route:
+1 -> 3 -> 2 -> 4 -> 1
+LEG DETAILS
+Leg | From -> To | Distance km | Fuel L | Cost INR | Time min | Cumulative INR
+1 | 1 -> 3 | 15 | 1.500 | 150.000 | 15 | 150.000
+2 | 3 -> 2 | 15 | 1.500 | 150.000 | 15 | 300.000
+3 | 2 -> 4 | 15 | 1.500 | 150.000 | 15 | 450.000
+4 | 4 -> 1 | 10 | 1.000 | 100.000 | 30 | 550.000
+Cities visited exactly once: 4 / 4 | Return to start: YES
+Deadline check: PASS | Spare time: 15 minutes
+
 Minimum fuel cost: 550.000 INR
 Total distance: 55 km
 Total fuel: 5.500 litres

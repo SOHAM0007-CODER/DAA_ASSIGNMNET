@@ -116,6 +116,15 @@ void solve() {
     priority_queue<Node, vector<Node>, LeastBound> live;
     long long rootTime = remainingBound(root, minutes);
     if (root.bound < bestCost && rootTime <= timeLimit) live.push(root);
+
+    cout << "\nINITIAL BOUNDS\nRoot cost lower bound:\n";
+    if (root.bound == INF) cout << "No possible completion"; else cout << thousandths(root.bound) << " INR";
+    cout << "\nRoot travel-time lower bound:\n";
+    if (rootTime == INF) cout << "No possible completion"; else cout << rootTime << " minutes";
+    cout << "\nInitial feasible seed cost:\n";
+    if (bestCost == INF) cout << "None"; else cout << thousandths(bestCost) << " INR";
+    cout << "\nGreedy seeds give upper bounds only; LC search proves the result.\n";
+    cout << "\nSEARCH TRACE (first 20 expanded nodes)\nNode | Partial route | Paid INR | Elapsed min | Lower bound INR\n";
     unsigned long long expanded = 0, pruned = 0;
     size_t peakQueue = live.size();
 
@@ -124,6 +133,11 @@ void solve() {
         Node node = live.top();
         live.pop();
         expanded++;
+        if (expanded <= 20) {
+            cout << expanded << " | ";
+            for (int city : node.path) cout << city + 1 << " ";
+            cout << "| " << thousandths(node.paid) << " | " << node.time << " | " << thousandths(node.bound) << '\n';
+        }
         int u = node.path.back();
         for (int v = 0; v < n; v++) {
             if ((node.visited & (1U << v)) || cost[u][v] == INF) continue;
@@ -158,7 +172,7 @@ void solve() {
         cout << "\nNo tour visits every city and returns within the time limit.\n";
     } else {
         long long distance = 0, fuel = 0, duration = 0;
-        cout << "\nOptimal route: ";
+        cout << "\nOptimal route:\n";
         for (int i = 0; i < (int)bestPath.size(); i++) {
             if (i) cout << " -> ";
             cout << bestPath[i] + 1;
@@ -169,6 +183,16 @@ void solve() {
                 duration += minutes[a][b];
             }
         }
+
+        cout << "\nLEG DETAILS\nLeg | From -> To | Distance km | Fuel L | Cost INR | Time min | Cumulative INR\n";
+        long long cumulative = 0;
+        for (int i = 1; i < (int)bestPath.size(); i++) {
+            int a = bestPath[i-1], b = bestPath[i]; cumulative += cost[a][b];
+            cout << i << " | " << a+1 << " -> " << b+1 << " | " << distanceKm[a][b] << " | " << thousandths(fuelMl[a][b])
+                 << " | " << thousandths(cost[a][b]) << " | " << minutes[a][b] << " | " << thousandths(cumulative) << '\n';
+        }
+        cout << "Cities visited exactly once: " << n << " / " << n << " | Return to start: YES\n";
+        cout << "Deadline check: PASS | Spare time: " << timeLimit - duration << " minutes\n";
         cout << "\nMinimum fuel cost: " << thousandths(bestCost) << " INR\n";
         cout << "Total distance: " << distance << " km\n";
         cout << "Total fuel: " << thousandths(fuel) << " litres\n";
@@ -182,10 +206,11 @@ void solve() {
 }
 
 int main() {
-    cout << "Enter number of cities (2-25): ";
+    cout << "ASSIGNMENT 8: SWIFTSHIP - LC BRANCH AND BOUND TSP\n";
+    cout << "Enter number of cities (2-25):\n";
     require(bool(cin >> n));
     require(n >= 2 && n <= 25);
-    cout << "Enter fuel price (whole INR per litre): ";
+    cout << "Enter fuel price (whole INR per litre):\n";
     require(bool(cin >> fuelPrice));
     require(fuelPrice >= 1 && fuelPrice <= 100000);
     cost.assign(n, vector<long long>(n, INF));
@@ -193,7 +218,7 @@ int main() {
     distanceKm = cost;
     fuelMl = cost;
     int roads;
-    cout << "Enter number of directed roads: ";
+    cout << "Enter number of directed roads:\n";
     require(bool(cin >> roads));
     require(roads >= 0 && roads <= n * (n - 1));
     cout << "Enter: from to distanceKm fuelMlPerKm travelMinutes\n";
@@ -210,10 +235,16 @@ int main() {
         cost[a][b] = fuelMl[a][b] * fuelPrice; // Exact milli-INR.
         minutes[a][b] = time;
     }
-    cout << "Enter start city and maximum total travel minutes: ";
+    cout << "Enter start city and maximum total travel minutes:\n";
     require(bool(cin >> startCity >> timeLimit));
     require(startCity >= 1 && startCity <= n && timeLimit >= 0 && timeLimit <= 25000000);
+
     startCity--;
+    cout << "\nDIRECTED ROAD TABLE\nFrom -> To | Distance km | Consumption mL/km | Fuel L | Cost INR | Time min\n";
+    for (int a = 0; a < n; a++) for (int b = 0; b < n; b++) if (cost[a][b] != INF)
+        cout << a+1 << " -> " << b+1 << " | " << distanceKm[a][b] << " | " << fuelMl[a][b] / distanceKm[a][b]
+             << " | " << thousandths(fuelMl[a][b]) << " | " << thousandths(cost[a][b]) << " | " << minutes[a][b] << '\n';
+    cout << "Objective: minimum fuel cost | Starting city: " << startCity+1 << " | Deadline: " << timeLimit << " minutes\n";
     solve();
     return 0;
 }

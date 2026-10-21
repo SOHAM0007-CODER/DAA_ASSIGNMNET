@@ -1,51 +1,29 @@
 # Design and Analysis of Algorithms Assignments
 
-Eight DAA assignments by **Soham Kulkarni**, PRN **124B1F056**,
-Pimpri Chinchwad College of Engineering, Pune.
+**Soham Kulkarni | PRN 124B1F056 | PCCoE Pune | Batch A3**
 
-| No. | Assignment | Folder |
+Eight C++ programs with matching inputs, detailed captured text outputs and PDF reports. C++ code is separate from the PDFs. The PDFs include their complete saved outputs, so Assignments 1 and 2 have longer landscape output appendices.
+
+| No. | Assignment | Result |
 | --- | --- | --- |
-| 1 | Merge Sort - IPL batters | [Assignment 1](DAA_ASSIGNMNET_1) |
-| 2 | Quick Sort - movie records | [Assignment 2](DAA_ASSIGNMNET_2) |
-| 3 | Fractional Knapsack | [Assignment 3](DAA_ASSIGNMENT_3) |
-| 4 | Dijkstra shortest paths | [Assignment 4](DAA_ASSIGNMENT_4) |
-| 5 | SwiftCargo multistage delivery routes | [Assignment 5](DAA_ASSIGNMENT_5) |
-| 6 | Disaster relief 0/1 Knapsack - simple version | [Assignment 6](DAA_ASSIGNMENT_6) |
-| 7 | Exam timetable Greedy coloring - simple version | [Assignment 7](DAA_ASSIGNMENT_7) |
-| 8 | SwiftShip TSP using LC Branch and Bound | [Assignment 8](DAA_ASSIGNMENT_8) |
+| 1 | [Merge Sort](DAA_ASSIGNMNET_1) | All 2,617 IPL player-team-season records sorted by runs |
+| 2 | [Quick Sort](DAA_ASSIGNMNET_2) | All 4,803 TMDB movies sorted by rating in the saved run |
+| 3 | [Fractional Knapsack](DAA_ASSIGNMENT_3) | Named boat supplies, divisibility and loading tables |
+| 4 | [Dijkstra](DAA_ASSIGNMENT_4) | Trace, distances, route legs and road update |
+| 5 | [Multistage routing](DAA_ASSIGNMENT_5) | DP table, fastest/cheapest routes and closures |
+| 6 | [0/1 Knapsack](DAA_ASSIGNMENT_6) | Named whole packages, DP table and truck contents |
+| 7 | [Graph Coloring](DAA_ASSIGNMENT_7) | Named exam colors, groups and conflict checks |
+| 8 | [LC Branch and Bound TSP](DAA_ASSIGNMENT_8) | Bounds, search trace, tour legs and deadline check |
 
-Each folder includes C++ source, an assignment PDF, `input.txt`, saved output,
-and a README. Assignment 4 records its output as a screenshot. Assignment 5
-uses an Output.txt transcript. Assignments 6 and 7 contain the simplified
-programs; their reports discuss the broader assignment extensions.
+Open an assignment folder and follow its README for the exact compile command and input format. For keyboard-input programs in PowerShell, use `Get-Content input.txt | .\AssignmentN.exe`. Assignment 1 reads its CSV directly; Assignment 2 needs both movies.csv and its keyboard choice.
 
-## Compile and Run
-Open a terminal in the assignment folder. Replace the filename below with
-that assignment's C++ filename (see its README):
+## Dataset sources
 
-```powershell
-g++ -std=c++11 Program.cpp -o Program.exe
-.\Program.exe
-```
+- IPL: [Kaggle IPL Complete Dataset (2008-2024)](https://www.kaggle.com/datasets/patrickb1912/ipl-complete-dataset-20082020). Aggregate regular-innings batsman_runs by batter, team and calendar year; retain all 2,617 resulting groups. No fabricated rows or repeated sample padding.
+- Movies: [Kaggle TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata). Retain all 4,803 rows, with title, vote_average, release year and decimal popularity. Missing release year is 0.
 
-For programs with keyboard input, PowerShell can supply the saved values:
+Each dataset folder has preparation notes and the downloaded archive SHA-256. Sorting timing excludes file reading and printing.
 
-```powershell
-Get-Content input.txt | .\Program.exe
-```
+## Validation
 
-On Linux/WSL, compile with `-o Program` and run `./Program`.
-
-## Dataset Notes
-- Assignment 1 reads `IPL2025Batters.csv` automatically, with no keyboard
-  prompts. Its input.txt mirrors the CSV records. This sample reconstructs
-  the ten players visible in the saved output, not the original full dataset.
-- Assignment 2 reads `movies.csv`, then takes the sort choice from input.txt.
-  Its CSV reconstructs the fifty movie records visible in the saved output.
-  The saved output comes from an older code version and shows an ascending
-  table; the current source prints the top ten in descending order. Code and
-  historical output are retained, with this difference documented.
-- For Assignments 3-8, input.txt contains the console values in input order.
-- Runtime measurements vary by computer and run.
-
-Compiled executables and object files are excluded from version control.
+All eight compile with C++11, `-Wall -Wextra` without warnings. Ninety-six execution checks cover full-record ordering and preservation, CSV quoting, independent fractional/0-1 knapsack calculations, Floyd-Warshall shortest-path comparisons, enumerated multistage routes, coloring conflicts and exhaustive small TSP comparisons. Greedy coloring does not generally prove minimum colors; TSP retains factorial worst-case complexity. Reports distinguish implemented behavior from optional extensions.

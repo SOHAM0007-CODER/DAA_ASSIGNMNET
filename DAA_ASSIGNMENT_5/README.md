@@ -1,99 +1,63 @@
-# DAA Assignment 5: SwiftCargo Multistage Delivery Optimization
+# DAA Assignment 5: Multistage DP - route details and closures
 
-## Description
-This assignment implements **Dynamic Programming** in C++ to find the
-**fastest** or **lowest fuel-cost** delivery route through a directed,
-weighted multistage graph. It supports traffic and weather delays,
-road closures, updated fuel estimates, and multiple delivery requests.
-Every route advances to the next stage, ensuring that a delivery passes
-through each predefined stage.
+Prints the network road table, per-city best remaining values, route and each leg's base time, traffic/weather delays, fuel and cost. Demonstrates fastest and cheapest requests, rerouting after a closure and no-route handling.
 
-## Features
-- **Dynamic Programming:** Computes an optimal route in O(V + E) time per request.
-- **Two Optimization Modes:** Minimize travel time or fuel cost.
-- **Road Updates:** Change travel time, traffic/weather delays, fuel usage,
-  or open/closed status using the road ID.
-- **Batch Processing:** Process multiple requests with the current road conditions.
-- **Route Display:** Print the city path, road IDs, total time, fuel and fuel cost.
-- **Adjacency Lists:** Use O(V + E) memory and support parallel roads.
-
-## Files
-- [SwiftCargo.cpp](SwiftCargo.cpp): Separate C++ source code.
-- [Assignment report](DAA_Assignment_No_5_Soham_Kulkarni.pdf): Theory,
-  pseudocode, complexity analysis and results; no C++ implementation.
-- [Program output](Output.txt): A text transcript of a sample run in Windows PowerShell.
-
-## How to Run
-Compile and run in Windows PowerShell:
+## Compile and run (PowerShell)
 
 ```powershell
-g++ -std=c++11 SwiftCargo.cpp -o SwiftCargo.exe
-.\SwiftCargo.exe
+g++ -std=c++11 "SwiftCargo.cpp" -o Assignment5.exe
+.\Assignment5.exe
 ```
 
-On Linux/WSL:
+Use the saved input:
 
-```sh
-g++ -std=c++11 SwiftCargo.cpp -o SwiftCargo
-./SwiftCargo
+```powershell
+Get-Content input.txt | .\Assignment5.exe
 ```
 
-## Input Format
-1. Number of cities and stages.
-2. Stage of each city, in city-ID order (IDs start at 1).
-3. Fuel price in INR per litre.
-4. Number of directed roads.
-5. Each road as `from to baseTime trafficDelay weatherDelay fuel open`.
+## Input
 
-Times and delays are in minutes; fuel is in litres. Open is `1` for an
-available road and `0` for a closed road. Road IDs follow input order.
-Source must be in stage 1 and destination in the final stage. Each stage
-must contain at least one city. All road values must be nonnegative.
+Read cities stages; stage per city; fuel price; road count; roads as from to baseTime trafficDelay weatherDelay fuel open. Menu 1=batch, 2=update, 3=show roads, 0=exit. City IDs start at 1. Each road advances exactly one stage.
 
-### Menu
-- `1`: Process a batch; enter the number of requests, then each request as
-  `source destination mode` (`1` = fastest, `2` = cheapest).
-- `2`: Update a road; enter its ID, then
-  `baseTime trafficDelay weatherDelay fuel open`.
-- `3`: Show all roads.
-- `0`: Exit.
+## Output
 
-## Sample Input
-This small example matches `Output.txt`. Enter the values in order:
+`Output.txt` is the actual captured output of the current program and saved input. The PDF includes theory, pseudocode, input details and the full output; C++ source stays separate. Sorting runtimes vary by machine and run.
+
+## Complexity
+
+O(V+E) per request and O(V+E) network storage. A batch of Q independent requests costs O(Q(V+E)).
+
+## Viva notes and scope
+
+The sample fastest route via city 2 takes 12 minutes and costs 400 INR; cheapest via city 3 takes 16 minutes and costs 200 INR. Manual closures change later requests. There is no shared fleet-capacity model or live traffic connection.
+
+## Saved sample input
 
 ```text
 4 3
 1 2 2 3
 100
 4
-1 2 5 0 0 2 1
+1 2 5 1 0 2 1
 1 3 8 0 0 1 1
-2 4 5 0 0 2 1
+2 4 5 0 1 2 1
 3 4 8 0 0 1 1
+3
 1
 2
 1 4 1
 1 4 2
+2
+1
+5 1 0 2 0
+1
+1
+1 4 1
+2
+2
+8 0 0 1 0
+1
+1
+1 4 1
 0
 ```
-
-## Sample Results
-| Mode | Optimal route | Total time | Total fuel | Fuel cost |
-| --- | --- | --- | --- | --- |
-| Fastest | 1 -> 2 -> 4 | 10 minutes | 4 litres | 400 INR |
-| Cheapest | 1 -> 3 -> 4 | 16 minutes | 2 litres | 200 INR |
-
-[View the complete sample output](Output.txt)
-
-## Complexity and Assumptions
-- One delivery request: **O(V + E)** time.
-- Batch of Q requests: **O(Q(V + E))** time.
-- Total memory: **O(V + E)**.
-- Road update by ID: **O(1)**; subsequent requests recompute their route.
-
-Fastest mode uses base time + traffic delay + weather delay. Cheapest
-mode uses estimated fuel litres * fuel price; tolls and other expenses
-are excluded. Updates entered by the user simulate real-time conditions.
-No live traffic/weather feed is connected. Conditions remain fixed within
-a batch, and requests are optimized independently. All sample values are
-illustrative. Invalid input terminates with an error message.

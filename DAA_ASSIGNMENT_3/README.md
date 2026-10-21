@@ -1,27 +1,43 @@
-# DAA Assignment 3: Fractional Knapsack Problem
+# DAA Assignment 3: Fractional Knapsack - named boat supplies
 
-## Description
-This assignment implements a solution to the **Fractional Knapsack Problem** using a **Greedy Approach** in C++. Given a set of items, each with a specific weight and profit, the goal is to determine the maximum profit that can be obtained by selecting items such that their total weight does not exceed the knapsack's capacity. 
+Prints the supply/divisibility table, decreasing utility-per-kg order, loading percentages, fractions, utility contributions and final named boat contents. Sample utility is 265 with 60 kg loaded.
 
-In the fractional variant, items can be broken down into smaller fractions if the remaining capacity cannot accommodate the whole item.
+## Compile and run (PowerShell)
 
-## Features
-- **Greedy Strategy:** Sorts items based on their Profit-to-Weight ratio in descending order.
-- **Tabular Display:** Beautifully formats the item details (Profit, Weight, P/W Ratio) and the selection process using `std::setw` and `std::setprecision`.
-- **Dynamic Calculation:** Accurately calculates the exact fraction of the item taken and its corresponding profit contribution.
+```powershell
+g++ -std=c++11 "knapsack.cpp" -o Assignment3.exe
+.\Assignment3.exe
+```
 
-## How to Run
-1. Compile the C++ program:
-   ```bash
-   g++ knapsack.cpp -o knapsack
-   ```
-2. Run the executable:
-   ```bash
-   ./knapsack
-   ```
-3. Enter the number of items and the knapsack capacity.
-4. Input the weight and profit for each item as prompted.
+Use the saved input:
 
-## Input file
-`input.txt` contains the exact values from output.txt: 5 items, capacity 60,
-then each item's weight and profit. Expected maximum profit: 265.00.
+```powershell
+Get-Content input.txt | .\Assignment3.exe
+```
+
+## Input
+
+First line: itemCount boatCapacity. Then one row per supply: name weight utility. Use one-word names. All input rows represent divisible bulk lots.
+
+## Output
+
+`output.txt` is the actual captured output of the current program and saved input. The PDF includes theory, pseudocode, input details and the full output; C++ source stays separate. Sorting runtimes vary by machine and run.
+
+## Complexity
+
+O(N log N) time; O(N) item storage.
+
+## Viva notes and scope
+
+A fraction is a portion of a bulk lot, not cutting a blanket or sealed medicine. Mixed indivisible-item constraints are not implemented. For whole packages use Assignment 6.
+
+## Saved sample input
+
+```text
+5 60
+Blankets 20 60
+Food 20 100
+BabyFood 5 30
+Medicine 30 120
+Water 15 40
+```

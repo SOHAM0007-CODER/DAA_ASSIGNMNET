@@ -2,11 +2,13 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <iomanip>
 using namespace std;
 
 int main() {
+    cout << "ASSIGNMENT 6: DISASTER RELIEF TRUCK - 0/1 KNAPSACK\n";
     int n, W;
-    cout << "Enter number of items and truck capacity: ";
+    cout << "Enter number of items and truck capacity:\n";
     if (!(cin >> n >> W) || n < 1 || n > 200 || W < 0 || W > 10000) {
         cout << "Invalid item count or capacity.\n";
         return 1;
@@ -47,12 +49,28 @@ int main() {
     }
     reverse(selected.begin(), selected.end());
 
-    cout << "\nSelected items:\nName Weight Utility\n";
-    for (int i : selected)
-        cout << name[i] << " " << weight[i] << " " << utility[i] << "\n";
+
+    vector<bool> loaded(n + 1, false);
+    for (int i : selected) loaded[i] = true;
+    cout << "\nSUPPLY AND SELECTION TABLE\nName | Weight kg | Utility | Divisibility | Take (0/1) | Decision\n";
+    for (int i = 1; i <= n; i++) cout << name[i] << " | " << weight[i] << " | " << utility[i]
+        << " | Whole package only | " << loaded[i] << " | " << (loaded[i] ? "Loaded" : "Left behind") << '\n';
+    if (n <= 8 && W <= 20) {
+        cout << "\nDP TABLE: maximum utility for each capacity\nItem/Capacity";
+        for (int w = 0; w <= W; w++) cout << " | " << w;
+        cout << '\n';
+        for (int i = 0; i <= n; i++) {
+            cout << (i == 0 ? "No items" : name[i]);
+            for (int w = 0; w <= W; w++) cout << " | " << dp[i][w];
+            cout << '\n';
+        }
+    } else cout << "DP table omitted from display for large input; optimum is computed using all states.\n";
+    cout << "\nITEMS IN THE TRUCK\nName | Weight kg | Utility\n";
+    for (int i : selected) cout << name[i] << " | " << weight[i] << " | " << utility[i] << '\n';
     if (selected.empty()) cout << "No items fit with a positive utility gain.\n";
-    cout << "Total weight: " << W - remaining << " kg\n";
-    cout << "Unused capacity: " << remaining << " kg\n";
-    cout << "Maximum utility: " << dp[n][W] << "\n";
+    cout << "Truck capacity: " << W << " kg\nTotal weight: " << W - remaining
+         << " kg\nUnused capacity: " << remaining << " kg\nMaximum utility: " << dp[n][W]
+         << "\nSelected packages: " << selected.size() << " of " << n
+         << "\nTime and space: O(N*(W+1)) | Each package used at most once.\n";
     return 0;
 }

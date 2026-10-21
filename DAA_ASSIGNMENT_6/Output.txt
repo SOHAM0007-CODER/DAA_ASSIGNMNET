@@ -1,9 +1,32 @@
-Enter number of items and truck capacity: Enter each item: name weight utility
+ASSIGNMENT 6: DISASTER RELIEF TRUCK - 0/1 KNAPSACK
+Enter number of items and truck capacity:
+Enter each item: name weight utility
 
-Selected items:
-Name Weight Utility
-Medicine 2 30
-Food 3 40
-Total weight: 5 kg
-Unused capacity: 0 kg
-Maximum utility: 70
+SUPPLY AND SELECTION TABLE
+Name | Weight kg | Utility | Divisibility | Take (0/1) | Decision
+Blankets | 5 | 30 | Whole package only | 0 | Left behind
+Food | 6 | 48 | Whole package only | 1 | Loaded
+BabyFood | 3 | 35 | Whole package only | 1 | Loaded
+Medicine | 4 | 60 | Whole package only | 1 | Loaded
+Water | 7 | 28 | Whole package only | 0 | Left behind
+
+DP TABLE: maximum utility for each capacity
+Item/Capacity | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15
+No items | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+Blankets | 0 | 0 | 0 | 0 | 0 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30
+Food | 0 | 0 | 0 | 0 | 0 | 30 | 48 | 48 | 48 | 48 | 48 | 78 | 78 | 78 | 78 | 78
+BabyFood | 0 | 0 | 0 | 35 | 35 | 35 | 48 | 48 | 65 | 83 | 83 | 83 | 83 | 83 | 113 | 113
+Medicine | 0 | 0 | 0 | 35 | 60 | 60 | 60 | 95 | 95 | 95 | 108 | 108 | 125 | 143 | 143 | 143
+Water | 0 | 0 | 0 | 35 | 60 | 60 | 60 | 95 | 95 | 95 | 108 | 108 | 125 | 143 | 143 | 143
+
+ITEMS IN THE TRUCK
+Name | Weight kg | Utility
+Food | 6 | 48
+BabyFood | 3 | 35
+Medicine | 4 | 60
+Truck capacity: 15 kg
+Total weight: 13 kg
+Unused capacity: 2 kg
+Maximum utility: 143
+Selected packages: 3 of 5
+Time and space: O(N*(W+1)) | Each package used at most once.

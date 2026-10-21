@@ -1,13 +1,2631 @@
-IPL 2025 Players Sorted By Runs
-Sai Sudharsan | GT | 759 runs
-Surya Kumar Yadav | MI | 717 runs
-Virat Kohli | RCB | 657 runs
-Shubman Gill | GT | 650 runs
-Mitchell Marsh | LSG | 627 runs
-Shreyas Iyer | PBKS | 604 runs
-Yashasvi Jaiswal | RR | 559 runs
-Prabhsimran Singh | PBKS | 549 runs
-K L Rahul | DC | 539 runs
-Jos Buttler | GT | 538 runs
-Total players: 10
-Merge Sort time: 0 ms
+ASSIGNMENT 1: IPL BATTING - MERGE SORT
+Dataset: IPLBatters.csv
+Record: player + team + season (2008-2024)
+Sort parameter: Runs | Order: Descending | Display: ALL records
+
+Rank | Player | Team | Season | Runs
+----------------------------------------------------------------------------------------------------
+1 | V Kohli | Royal Challengers Bangalore | 2016 | 973
+2 | Shubman Gill | Gujarat Titans | 2023 | 890
+3 | JC Buttler | Rajasthan Royals | 2022 | 863
+4 | DA Warner | Sunrisers Hyderabad | 2016 | 848
+5 | V Kohli | Royal Challengers Bengaluru | 2024 | 741
+6 | KS Williamson | Sunrisers Hyderabad | 2018 | 735
+7 | CH Gayle | Royal Challengers Bangalore | 2012 | 733
+8 | MEK Hussey | Chennai Super Kings | 2013 | 733
+9 | F du Plessis | Royal Challengers Bangalore | 2023 | 730
+10 | CH Gayle | Royal Challengers Bangalore | 2013 | 708
+11 | DA Warner | Sunrisers Hyderabad | 2019 | 692
+12 | AB de Villiers | Royal Challengers Bangalore | 2016 | 687
+13 | RR Pant | Delhi Daredevils | 2018 | 684
+14 | DP Conway | Chennai Super Kings | 2023 | 672
+15 | KL Rahul | Kings XI Punjab | 2020 | 670
+16 | RV Uthappa | Kolkata Knight Riders | 2014 | 660
+17 | KL Rahul | Kings XI Punjab | 2018 | 659
+18 | DA Warner | Sunrisers Hyderabad | 2017 | 641
+19 | V Kohli | Royal Challengers Bangalore | 2023 | 639
+20 | RD Gaikwad | Chennai Super Kings | 2021 | 635
+21 | V Kohli | Royal Challengers Bangalore | 2013 | 634
+22 | F du Plessis | Chennai Super Kings | 2021 | 633
+23 | KL Rahul | Punjab Kings | 2021 | 626
+24 | YBK Jaiswal | Rajasthan Royals | 2023 | 625
+25 | SR Tendulkar | Mumbai Indians | 2010 | 618
+26 | S Dhawan | Delhi Capitals | 2020 | 618
+27 | SE Marsh | Kings XI Punjab | 2008 | 616
+28 | KL Rahul | Lucknow Super Giants | 2022 | 616
+29 | CH Gayle | Royal Challengers Bangalore | 2011 | 608
+30 | SA Yadav | Mumbai Indians | 2023 | 605
+31 | AT Rayudu | Chennai Super Kings | 2018 | 602
+32 | KL Rahul | Kings XI Punjab | 2019 | 593
+33 | G Gambhir | Kolkata Knight Riders | 2012 | 590
+34 | RD Gaikwad | Chennai Super Kings | 2023 | 590
+35 | S Dhawan | Delhi Capitals | 2021 | 587
+36 | RD Gaikwad | Chennai Super Kings | 2024 | 583
+37 | R Parag | Rajasthan Royals | 2024 | 573
+38 | ML Hayden | Chennai Super Kings | 2009 | 572
+39 | JH Kallis | Royal Challengers Bangalore | 2010 | 572
+40 | S Dhawan | Deccan Chargers | 2012 | 569
+41 | TM Head | Sunrisers Hyderabad | 2024 | 567
+42 | DR Smith | Chennai Super Kings | 2014 | 566
+43 | DA Warner | Sunrisers Hyderabad | 2015 | 562
+44 | AM Rahane | Rajasthan Royals | 2012 | 560
+45 | V Kohli | Royal Challengers Bangalore | 2011 | 557
+46 | SR Watson | Chennai Super Kings | 2018 | 555
+47 | SR Tendulkar | Mumbai Indians | 2011 | 553
+48 | GJ Maxwell | Kings XI Punjab | 2014 | 552
+49 | SK Raina | Chennai Super Kings | 2013 | 548
+50 | JC Buttler | Rajasthan Royals | 2018 | 548
+51 | DA Warner | Sunrisers Hyderabad | 2020 | 548
+52 | SR Watson | Rajasthan Royals | 2013 | 543
+53 | AM Rahane | Rajasthan Royals | 2015 | 540
+54 | LMP Simmons | Mumbai Indians | 2015 | 540
+55 | RG Sharma | Mumbai Indians | 2013 | 538
+56 | G Gambhir | Delhi Daredevils | 2008 | 534
+57 | SV Samson | Rajasthan Royals | 2024 | 531
+58 | V Kohli | Royal Challengers Bangalore | 2018 | 530
+59 | Q de Kock | Mumbai Indians | 2019 | 529
+60 | DA Warner | Sunrisers Hyderabad | 2014 | 528
+61 | B Sai Sudharsan | Gujarat Titans | 2024 | 527
+62 | SK Raina | Chennai Super Kings | 2014 | 523
+63 | S Dhawan | Delhi Capitals | 2019 | 521
+64 | SK Raina | Chennai Super Kings | 2010 | 520
+65 | KL Rahul | Lucknow Super Giants | 2024 | 520
+66 | SS Iyer | Delhi Capitals | 2020 | 519
+67 | Ishan Kishan | Mumbai Indians | 2020 | 516
+68 | DA Warner | Delhi Capitals | 2023 | 516
+69 | ST Jayasuriya | Mumbai Indians | 2008 | 514
+70 | AB de Villiers | Royal Challengers Bangalore | 2015 | 513
+71 | GJ Maxwell | Royal Challengers Bangalore | 2021 | 513
+72 | SA Yadav | Mumbai Indians | 2018 | 512
+73 | KD Karthik | Mumbai Indians | 2013 | 510
+74 | AD Russell | Kolkata Knight Riders | 2019 | 510
+75 | Q de Kock | Lucknow Super Giants | 2022 | 508
+76 | V Kohli | Royal Challengers Bangalore | 2015 | 505
+77 | SE Marsh | Kings XI Punjab | 2011 | 504
+78 | Q de Kock | Mumbai Indians | 2020 | 503
+79 | G Gambhir | Kolkata Knight Riders | 2016 | 501
+80 | S Dhawan | Sunrisers Hyderabad | 2016 | 501
+81 | N Pooran | Lucknow Super Giants | 2024 | 499
+82 | G Gambhir | Kolkata Knight Riders | 2017 | 498
+83 | KD Karthik | Kolkata Knight Riders | 2018 | 498
+84 | S Dhawan | Sunrisers Hyderabad | 2018 | 497
+85 | AC Gilchrist | Deccan Chargers | 2009 | 495
+86 | V Sehwag | Delhi Daredevils | 2012 | 495
+87 | SC Ganguly | Kolkata Knight Riders | 2010 | 493
+88 | MEK Hussey | Chennai Super Kings | 2011 | 492
+89 | CH Gayle | Royal Challengers Bangalore | 2015 | 491
+90 | CA Lynn | Kolkata Knight Riders | 2018 | 491
+91 | CH Gayle | Kings XI Punjab | 2019 | 490
+92 | RG Sharma | Mumbai Indians | 2016 | 489
+93 | AM Rahane | Rajasthan Royals | 2013 | 488
+94 | RR Pant | Delhi Capitals | 2019 | 488
+95 | SP Narine | Kolkata Knight Riders | 2024 | 488
+96 | HH Pandya | Gujarat Titans | 2022 | 487
+97 | SV Samson | Rajasthan Royals | 2021 | 484
+98 | Abhishek Sharma | Sunrisers Hyderabad | 2024 | 484
+99 | Shubman Gill | Gujarat Titans | 2022 | 483
+100 | RG Sharma | Mumbai Indians | 2015 | 482
+101 | DA Miller | Gujarat Titans | 2022 | 481
+102 | AM Rahane | Rising Pune Supergiants | 2016 | 480
+103 | AB de Villiers | Royal Challengers Bangalore | 2018 | 480
+104 | SA Yadav | Mumbai Indians | 2020 | 480
+105 | CL White | Deccan Chargers | 2012 | 479
+106 | S Dhawan | Sunrisers Hyderabad | 2017 | 479
+107 | PP Shaw | Delhi Capitals | 2021 | 479
+108 | H Klaasen | Sunrisers Hyderabad | 2024 | 479
+109 | Shubman Gill | Kolkata Knight Riders | 2021 | 478
+110 | RK Singh | Kolkata Knight Riders | 2023 | 474
+111 | D Padikkal | Royal Challengers Bangalore | 2020 | 473
+112 | SR Watson | Rajasthan Royals | 2008 | 472
+113 | SPD Smith | Rising Pune Supergiant | 2017 | 472
+114 | R Dravid | Rajasthan Royals | 2013 | 471
+115 | F du Plessis | Royal Challengers Bangalore | 2022 | 468
+116 | V Kohli | Royal Challengers Bangalore | 2020 | 466
+117 | AB de Villiers | Delhi Daredevils | 2009 | 465
+118 | V Kohli | Royal Challengers Bangalore | 2019 | 464
+119 | PC Valthaty | Kings XI Punjab | 2011 | 463
+120 | SS Iyer | Delhi Capitals | 2019 | 463
+121 | R Dravid | Rajasthan Royals | 2012 | 462
+122 | MS Dhoni | Chennai Super Kings | 2013 | 461
+123 | S Dhawan | Punjab Kings | 2022 | 460
+124 | M Vijay | Chennai Super Kings | 2010 | 458
+125 | SV Samson | Rajasthan Royals | 2022 | 458
+126 | AJ Finch | Pune Warriors | 2013 | 456
+127 | V Sehwag | Kings XI Punjab | 2014 | 455
+128 | MS Dhoni | Chennai Super Kings | 2018 | 455
+129 | AB de Villiers | Royal Challengers Bangalore | 2020 | 454
+130 | Ishan Kishan | Mumbai Indians | 2023 | 454
+131 | M Vijay | Kings XI Punjab | 2016 | 453
+132 | C Green | Mumbai Indians | 2023 | 452
+133 | DJ Hooda | Lucknow Super Giants | 2022 | 451
+134 | F du Plessis | Chennai Super Kings | 2020 | 449
+135 | H Klaasen | Sunrisers Hyderabad | 2023 | 448
+136 | DA Miller | Kings XI Punjab | 2014 | 446
+137 | RR Pant | Delhi Capitals | 2024 | 446
+138 | Q de Kock | Delhi Daredevils | 2016 | 445
+139 | SK Raina | Chennai Super Kings | 2018 | 445
+140 | JM Bairstow | Sunrisers Hyderabad | 2019 | 445
+141 | SK Raina | Gujarat Lions | 2017 | 442
+142 | AB de Villiers | Royal Challengers Bangalore | 2019 | 442
+143 | GC Smith | Rajasthan Royals | 2008 | 441
+144 | SK Raina | Chennai Super Kings | 2012 | 441
+145 | SV Samson | Rajasthan Royals | 2018 | 441
+146 | MA Agarwal | Punjab Kings | 2021 | 441
+147 | Shubman Gill | Kolkata Knight Riders | 2020 | 440
+148 | DPMD Jayawardene | Kings XI Punjab | 2010 | 439
+149 | SS Iyer | Delhi Daredevils | 2015 | 439
+150 | SK Raina | Chennai Super Kings | 2011 | 438
+151 | F du Plessis | Royal Challengers Bengaluru | 2024 | 438
+152 | LS Livingstone | Punjab Kings | 2022 | 437
+153 | AC Gilchrist | Deccan Chargers | 2008 | 436
+154 | BB McCullum | Chennai Super Kings | 2015 | 436
+155 | YK Pathan | Rajasthan Royals | 2008 | 435
+156 | PD Salt | Kolkata Knight Riders | 2024 | 435
+157 | YBK Jaiswal | Rajasthan Royals | 2024 | 435
+158 | SK Raina | Chennai Super Kings | 2009 | 434
+159 | M Vijay | Chennai Super Kings | 2011 | 434
+160 | RV Uthappa | Pune Warriors | 2013 | 434
+161 | RG Sharma | Mumbai Indians | 2012 | 433
+162 | Mandeep Singh | Kings XI Punjab | 2012 | 432
+163 | DA Warner | Delhi Capitals | 2022 | 432
+164 | A Symonds | Deccan Chargers | 2010 | 429
+165 | Abhishek Sharma | Sunrisers Hyderabad | 2022 | 426
+166 | Shubman Gill | Gujarat Titans | 2024 | 426
+167 | MK Pandey | Sunrisers Hyderabad | 2020 | 425
+168 | JH Kallis | Kolkata Knight Riders | 2011 | 424
+169 | V Sehwag | Delhi Daredevils | 2011 | 424
+170 | SA Yadav | Mumbai Indians | 2019 | 424
+171 | MA Agarwal | Kings XI Punjab | 2020 | 424
+172 | SK Raina | Chennai Super Kings | 2008 | 421
+173 | KA Pollard | Mumbai Indians | 2013 | 420
+174 | HM Amla | Kings XI Punjab | 2017 | 420
+175 | SS Tiwary | Mumbai Indians | 2010 | 419
+176 | KA Pollard | Mumbai Indians | 2015 | 419
+177 | RR Pant | Delhi Capitals | 2021 | 419
+178 | TM Dilshan | Delhi Daredevils | 2009 | 418
+179 | DR Smith | Mumbai Indians | 2013 | 418
+180 | DA Miller | Kings XI Punjab | 2013 | 418
+181 | EJG Morgan | Kolkata Knight Riders | 2020 | 418
+182 | Ishan Kishan | Mumbai Indians | 2022 | 418
+183 | S Dube | Chennai Super Kings | 2023 | 418
+184 | RG Sharma | Mumbai Indians | 2024 | 417
+185 | MS Dhoni | Chennai Super Kings | 2019 | 416
+186 | Tilak Varma | Mumbai Indians | 2024 | 416
+187 | MS Dhoni | Chennai Super Kings | 2008 | 414
+188 | JP Duminy | Delhi Daredevils | 2015 | 414
+189 | RA Tripathi | Sunrisers Hyderabad | 2022 | 413
+190 | N Rana | Kolkata Knight Riders | 2023 | 413
+191 | SS Iyer | Delhi Daredevils | 2018 | 411
+192 | D Padikkal | Royal Challengers Bangalore | 2021 | 411
+193 | DA Warner | Delhi Daredevils | 2013 | 410
+194 | JP Duminy | Delhi Daredevils | 2014 | 410
+195 | JH Kallis | Kolkata Knight Riders | 2012 | 409
+196 | MP Stoinis | Lucknow Super Giants | 2023 | 408
+197 | V Sehwag | Delhi Daredevils | 2008 | 406
+198 | G Gambhir | Kolkata Knight Riders | 2013 | 406
+199 | RV Uthappa | Pune Warriors | 2012 | 405
+200 | BB McCullum | Chennai Super Kings | 2014 | 405
+201 | CA Lynn | Kolkata Knight Riders | 2019 | 405
+202 | RG Sharma | Mumbai Indians | 2019 | 405
+203 | V Kohli | Royal Challengers Bangalore | 2021 | 405
+204 | RG Sharma | Deccan Chargers | 2008 | 404
+205 | RG Sharma | Deccan Chargers | 2010 | 404
+206 | VR Iyer | Kolkata Knight Riders | 2023 | 404
+207 | HH Pandya | Mumbai Indians | 2019 | 402
+208 | MK Pandey | Kolkata Knight Riders | 2014 | 401
+209 | SS Iyer | Kolkata Knight Riders | 2022 | 401
+210 | S Dhawan | Deccan Chargers | 2011 | 400
+211 | GJ Maxwell | Royal Challengers Bangalore | 2023 | 400
+212 | DR Smith | Chennai Super Kings | 2015 | 399
+213 | SK Raina | Gujarat Lions | 2016 | 399
+214 | F du Plessis | Chennai Super Kings | 2012 | 398
+215 | SR Watson | Chennai Super Kings | 2019 | 398
+216 | KL Rahul | Royal Challengers Bangalore | 2016 | 397
+217 | RA Tripathi | Kolkata Knight Riders | 2021 | 397
+218 | Tilak Varma | Mumbai Indians | 2022 | 397
+219 | S Badrinath | Chennai Super Kings | 2011 | 396
+220 | DJ Hussey | Kings XI Punjab | 2012 | 396
+221 | MK Pandey | Kolkata Knight Riders | 2017 | 396
+222 | F du Plessis | Chennai Super Kings | 2019 | 396
+223 | S Dube | Chennai Super Kings | 2024 | 396
+224 | AT Rayudu | Mumbai Indians | 2011 | 395
+225 | AB de Villiers | Royal Challengers Bangalore | 2014 | 395
+226 | PA Patel | Mumbai Indians | 2017 | 395
+227 | RM Patidar | Royal Challengers Bengaluru | 2024 | 395
+228 | LMP Simmons | Mumbai Indians | 2014 | 394
+229 | RV Uthappa | Kolkata Knight Riders | 2016 | 394
+230 | AJ Finch | Gujarat Lions | 2016 | 393
+231 | AM Rahane | Rajasthan Royals | 2019 | 393
+232 | MS Dhoni | Chennai Super Kings | 2011 | 392
+233 | JC Buttler | Rajasthan Royals | 2023 | 392
+234 | RA Tripathi | Rising Pune Supergiant | 2017 | 391
+235 | RG Sharma | Mumbai Indians | 2014 | 390
+236 | RV Uthappa | Kolkata Knight Riders | 2017 | 388
+237 | MP Stoinis | Lucknow Super Giants | 2024 | 388
+238 | SV Samson | Delhi Daredevils | 2017 | 386
+239 | KA Pollard | Mumbai Indians | 2017 | 385
+240 | AC Gilchrist | Kings XI Punjab | 2011 | 383
+241 | SK Raina | Chennai Super Kings | 2019 | 383
+242 | N Rana | Kolkata Knight Riders | 2021 | 383
+243 | AM Rahane | Rising Pune Supergiant | 2017 | 382
+244 | E Lewis | Mumbai Indians | 2018 | 382
+245 | RG Sharma | Mumbai Indians | 2021 | 381
+246 | AK Markram | Sunrisers Hyderabad | 2022 | 381
+247 | F du Plessis | Chennai Super Kings | 2015 | 380
+248 | KR Mayers | Lucknow Super Giants | 2023 | 379
+249 | G Gambhir | Kolkata Knight Riders | 2011 | 378
+250 | T Stubbs | Delhi Capitals | 2024 | 378
+251 | NV Ojha | Rajasthan Royals | 2010 | 377
+252 | S Dhawan | Sunrisers Hyderabad | 2014 | 377
+253 | Yuvraj Singh | Royal Challengers Bangalore | 2014 | 376
+254 | D Padikkal | Rajasthan Royals | 2022 | 376
+255 | SV Samson | Rajasthan Royals | 2020 | 375
+256 | RV Uthappa | Royal Challengers Bangalore | 2010 | 374
+257 | SK Raina | Chennai Super Kings | 2015 | 374
+258 | PA Patel | Royal Challengers Bangalore | 2019 | 373
+259 | S Dhawan | Punjab Kings | 2023 | 373
+260 | JP Duminy | Mumbai Indians | 2009 | 372
+261 | RG Sharma | Mumbai Indians | 2011 | 372
+262 | MS Dhoni | Chennai Super Kings | 2015 | 372
+263 | R Dravid | Royal Challengers Bangalore | 2008 | 371
+264 | HH Gibbs | Deccan Chargers | 2009 | 371
+265 | DJ Bravo | Chennai Super Kings | 2012 | 371
+266 | MS Dhoni | Chennai Super Kings | 2014 | 371
+267 | WP Saha | Gujarat Titans | 2023 | 371
+268 | AM Rahane | Rajasthan Royals | 2018 | 370
+269 | VR Iyer | Kolkata Knight Riders | 2021 | 370
+270 | VR Iyer | Kolkata Knight Riders | 2024 | 370
+271 | CH Gayle | Kings XI Punjab | 2018 | 368
+272 | RD Gaikwad | Chennai Super Kings | 2022 | 368
+273 | RR Pant | Delhi Daredevils | 2017 | 366
+274 | BJ Hodge | Kolkata Knight Riders | 2009 | 365
+275 | SR Tendulkar | Mumbai Indians | 2009 | 364
+276 | V Kohli | Royal Challengers Bangalore | 2012 | 364
+277 | RV Uthappa | Kolkata Knight Riders | 2015 | 364
+278 | RG Sharma | Deccan Chargers | 2009 | 362
+279 | SPD Smith | Pune Warriors | 2012 | 362
+280 | WP Saha | Kings XI Punjab | 2014 | 362
+281 | B Sai Sudharsan | Gujarat Titans | 2023 | 362
+282 | SV Samson | Rajasthan Royals | 2023 | 362
+283 | JH Kallis | Royal Challengers Bangalore | 2009 | 361
+284 | AT Rayudu | Mumbai Indians | 2014 | 361
+285 | YK Pathan | Kolkata Knight Riders | 2016 | 361
+286 | KD Karthik | Gujarat Lions | 2017 | 361
+287 | N Rana | Kolkata Knight Riders | 2022 | 361
+288 | AB de Villiers | Royal Challengers Bangalore | 2013 | 360
+289 | MK Tiwary | Kolkata Knight Riders | 2011 | 359
+290 | V Kohli | Royal Challengers Bangalore | 2014 | 359
+291 | AT Rayudu | Chennai Super Kings | 2020 | 359
+292 | JC Buttler | Rajasthan Royals | 2024 | 359
+293 | KC Sangakkara | Deccan Chargers | 2011 | 358
+294 | MS Dhoni | Chennai Super Kings | 2012 | 358
+295 | P Simran Singh | Punjab Kings | 2023 | 358
+296 | N Pooran | Lucknow Super Giants | 2023 | 358
+297 | KC Sangakkara | Kings XI Punjab | 2010 | 357
+298 | BB McCullum | Kochi Tuskers Kerala | 2011 | 357
+299 | DA Miller | Kings XI Punjab | 2015 | 357
+300 | KK Nair | Delhi Daredevils | 2016 | 357
+301 | SP Narine | Kolkata Knight Riders | 2018 | 357
+302 | MM Ali | Chennai Super Kings | 2021 | 357
+303 | AT Rayudu | Mumbai Indians | 2010 | 356
+304 | V Sehwag | Delhi Daredevils | 2010 | 356
+305 | S Badrinath | Chennai Super Kings | 2010 | 356
+306 | BB McCullum | Gujarat Lions | 2016 | 354
+307 | Shashank Singh | Punjab Kings | 2024 | 354
+308 | S Dhawan | Sunrisers Hyderabad | 2015 | 353
+309 | PP Shaw | Delhi Capitals | 2019 | 353
+310 | N Pooran | Kings XI Punjab | 2020 | 353
+311 | MP Stoinis | Delhi Capitals | 2020 | 352
+312 | N Rana | Kolkata Knight Riders | 2020 | 352
+313 | RV Uthappa | Kolkata Knight Riders | 2018 | 351
+314 | SS Iyer | Kolkata Knight Riders | 2024 | 351
+315 | SC Ganguly | Kolkata Knight Riders | 2008 | 349
+316 | SR Watson | Rajasthan Royals | 2015 | 347
+317 | ML Hayden | Chennai Super Kings | 2010 | 346
+318 | HH Pandya | Gujarat Titans | 2023 | 346
+319 | JM Bairstow | Sunrisers Hyderabad | 2020 | 345
+320 | SA Yadav | Mumbai Indians | 2024 | 345
+321 | MK Pandey | Sunrisers Hyderabad | 2019 | 344
+322 | N Rana | Kolkata Knight Riders | 2019 | 344
+323 | R Dravid | Rajasthan Royals | 2011 | 343
+324 | Yuvraj Singh | Pune Warriors | 2011 | 343
+325 | RR Pant | Delhi Capitals | 2020 | 343
+326 | Tilak Varma | Mumbai Indians | 2023 | 343
+327 | SV Samson | Rajasthan Royals | 2019 | 342
+328 | V Kohli | Royal Challengers Bangalore | 2022 | 341
+329 | S Dhawan | Delhi Daredevils | 2008 | 340
+330 | Yuvraj Singh | Kings XI Punjab | 2009 | 340
+331 | OA Shah | Rajasthan Royals | 2012 | 340
+332 | RR Pant | Delhi Capitals | 2022 | 340
+333 | SV Samson | Rajasthan Royals | 2014 | 339
+334 | AM Rahane | Rajasthan Royals | 2014 | 339
+335 | PA Patel | Mumbai Indians | 2015 | 339
+336 | SS Iyer | Delhi Daredevils | 2017 | 338
+337 | Y Venugopal Rao | Delhi Daredevils | 2011 | 336
+338 | M Vijay | Chennai Super Kings | 2012 | 336
+339 | SE Marsh | Kings XI Punjab | 2012 | 336
+340 | DPMD Jayawardene | Delhi Daredevils | 2012 | 335
+341 | G Gambhir | Kolkata Knight Riders | 2014 | 335
+342 | KD Karthik | Gujarat Lions | 2016 | 335
+343 | AD Russell | Kolkata Knight Riders | 2022 | 335
+344 | AT Rayudu | Mumbai Indians | 2016 | 334
+345 | P Simran Singh | Punjab Kings | 2024 | 334
+346 | YK Pathan | Rajasthan Royals | 2010 | 333
+347 | AT Rayudu | Mumbai Indians | 2012 | 333
+348 | RG Sharma | Mumbai Indians | 2017 | 333
+349 | N Rana | Mumbai Indians | 2017 | 333
+350 | RM Patidar | Royal Challengers Bangalore | 2022 | 333
+351 | MS Dhoni | Chennai Super Kings | 2009 | 332
+352 | KC Sangakkara | Kings XI Punjab | 2009 | 332
+353 | YK Pathan | Kolkata Knight Riders | 2013 | 332
+354 | MA Agarwal | Kings XI Punjab | 2019 | 332
+355 | RG Sharma | Mumbai Indians | 2020 | 332
+356 | RG Sharma | Mumbai Indians | 2023 | 332
+357 | DPMD Jayawardene | Delhi Daredevils | 2013 | 331
+358 | SR Watson | Rajasthan Royals | 2011 | 330
+359 | KK Nair | Rajasthan Royals | 2014 | 330
+360 | KD Karthik | Royal Challengers Bangalore | 2022 | 330
+361 | J Fraser-McGurk | Delhi Capitals | 2024 | 330
+362 | JC Buttler | Rajasthan Royals | 2020 | 328
+363 | G Gambhir | Kolkata Knight Riders | 2015 | 327
+364 | Abishek Porel | Delhi Capitals | 2024 | 327
+365 | AD Russell | Kolkata Knight Riders | 2015 | 326
+366 | AM Rahane | Chennai Super Kings | 2023 | 326
+367 | KD Karthik | Royal Challengers Bengaluru | 2024 | 326
+368 | KD Karthik | Delhi Daredevils | 2014 | 325
+369 | DA Warner | Delhi Daredevils | 2011 | 324
+370 | SR Tendulkar | Mumbai Indians | 2012 | 324
+371 | M Vohra | Kings XI Punjab | 2014 | 324
+372 | DR Smith | Gujarat Lions | 2016 | 324
+373 | MK Tiwary | Rising Pune Supergiant | 2017 | 324
+374 | KC Sangakkara | Kings XI Punjab | 2008 | 320
+375 | RV Uthappa | Mumbai Indians | 2008 | 320
+376 | Ishan Kishan | Mumbai Indians | 2024 | 320
+377 | DJ Hussey | Kolkata Knight Riders | 2008 | 319
+378 | AB de Villiers | Royal Challengers Bangalore | 2012 | 319
+379 | BB McCullum | Gujarat Lions | 2017 | 319
+380 | SPD Smith | Rajasthan Royals | 2019 | 319
+381 | DJ Mitchell | Chennai Super Kings | 2024 | 318
+382 | KS Williamson | Sunrisers Hyderabad | 2020 | 317
+383 | SA Yadav | Mumbai Indians | 2021 | 317
+384 | WP Saha | Gujarat Titans | 2022 | 317
+385 | BA Stokes | Rising Pune Supergiant | 2017 | 316
+386 | AD Russell | Kolkata Knight Riders | 2018 | 316
+387 | SO Hetmyer | Rajasthan Royals | 2022 | 314
+388 | AB de Villiers | Royal Challengers Bangalore | 2021 | 313
+389 | AB de Villiers | Royal Challengers Bangalore | 2011 | 312
+390 | M Vijay | Chennai Super Kings | 2013 | 312
+391 | YK Pathan | Kolkata Knight Riders | 2015 | 312
+392 | SA Asnodkar | Rajasthan Royals | 2008 | 311
+393 | JH Kallis | Kolkata Knight Riders | 2013 | 311
+394 | S Dhawan | Sunrisers Hyderabad | 2013 | 311
+395 | JC Buttler | Rajasthan Royals | 2019 | 311
+396 | SPD Smith | Rajasthan Royals | 2020 | 311
+397 | GJ Maxwell | Kings XI Punjab | 2017 | 310
+398 | AJ Finch | Sunrisers Hyderabad | 2014 | 309
+399 | JM Sharma | Punjab Kings | 2023 | 309
+400 | V Kohli | Royal Challengers Bangalore | 2017 | 308
+401 | TL Suman | Deccan Chargers | 2010 | 307
+402 | V Kohli | Royal Challengers Bangalore | 2010 | 307
+403 | EJG Morgan | Kolkata Knight Riders | 2013 | 307
+404 | N Pooran | Sunrisers Hyderabad | 2022 | 306
+405 | KP Pietersen | Delhi Daredevils | 2012 | 305
+406 | N Rana | Kolkata Knight Riders | 2018 | 304
+407 | F du Plessis | Chennai Super Kings | 2014 | 303
+408 | SA Yadav | Mumbai Indians | 2022 | 303
+409 | Nithish Kumar Reddy | Sunrisers Hyderabad | 2024 | 303
+410 | PA Patel | Chennai Super Kings | 2008 | 302
+411 | KK Nair | Kings XI Punjab | 2018 | 301
+412 | GJ Maxwell | Royal Challengers Bangalore | 2022 | 301
+413 | V Shankar | Gujarat Titans | 2023 | 301
+414 | SE Marsh | Kings XI Punjab | 2013 | 300
+415 | Yuvraj Singh | Kings XI Punjab | 2008 | 299
+416 | DPMD Jayawardene | Kochi Tuskers Kerala | 2011 | 299
+417 | AJ Finch | Gujarat Lions | 2017 | 299
+418 | SR Watson | Chennai Super Kings | 2020 | 299
+419 | SO Hetmyer | Rajasthan Royals | 2023 | 299
+420 | JM Bairstow | Punjab Kings | 2024 | 298
+421 | Q de Kock | Mumbai Indians | 2021 | 297
+422 | Shubman Gill | Kolkata Knight Riders | 2019 | 296
+423 | RA Jadeja | Rajasthan Royals | 2009 | 295
+424 | V Sehwag | Delhi Daredevils | 2013 | 295
+425 | CA Lynn | Kolkata Knight Riders | 2017 | 295
+426 | PA Patel | Sunrisers Hyderabad | 2013 | 294
+427 | AC Gilchrist | Kings XI Punjab | 2013 | 294
+428 | KP Pietersen | Delhi Daredevils | 2014 | 294
+429 | STR Binny | Rajasthan Royals | 2013 | 293
+430 | BJ Hodge | Rajasthan Royals | 2013 | 293
+431 | SPD Smith | Rajasthan Royals | 2015 | 293
+432 | CH Gayle | Kolkata Knight Riders | 2010 | 292
+433 | JD Ryder | Pune Warriors | 2011 | 292
+434 | MK Pandey | Sunrisers Hyderabad | 2021 | 292
+435 | SV Samson | Delhi Daredevils | 2016 | 291
+436 | MS Dhoni | Rising Pune Supergiant | 2017 | 290
+437 | AC Gilchrist | Deccan Chargers | 2010 | 289
+438 | BB McCullum | Kolkata Knight Riders | 2012 | 289
+439 | S Dube | Chennai Super Kings | 2022 | 289
+440 | Y Venugopal Rao | Deccan Chargers | 2008 | 288
+441 | KD Karthik | Delhi Daredevils | 2009 | 288
+442 | CH Gayle | Kings XI Punjab | 2020 | 288
+443 | MS Dhoni | Chennai Super Kings | 2010 | 287
+444 | SR Tendulkar | Mumbai Indians | 2013 | 287
+445 | MC Henriques | Sunrisers Hyderabad | 2015 | 287
+446 | G Gambhir | Delhi Daredevils | 2009 | 286
+447 | RG Sharma | Mumbai Indians | 2018 | 286
+448 | BB McCullum | Kolkata Knight Riders | 2009 | 285
+449 | BJ Hodge | Kochi Tuskers Kerala | 2011 | 285
+450 | TM Dilshan | Royal Challengers Bangalore | 2012 | 285
+451 | BA Stokes | Rajasthan Royals | 2020 | 285
+452 | JJ Roy | Kolkata Knight Riders | 2023 | 285
+453 | MS Dhoni | Rising Pune Supergiants | 2016 | 284
+454 | MK Pandey | Sunrisers Hyderabad | 2018 | 284
+455 | YK Pathan | Kolkata Knight Riders | 2011 | 283
+456 | RA Jadeja | Kochi Tuskers Kerala | 2011 | 283
+457 | PP Shaw | Delhi Capitals | 2022 | 283
+458 | AR Patel | Delhi Capitals | 2023 | 283
+459 | DA Warner | Delhi Daredevils | 2010 | 282
+460 | KD Karthik | Kings XI Punjab | 2011 | 282
+461 | AT Rayudu | Chennai Super Kings | 2019 | 282
+462 | RV Uthappa | Kolkata Knight Riders | 2019 | 282
+463 | AT Rayudu | Mumbai Indians | 2015 | 281
+464 | KK Nair | Delhi Daredevils | 2017 | 281
+465 | HH Pandya | Mumbai Indians | 2020 | 281
+466 | LRPL Taylor | Royal Challengers Bangalore | 2009 | 280
+467 | KA Pollard | Mumbai Indians | 2019 | 279
+468 | LS Livingstone | Punjab Kings | 2023 | 279
+469 | KD Karthik | Delhi Daredevils | 2010 | 278
+470 | MJ Lumb | Rajasthan Royals | 2010 | 278
+471 | G Gambhir | Delhi Daredevils | 2010 | 277
+472 | MC Henriques | Sunrisers Hyderabad | 2017 | 277
+473 | Ishan Kishan | Gujarat Lions | 2017 | 277
+474 | IK Pathan | Kings XI Punjab | 2010 | 276
+475 | SM Curran | Punjab Kings | 2023 | 276
+476 | Ishan Kishan | Mumbai Indians | 2018 | 275
+477 | AT Rayudu | Chennai Super Kings | 2022 | 274
+478 | KL Rahul | Lucknow Super Giants | 2023 | 274
+479 | KA Pollard | Mumbai Indians | 2010 | 273
+480 | KA Pollard | Mumbai Indians | 2014 | 273
+481 | RA Tripathi | Sunrisers Hyderabad | 2023 | 273
+482 | JC Buttler | Mumbai Indians | 2017 | 272
+483 | R Dravid | Royal Challengers Bangalore | 2009 | 271
+484 | WP Saha | Kings XI Punjab | 2016 | 270
+485 | SPD Smith | Rising Pune Supergiants | 2016 | 270
+486 | MA Agarwal | Sunrisers Hyderabad | 2023 | 270
+487 | SM Curran | Punjab Kings | 2024 | 270
+488 | SC Ganguly | Pune Warriors | 2012 | 268
+489 | YK Pathan | Kolkata Knight Riders | 2014 | 268
+490 | KA Pollard | Mumbai Indians | 2020 | 268
+491 | AJ Finch | Royal Challengers Bangalore | 2020 | 268
+492 | RG Sharma | Mumbai Indians | 2022 | 268
+493 | HH Gibbs | Deccan Chargers | 2010 | 267
+494 | KM Jadhav | Royal Challengers Bangalore | 2017 | 267
+495 | RA Jadeja | Chennai Super Kings | 2024 | 267
+496 | KS Williamson | Sunrisers Hyderabad | 2021 | 266
+497 | AT Rayudu | Mumbai Indians | 2013 | 265
+498 | CJ Anderson | Mumbai Indians | 2014 | 265
+499 | RV Uthappa | Pune Warriors | 2011 | 264
+500 | SE Marsh | Kings XI Punjab | 2017 | 264
+501 | MEK Hussey | Chennai Super Kings | 2012 | 261
+502 | D Padikkal | Rajasthan Royals | 2023 | 261
+503 | MK Tiwary | Kolkata Knight Riders | 2012 | 260
+504 | Mandeep Singh | Kings XI Punjab | 2013 | 260
+505 | HH Pandya | Mumbai Indians | 2018 | 260
+506 | YK Pathan | Sunrisers Hyderabad | 2018 | 260
+507 | GJ Bailey | Kings XI Punjab | 2015 | 259
+508 | DA Miller | Gujarat Titans | 2023 | 259
+509 | YBK Jaiswal | Rajasthan Royals | 2022 | 258
+510 | GJ Bailey | Kings XI Punjab | 2014 | 257
+511 | AT Rayudu | Chennai Super Kings | 2021 | 257
+512 | R Dravid | Royal Challengers Bangalore | 2010 | 256
+513 | JD Ryder | Pune Warriors | 2012 | 256
+514 | DA Warner | Delhi Daredevils | 2012 | 256
+515 | KS Williamson | Sunrisers Hyderabad | 2017 | 256
+516 | Yuvraj Singh | Kings XI Punjab | 2010 | 255
+517 | NV Ojha | Delhi Daredevils | 2012 | 255
+518 | SR Watson | Rajasthan Royals | 2012 | 255
+519 | MS Bisla | Kolkata Knight Riders | 2013 | 255
+520 | JC Buttler | Mumbai Indians | 2016 | 255
+521 | R Tewatia | Rajasthan Royals | 2020 | 255
+522 | C Green | Royal Challengers Bengaluru | 2024 | 255
+523 | JC Buttler | Rajasthan Royals | 2021 | 254
+524 | KD Karthik | Kolkata Knight Riders | 2019 | 253
+525 | JM Bairstow | Punjab Kings | 2022 | 253
+526 | Yuvraj Singh | Sunrisers Hyderabad | 2017 | 252
+527 | Mandeep Singh | Royal Challengers Bangalore | 2018 | 252
+528 | DP Conway | Chennai Super Kings | 2022 | 252
+529 | M Vijay | Kings XI Punjab | 2015 | 251
+530 | MR Marsh | Delhi Capitals | 2022 | 251
+531 | HH Pandya | Mumbai Indians | 2017 | 250
+532 | R Powell | Delhi Capitals | 2022 | 250
+533 | Q de Kock | Lucknow Super Giants | 2024 | 250
+534 | A Symonds | Deccan Chargers | 2009 | 249
+535 | MK Pandey | Royal Challengers Bangalore | 2010 | 249
+536 | S Sohal | Deccan Chargers | 2011 | 249
+537 | WP Saha | Kings XI Punjab | 2015 | 249
+538 | YBK Jaiswal | Rajasthan Royals | 2021 | 249
+539 | RS Bopara | Kings XI Punjab | 2010 | 248
+540 | Yuvraj Singh | Delhi Daredevils | 2015 | 248
+541 | MK Pandey | Kolkata Knight Riders | 2016 | 248
+542 | JM Bairstow | Sunrisers Hyderabad | 2021 | 248
+543 | AK Markram | Sunrisers Hyderabad | 2023 | 248
+544 | V Kohli | Royal Challengers Bangalore | 2009 | 246
+545 | MK Pandey | Pune Warriors | 2011 | 246
+546 | BJ Hodge | Rajasthan Royals | 2012 | 245
+547 | PP Shaw | Delhi Daredevils | 2018 | 245
+548 | KA Pollard | Mumbai Indians | 2021 | 245
+549 | JP Duminy | Deccan Chargers | 2012 | 244
+550 | V Shankar | Sunrisers Hyderabad | 2019 | 244
+551 | MM Ali | Chennai Super Kings | 2022 | 244
+552 | YK Pathan | Rajasthan Royals | 2009 | 243
+553 | KH Pandya | Mumbai Indians | 2017 | 243
+554 | SO Hetmyer | Delhi Capitals | 2021 | 242
+555 | AM Rahane | Chennai Super Kings | 2024 | 242
+556 | JA Morkel | Chennai Super Kings | 2008 | 241
+557 | GH Vihari | Sunrisers Hyderabad | 2013 | 241
+558 | Ishan Kishan | Mumbai Indians | 2021 | 241
+559 | N Wadhera | Mumbai Indians | 2023 | 241
+560 | TH David | Mumbai Indians | 2024 | 241
+561 | SR Watson | Rajasthan Royals | 2014 | 240
+562 | DR Smith | Gujarat Lions | 2017 | 239
+563 | Shakib Al Hasan | Sunrisers Hyderabad | 2018 | 239
+564 | KD Karthik | Mumbai Indians | 2012 | 238
+565 | Yuvraj Singh | Pune Warriors | 2013 | 238
+566 | A Badoni | Lucknow Super Giants | 2023 | 238
+567 | TL Suman | Deccan Chargers | 2009 | 237
+568 | MK Tiwary | Kolkata Knight Riders | 2010 | 237
+569 | KH Pandya | Mumbai Indians | 2016 | 237
+570 | KP Pietersen | Royal Challengers Bangalore | 2010 | 236
+571 | Yuvraj Singh | Sunrisers Hyderabad | 2016 | 236
+572 | DJ Hussey | Kings XI Punjab | 2013 | 235
+573 | AR Patel | Delhi Capitals | 2024 | 235
+574 | A Badoni | Lucknow Super Giants | 2024 | 235
+575 | WP Saha | Kings XI Punjab | 2017 | 234
+576 | JM Sharma | Punjab Kings | 2022 | 234
+577 | AD Mathews | Kolkata Knight Riders | 2010 | 233
+578 | NLTC Perera | Sunrisers Hyderabad | 2013 | 233
+579 | NV Ojha | Sunrisers Hyderabad | 2014 | 232
+580 | RA Jadeja | Chennai Super Kings | 2020 | 232
+581 | MS Dhoni | Chennai Super Kings | 2022 | 232
+582 | TH David | Mumbai Indians | 2023 | 231
+583 | J Botha | Rajasthan Royals | 2011 | 230
+584 | RA Tripathi | Kolkata Knight Riders | 2020 | 230
+585 | S Dube | Rajasthan Royals | 2021 | 230
+586 | RV Uthappa | Chennai Super Kings | 2022 | 230
+587 | WG Jacks | Royal Challengers Bengaluru | 2024 | 230
+588 | M Vohra | Kings XI Punjab | 2017 | 229
+589 | KH Pandya | Mumbai Indians | 2018 | 228
+590 | PP Shaw | Delhi Capitals | 2020 | 228
+591 | Shakib Al Hasan | Kolkata Knight Riders | 2014 | 227
+592 | CH Gayle | Royal Challengers Bangalore | 2016 | 227
+593 | AR Patel | Kings XI Punjab | 2017 | 227
+594 | RA Jadeja | Chennai Super Kings | 2021 | 227
+595 | Rahmanullah Gurbaz | Kolkata Knight Riders | 2023 | 227
+596 | AD Russell | Kolkata Knight Riders | 2023 | 227
+597 | TM Dilshan | Royal Challengers Bangalore | 2011 | 226
+598 | RA Tripathi | Rajasthan Royals | 2018 | 226
+599 | Abhishek Sharma | Sunrisers Hyderabad | 2023 | 226
+600 | MV Boucher | Royal Challengers Bangalore | 2008 | 225
+601 | MA Agarwal | Royal Challengers Bangalore | 2012 | 225
+602 | MK Pandey | Kolkata Knight Riders | 2015 | 225
+603 | SP Narine | Kolkata Knight Riders | 2017 | 224
+604 | KD Karthik | Kolkata Knight Riders | 2021 | 223
+605 | R Ravindra | Chennai Super Kings | 2024 | 222
+606 | AD Russell | Kolkata Knight Riders | 2024 | 222
+607 | JR Hopes | Kings XI Punjab | 2008 | 221
+608 | ST Jayasuriya | Mumbai Indians | 2009 | 221
+609 | JEC Franklin | Mumbai Indians | 2012 | 220
+610 | KA Pollard | Mumbai Indians | 2012 | 220
+611 | AL Menaria | Rajasthan Royals | 2012 | 220
+612 | MM Ali | Royal Challengers Bangalore | 2019 | 220
+613 | AK Markram | Sunrisers Hyderabad | 2024 | 220
+614 | DPMD Jayawardene | Kings XI Punjab | 2009 | 219
+615 | Shahbaz Ahmed | Royal Challengers Bangalore | 2022 | 219
+616 | DJ Bravo | Mumbai Indians | 2009 | 218
+617 | MS Bisla | Kings XI Punjab | 2010 | 218
+618 | PD Salt | Delhi Capitals | 2023 | 218
+619 | R Tewatia | Gujarat Titans | 2022 | 217
+620 | AB de Villiers | Royal Challengers Bangalore | 2017 | 216
+621 | KS Williamson | Sunrisers Hyderabad | 2022 | 216
+622 | HH Pandya | Mumbai Indians | 2024 | 216
+623 | DR Smith | Deccan Chargers | 2009 | 215
+624 | Shahbaz Ahmed | Sunrisers Hyderabad | 2024 | 215
+625 | WP Saha | Sunrisers Hyderabad | 2020 | 214
+626 | MS Bisla | Kolkata Knight Riders | 2012 | 213
+627 | MA Agarwal | Delhi Daredevils | 2015 | 213
+628 | DA Miller | Kings XI Punjab | 2019 | 213
+629 | GC Smith | Rajasthan Royals | 2009 | 212
+630 | V Shankar | Delhi Daredevils | 2018 | 212
+631 | MP Stoinis | Royal Challengers Bangalore | 2019 | 211
+632 | RR Rossouw | Punjab Kings | 2024 | 211
+633 | DA Miller | Gujarat Titans | 2024 | 210
+634 | CL White | Sunrisers Hyderabad | 2013 | 209
+635 | MEK Hussey | Mumbai Indians | 2014 | 209
+636 | RR Rossouw | Delhi Capitals | 2023 | 209
+637 | B Chipli | Deccan Chargers | 2011 | 207
+638 | M Vijay | Delhi Daredevils | 2014 | 207
+639 | KA Pollard | Mumbai Indians | 2016 | 207
+640 | AM Nayar | Mumbai Indians | 2008 | 206
+641 | SV Samson | Rajasthan Royals | 2013 | 206
+642 | AR Patel | Kings XI Punjab | 2015 | 206
+643 | F du Plessis | Rising Pune Supergiants | 2016 | 206
+644 | PBB Rajapaksa | Punjab Kings | 2022 | 206
+645 | JP Duminy | Deccan Chargers | 2011 | 205
+646 | PA Patel | Royal Challengers Bangalore | 2014 | 205
+647 | SV Samson | Rajasthan Royals | 2015 | 204
+648 | RD Gaikwad | Chennai Super Kings | 2020 | 204
+649 | PD Collingwood | Delhi Daredevils | 2010 | 203
+650 | Shubman Gill | Kolkata Knight Riders | 2018 | 203
+651 | PA Patel | Kochi Tuskers Kerala | 2011 | 202
+652 | RA Jadeja | Chennai Super Kings | 2013 | 201
+653 | Q de Kock | Royal Challengers Bangalore | 2018 | 201
+654 | KC Sangakkara | Deccan Chargers | 2012 | 200
+655 | CH Gayle | Royal Challengers Bangalore | 2017 | 200
+656 | MS Dhoni | Chennai Super Kings | 2020 | 200
+657 | JH Kallis | Royal Challengers Bangalore | 2008 | 199
+658 | V Sehwag | Delhi Daredevils | 2009 | 198
+659 | JA Morkel | Chennai Super Kings | 2010 | 198
+660 | RR Pant | Delhi Daredevils | 2016 | 198
+661 | PP Shaw | Delhi Capitals | 2024 | 198
+662 | LRPL Taylor | Delhi Daredevils | 2012 | 197
+663 | SP Fleming | Chennai Super Kings | 2008 | 196
+664 | IK Pathan | Kings XI Punjab | 2009 | 196
+665 | JR Hopes | Delhi Daredevils | 2011 | 196
+666 | S Badrinath | Chennai Super Kings | 2012 | 196
+667 | Azhar Mahmood | Kings XI Punjab | 2013 | 196
+668 | CH Gayle | Royal Challengers Bangalore | 2014 | 196
+669 | BA Stokes | Rajasthan Royals | 2018 | 196
+670 | RV Uthappa | Rajasthan Royals | 2020 | 196
+671 | MA Agarwal | Punjab Kings | 2022 | 196
+672 | DJ Bravo | Chennai Super Kings | 2015 | 195
+673 | CH Morris | Delhi Daredevils | 2016 | 195
+674 | DA Warner | Sunrisers Hyderabad | 2021 | 195
+675 | Dhruv Jurel | Rajasthan Royals | 2024 | 195
+676 | YK Pathan | Kolkata Knight Riders | 2012 | 194
+677 | PA Patel | Deccan Chargers | 2012 | 194
+678 | Salman Butt | Kolkata Knight Riders | 2008 | 193
+679 | AM Nayar | Mumbai Indians | 2009 | 193
+680 | BJ Rohrer | Delhi Daredevils | 2013 | 193
+681 | CH Gayle | Punjab Kings | 2021 | 193
+682 | S Badrinath | Chennai Super Kings | 2008 | 192
+683 | S Dhawan | Mumbai Indians | 2010 | 191
+684 | RA Jadeja | Chennai Super Kings | 2012 | 191
+685 | SS Tiwary | Royal Challengers Bangalore | 2012 | 191
+686 | RA Jadeja | Gujarat Lions | 2016 | 191
+687 | JP Duminy | Delhi Daredevils | 2016 | 191
+688 | KS Bharat | Royal Challengers Bangalore | 2021 | 191
+689 | R Ashwin | Rajasthan Royals | 2022 | 191
+690 | DT Christian | Deccan Chargers | 2011 | 190
+691 | RA Jadeja | Chennai Super Kings | 2023 | 190
+692 | HC Brook | Sunrisers Hyderabad | 2023 | 190
+693 | ML Hayden | Chennai Super Kings | 2008 | 189
+694 | SC Ganguly | Kolkata Knight Riders | 2009 | 189
+695 | KM Jadhav | Delhi Daredevils | 2015 | 189
+696 | Ashutosh Sharma | Punjab Kings | 2024 | 189
+697 | BB McCullum | Kolkata Knight Riders | 2008 | 188
+698 | SR Tendulkar | Mumbai Indians | 2008 | 188
+699 | AD Russell | Kolkata Knight Riders | 2016 | 188
+700 | Mandeep Singh | Royal Challengers Bangalore | 2017 | 188
+701 | KH Pandya | Lucknow Super Giants | 2023 | 188
+702 | R Tewatia | Gujarat Titans | 2024 | 188
+703 | SS Tiwary | Royal Challengers Bangalore | 2011 | 187
+704 | EJG Morgan | Sunrisers Hyderabad | 2015 | 187
+705 | JM Sharma | Punjab Kings | 2024 | 187
+706 | Azhar Mahmood | Kings XI Punjab | 2012 | 186
+707 | SM Curran | Chennai Super Kings | 2020 | 186
+708 | TH David | Mumbai Indians | 2022 | 186
+709 | Atharva Taide | Punjab Kings | 2023 | 186
+710 | SR Watson | Rajasthan Royals | 2010 | 185
+711 | SO Hetmyer | Delhi Capitals | 2020 | 185
+712 | CA Ingram | Delhi Capitals | 2019 | 184
+713 | AA Jhunjhunwala | Rajasthan Royals | 2010 | 183
+714 | DB Ravi Teja | Deccan Chargers | 2011 | 183
+715 | KH Pandya | Mumbai Indians | 2019 | 183
+716 | AD Russell | Kolkata Knight Riders | 2021 | 183
+717 | KH Pandya | Lucknow Super Giants | 2022 | 183
+718 | R Parag | Rajasthan Royals | 2022 | 183
+719 | SD Hope | Delhi Capitals | 2024 | 183
+720 | MC Henriques | Sunrisers Hyderabad | 2016 | 182
+721 | SA Yadav | Kolkata Knight Riders | 2016 | 182
+722 | VR Iyer | Kolkata Knight Riders | 2022 | 182
+723 | AR Patel | Delhi Capitals | 2022 | 182
+724 | Abdul Samad | Sunrisers Hyderabad | 2024 | 182
+725 | AC Voges | Rajasthan Royals | 2010 | 181
+726 | LRPL Taylor | Rajasthan Royals | 2011 | 181
+727 | JP Faulkner | Rajasthan Royals | 2014 | 181
+728 | KK Nair | Rajasthan Royals | 2015 | 181
+729 | AL Menaria | Rajasthan Royals | 2011 | 180
+730 | SN Khan | Kings XI Punjab | 2019 | 180
+731 | DPMD Jayawardene | Kings XI Punjab | 2008 | 179
+732 | GJ Maxwell | Kings XI Punjab | 2016 | 179
+733 | SR Watson | Royal Challengers Bangalore | 2016 | 179
+734 | DJ Bravo | Mumbai Indians | 2008 | 178
+735 | S Badrinath | Chennai Super Kings | 2009 | 177
+736 | PA Patel | Mumbai Indians | 2016 | 177
+737 | M Kaif | Rajasthan Royals | 2008 | 176
+738 | IK Pathan | Delhi Daredevils | 2012 | 176
+739 | RV Uthappa | Royal Challengers Bangalore | 2009 | 175
+740 | SS Iyer | Delhi Capitals | 2021 | 175
+741 | DJG Sammy | Sunrisers Hyderabad | 2013 | 174
+742 | RK Singh | Kolkata Knight Riders | 2022 | 174
+743 | AC Gilchrist | Kings XI Punjab | 2012 | 172
+744 | AD Mathews | Pune Warriors | 2013 | 172
+745 | CH Gayle | Kolkata Knight Riders | 2009 | 171
+746 | SS Tiwary | Rising Pune Supergiants | 2016 | 170
+747 | GJ Maxwell | Delhi Daredevils | 2018 | 169
+748 | KD Karthik | Kolkata Knight Riders | 2020 | 169
+749 | SW Billings | Kolkata Knight Riders | 2022 | 169
+750 | Abdul Samad | Sunrisers Hyderabad | 2023 | 169
+751 | MEK Hussey | Chennai Super Kings | 2008 | 168
+752 | MK Pandey | Royal Challengers Bangalore | 2009 | 168
+753 | NV Ojha | Rajasthan Royals | 2009 | 168
+754 | N Pooran | Kings XI Punjab | 2019 | 168
+755 | DA Warner | Delhi Capitals | 2024 | 168
+756 | RK Singh | Kolkata Knight Riders | 2024 | 168
+757 | HH Gibbs | Deccan Chargers | 2008 | 167
+758 | MN van Wyk | Kolkata Knight Riders | 2009 | 167
+759 | MD Mishra | Deccan Chargers | 2010 | 166
+760 | KL Rahul | Sunrisers Hyderabad | 2014 | 166
+761 | V Kohli | Royal Challengers Bangalore | 2008 | 165
+762 | MC Henriques | Royal Challengers Bangalore | 2013 | 165
+763 | Mandeep Singh | Kings XI Punjab | 2019 | 165
+764 | RA Tripathi | Sunrisers Hyderabad | 2024 | 165
+765 | FY Fazal | Rajasthan Royals | 2010 | 164
+766 | SA Yadav | Kolkata Knight Riders | 2014 | 164
+767 | LR Shukla | Kolkata Knight Riders | 2008 | 163
+768 | DA Warner | Delhi Daredevils | 2009 | 163
+769 | A Raghuvanshi | Kolkata Knight Riders | 2024 | 163
+770 | F du Plessis | Chennai Super Kings | 2018 | 162
+771 | KM Jadhav | Chennai Super Kings | 2019 | 162
+772 | A Symonds | Deccan Chargers | 2008 | 161
+773 | M Vohra | Kings XI Punjab | 2013 | 161
+774 | M Vohra | Kings XI Punjab | 2016 | 161
+775 | DA Miller | Kings XI Punjab | 2016 | 161
+776 | Lalit Yadav | Delhi Capitals | 2022 | 161
+777 | A Badoni | Lucknow Super Giants | 2022 | 161
+778 | D Brevis | Mumbai Indians | 2022 | 161
+779 | MS Dhoni | Chennai Super Kings | 2024 | 161
+780 | NV Ojha | Delhi Daredevils | 2011 | 160
+781 | R Parag | Rajasthan Royals | 2019 | 160
+782 | SK Raina | Chennai Super Kings | 2021 | 160
+783 | DJ Hooda | Punjab Kings | 2021 | 160
+784 | MK Pandey | Delhi Capitals | 2023 | 160
+785 | WP Saha | Kolkata Knight Riders | 2008 | 159
+786 | SPD Smith | Pune Warriors | 2013 | 159
+787 | SE Marsh | Kings XI Punjab | 2016 | 159
+788 | UBT Chand | Delhi Daredevils | 2013 | 158
+789 | RA Jadeja | Gujarat Lions | 2017 | 158
+790 | AT Rayudu | Chennai Super Kings | 2023 | 158
+791 | M Manhas | Delhi Daredevils | 2010 | 157
+792 | JP Duminy | Mumbai Indians | 2010 | 157
+793 | DR Smith | Mumbai Indians | 2012 | 157
+794 | SA Yadav | Kolkata Knight Riders | 2015 | 157
+795 | Mandeep Singh | Royal Challengers Bangalore | 2015 | 157
+796 | HM Amla | Kings XI Punjab | 2016 | 157
+797 | MS Wade | Gujarat Titans | 2022 | 157
+798 | KS Williamson | Sunrisers Hyderabad | 2019 | 156
+799 | MP Stoinis | Lucknow Super Giants | 2022 | 156
+800 | M Shahrukh Khan | Punjab Kings | 2023 | 156
+801 | VVS Laxman | Deccan Chargers | 2008 | 155
+802 | R Tewatia | Rajasthan Royals | 2021 | 155
+803 | CH Morris | Delhi Daredevils | 2017 | 154
+804 | Y Nagar | Delhi Daredevils | 2012 | 153
+805 | Q de Kock | Delhi Daredevils | 2014 | 153
+806 | PA Patel | Royal Challengers Bangalore | 2018 | 153
+807 | M Shahrukh Khan | Punjab Kings | 2021 | 153
+808 | LA Pomersbach | Kings XI Punjab | 2008 | 152
+809 | KM Jadhav | Delhi Daredevils | 2013 | 152
+810 | MK Tiwary | Delhi Daredevils | 2014 | 152
+811 | SPD Smith | Delhi Capitals | 2021 | 152
+812 | Dhruv Jurel | Rajasthan Royals | 2023 | 152
+813 | S Dhawan | Punjab Kings | 2024 | 152
+814 | JH Kallis | Kolkata Knight Riders | 2014 | 151
+815 | DJ Hooda | Rajasthan Royals | 2015 | 151
+816 | TM Head | Royal Challengers Bangalore | 2017 | 151
+817 | E Lewis | Rajasthan Royals | 2021 | 151
+818 | MV Boucher | Royal Challengers Bangalore | 2009 | 150
+819 | IK Pathan | Delhi Daredevils | 2011 | 150
+820 | NLTC Perera | Rising Pune Supergiants | 2016 | 150
+821 | JJ Roy | Sunrisers Hyderabad | 2021 | 150
+822 | LRPL Taylor | Royal Challengers Bangalore | 2008 | 149
+823 | KM Jadhav | Delhi Daredevils | 2014 | 149
+824 | AD Hales | Sunrisers Hyderabad | 2018 | 148
+825 | SM Pollock | Mumbai Indians | 2008 | 147
+826 | SE Marsh | Kings XI Punjab | 2010 | 147
+827 | SPD Smith | Rajasthan Royals | 2014 | 147
+828 | KA Pollard | Mumbai Indians | 2011 | 146
+829 | MK Tiwary | Kolkata Knight Riders | 2013 | 146
+830 | RA Jadeja | Chennai Super Kings | 2014 | 146
+831 | MP Stoinis | Kings XI Punjab | 2016 | 146
+832 | PJ Cummins | Kolkata Knight Riders | 2020 | 146
+833 | AK Markram | Punjab Kings | 2021 | 146
+834 | KD Karthik | Delhi Daredevils | 2008 | 145
+835 | S Vidyut | Chennai Super Kings | 2008 | 145
+836 | SM Katich | Kings XI Punjab | 2009 | 145
+837 | DT Christian | Deccan Chargers | 2012 | 145
+838 | GJ Maxwell | Kings XI Punjab | 2015 | 145
+839 | RS Bopara | Sunrisers Hyderabad | 2015 | 145
+840 | B Sai Sudharsan | Gujarat Titans | 2022 | 145
+841 | DJ Hooda | Lucknow Super Giants | 2024 | 145
+842 | AM Rahane | Mumbai Indians | 2009 | 144
+843 | JP Faulkner | Rajasthan Royals | 2015 | 144
+844 | AD Mathews | Delhi Daredevils | 2015 | 144
+845 | DJ Hooda | Sunrisers Hyderabad | 2016 | 144
+846 | P Negi | Royal Challengers Bangalore | 2017 | 144
+847 | KA Pollard | Mumbai Indians | 2022 | 144
+848 | MK Pandey | Pune Warriors | 2012 | 143
+849 | YK Pathan | Kolkata Knight Riders | 2017 | 143
+850 | SP Narine | Kolkata Knight Riders | 2019 | 143
+851 | KH Pandya | Mumbai Indians | 2021 | 143
+852 | Q de Kock | Lucknow Super Giants | 2023 | 143
+853 | PA Patel | Chennai Super Kings | 2009 | 142
+854 | IK Pathan | Delhi Daredevils | 2013 | 142
+855 | KL Rahul | Sunrisers Hyderabad | 2015 | 142
+856 | CJ Anderson | Delhi Daredevils | 2017 | 142
+857 | MA Agarwal | Royal Challengers Bangalore | 2011 | 141
+858 | KD Karthik | Royal Challengers Bangalore | 2015 | 141
+859 | DJ Bravo | Chennai Super Kings | 2018 | 141
+860 | RA Tripathi | Rajasthan Royals | 2019 | 141
+861 | N Saini | Kings XI Punjab | 2012 | 140
+862 | MR Marsh | Pune Warriors | 2013 | 140
+863 | KD Karthik | Royal Challengers Bangalore | 2023 | 140
+864 | Naman Dhir | Mumbai Indians | 2024 | 140
+865 | Sikandar Raza | Punjab Kings | 2023 | 139
+866 | RS Bopara | Kings XI Punjab | 2009 | 138
+867 | JA Morkel | Chennai Super Kings | 2011 | 138
+868 | SW Billings | Delhi Daredevils | 2017 | 138
+869 | EJG Morgan | Kolkata Knight Riders | 2011 | 137
+870 | NV Ojha | Sunrisers Hyderabad | 2015 | 137
+871 | LMP Simmons | Mumbai Indians | 2017 | 137
+872 | MK Pandey | Pune Warriors | 2013 | 136
+873 | NV Ojha | Sunrisers Hyderabad | 2016 | 136
+874 | PJ Cummins | Sunrisers Hyderabad | 2024 | 136
+875 | WP Saha | Gujarat Titans | 2024 | 136
+876 | RA Jadeja | Rajasthan Royals | 2008 | 135
+877 | A Symonds | Mumbai Indians | 2011 | 135
+878 | MK Lomror | Royal Challengers Bangalore | 2023 | 135
+879 | AJ Finch | Kings XI Punjab | 2018 | 134
+880 | KA Pollard | Mumbai Indians | 2018 | 133
+881 | PK Garg | Sunrisers Hyderabad | 2020 | 133
+882 | EJG Morgan | Kolkata Knight Riders | 2021 | 133
+883 | AM Rahane | Kolkata Knight Riders | 2022 | 133
+884 | KH Pandya | Lucknow Super Giants | 2024 | 133
+885 | Y Venugopal Rao | Delhi Daredevils | 2012 | 132
+886 | RA Jadeja | Chennai Super Kings | 2015 | 132
+887 | MJ Guptill | Kings XI Punjab | 2017 | 132
+888 | IK Pathan | Kings XI Punjab | 2008 | 131
+889 | C de Grandhomme | Royal Challengers Bangalore | 2018 | 131
+890 | WP Saha | Sunrisers Hyderabad | 2021 | 131
+891 | Mandeep Singh | Kings XI Punjab | 2020 | 130
+892 | Rashid Khan | Gujarat Titans | 2023 | 130
+893 | S Dube | Royal Challengers Bangalore | 2020 | 129
+894 | Anuj Rawat | Royal Challengers Bangalore | 2022 | 129
+895 | Kamran Akmal | Rajasthan Royals | 2008 | 128
+896 | MR Marsh | Delhi Capitals | 2023 | 128
+897 | MM Ali | Chennai Super Kings | 2024 | 128
+898 | AD Mathews | Pune Warriors | 2012 | 127
+899 | UT Khawaja | Rising Pune Supergiants | 2016 | 127
+900 | BB McCullum | Royal Challengers Bangalore | 2018 | 127
+901 | HH Pandya | Mumbai Indians | 2021 | 127
+902 | M Shahrukh Khan | Gujarat Titans | 2024 | 127
+903 | DB Das | Kolkata Knight Riders | 2012 | 126
+904 | AP Tare | Mumbai Indians | 2014 | 126
+905 | C de Grandhomme | Kolkata Knight Riders | 2017 | 126
+906 | K Gowtham | Rajasthan Royals | 2018 | 126
+907 | MF Maharoof | Delhi Daredevils | 2008 | 125
+908 | MC Juneja | Delhi Daredevils | 2013 | 125
+909 | A Ashish Reddy | Sunrisers Hyderabad | 2013 | 125
+910 | DH Yagnik | Rajasthan Royals | 2013 | 125
+911 | CA Pujara | Kings XI Punjab | 2014 | 125
+912 | Ramandeep Singh | Kolkata Knight Riders | 2024 | 125
+913 | MK Lomror | Royal Challengers Bengaluru | 2024 | 125
+914 | K Goel | Kings XI Punjab | 2009 | 124
+915 | Y Venugopal Rao | Deccan Chargers | 2009 | 124
+916 | MN Samuels | Pune Warriors | 2012 | 124
+917 | S Badrinath | Chennai Super Kings | 2013 | 124
+918 | KS Williamson | Sunrisers Hyderabad | 2016 | 124
+919 | DA Miller | Rajasthan Royals | 2021 | 124
+920 | MM Ali | Chennai Super Kings | 2023 | 124
+921 | BB Samantray | Sunrisers Hyderabad | 2013 | 123
+922 | AP Tare | Mumbai Indians | 2013 | 123
+923 | STR Binny | Rajasthan Royals | 2014 | 123
+924 | EJG Morgan | Sunrisers Hyderabad | 2016 | 123
+925 | BA Stokes | Rajasthan Royals | 2019 | 123
+926 | RE van der Merwe | Royal Challengers Bangalore | 2009 | 122
+927 | CA Pujara | Kolkata Knight Riders | 2010 | 122
+928 | D Wiese | Royal Challengers Bangalore | 2015 | 122
+929 | Q de Kock | Delhi Daredevils | 2015 | 122
+930 | WP Saha | Sunrisers Hyderabad | 2018 | 122
+931 | DJ Bravo | Chennai Super Kings | 2013 | 121
+932 | CM Gautam | Mumbai Indians | 2014 | 121
+933 | SP Narine | Kolkata Knight Riders | 2020 | 121
+934 | AM Rahane | Rajasthan Royals | 2011 | 120
+935 | AC Blizzard | Mumbai Indians | 2011 | 120
+936 | M Manhas | Pune Warriors | 2012 | 120
+937 | KC Sangakkara | Sunrisers Hyderabad | 2013 | 120
+938 | MA Agarwal | Kings XI Punjab | 2018 | 120
+939 | JJ Roy | Delhi Daredevils | 2018 | 120
+940 | SN Thakur | Delhi Capitals | 2022 | 120
+941 | Sachin Baby | Royal Challengers Bangalore | 2016 | 119
+942 | Misbah-ul-Haq | Royal Challengers Bangalore | 2008 | 117
+943 | Harbhajan Singh | Mumbai Indians | 2015 | 117
+944 | AR Patel | Delhi Capitals | 2020 | 117
+945 | AD Russell | Kolkata Knight Riders | 2020 | 117
+946 | M Shahrukh Khan | Punjab Kings | 2022 | 117
+947 | MW Short | Punjab Kings | 2023 | 117
+948 | Harbhajan Singh | Mumbai Indians | 2013 | 116
+949 | DJ Hussey | Chennai Super Kings | 2014 | 116
+950 | P Negi | Chennai Super Kings | 2015 | 116
+951 | RA Jadeja | Chennai Super Kings | 2022 | 116
+952 | W Jaffer | Royal Challengers Bangalore | 2008 | 115
+953 | S Sohal | Kings XI Punjab | 2009 | 115
+954 | OA Shah | Kolkata Knight Riders | 2010 | 115
+955 | MA Agarwal | Delhi Daredevils | 2014 | 115
+956 | DJM Short | Rajasthan Royals | 2018 | 115
+957 | Mohammad Nabi | Sunrisers Hyderabad | 2019 | 115
+958 | RV Uthappa | Chennai Super Kings | 2021 | 115
+959 | SS Tiwary | Mumbai Indians | 2021 | 115
+960 | CL White | Royal Challengers Bangalore | 2008 | 114
+961 | BB McCullum | Kolkata Knight Riders | 2010 | 114
+962 | M Manhas | Pune Warriors | 2011 | 114
+963 | CJ Anderson | Mumbai Indians | 2015 | 114
+964 | Shakib Al Hasan | Kolkata Knight Riders | 2016 | 114
+965 | MS Dhoni | Chennai Super Kings | 2021 | 114
+966 | A Manohar | Gujarat Titans | 2023 | 114
+967 | Gurkeerat Singh | Kings XI Punjab | 2016 | 113
+968 | JC Archer | Rajasthan Royals | 2020 | 113
+969 | AM Rahane | Delhi Capitals | 2020 | 113
+970 | SN Thakur | Kolkata Knight Riders | 2023 | 113
+971 | SO Hetmyer | Rajasthan Royals | 2024 | 113
+972 | P Kumar | Royal Challengers Bangalore | 2008 | 112
+973 | SB Styris | Deccan Chargers | 2008 | 112
+974 | R Sathish | Mumbai Indians | 2010 | 112
+975 | HH Pandya | Mumbai Indians | 2015 | 112
+976 | AB de Villiers | Delhi Daredevils | 2010 | 111
+977 | Y Nagar | Delhi Daredevils | 2011 | 111
+978 | DJ Harris | Deccan Chargers | 2012 | 111
+979 | SN Khan | Royal Challengers Bangalore | 2015 | 111
+980 | AR Patel | Kings XI Punjab | 2016 | 111
+981 | Abdul Samad | Sunrisers Hyderabad | 2020 | 111
+982 | Washington Sundar | Royal Challengers Bangalore | 2020 | 111
+983 | Abdul Samad | Sunrisers Hyderabad | 2021 | 111
+984 | LS Livingstone | Punjab Kings | 2024 | 111
+985 | AR Patel | Delhi Capitals | 2019 | 110
+986 | Aman Hakim Khan | Delhi Capitals | 2023 | 110
+987 | DB Ravi Teja | Deccan Chargers | 2008 | 109
+988 | R Sathish | Kings XI Punjab | 2013 | 109
+989 | SS Tiwary | Royal Challengers Bangalore | 2013 | 109
+990 | SS Tiwary | Delhi Daredevils | 2015 | 109
+991 | KH Pandya | Mumbai Indians | 2020 | 109
+992 | N Wadhera | Mumbai Indians | 2024 | 109
+993 | SK Warne | Rajasthan Royals | 2009 | 108
+994 | Harbhajan Singh | Mumbai Indians | 2012 | 108
+995 | Gurkeerat Singh | Kings XI Punjab | 2013 | 108
+996 | DJG Sammy | Sunrisers Hyderabad | 2014 | 108
+997 | SW Billings | Chennai Super Kings | 2018 | 108
+998 | GJ Maxwell | Kings XI Punjab | 2020 | 108
+999 | A Manohar | Gujarat Titans | 2022 | 108
+1000 | P Dogra | Rajasthan Royals | 2010 | 107
+1001 | JEC Franklin | Mumbai Indians | 2011 | 107
+1002 | RN ten Doeschate | Kolkata Knight Riders | 2011 | 107
+1003 | JA Morkel | Chennai Super Kings | 2012 | 107
+1004 | PP Chawla | Kings XI Punjab | 2012 | 106
+1005 | LJ Wright | Pune Warriors | 2013 | 106
+1006 | RA Jadeja | Chennai Super Kings | 2019 | 106
+1007 | PP Shaw | Delhi Capitals | 2023 | 106
+1008 | Harbhajan Singh | Mumbai Indians | 2010 | 105
+1009 | SA Yadav | Kolkata Knight Riders | 2017 | 105
+1010 | Anmolpreet Singh | Sunrisers Hyderabad | 2023 | 105
+1011 | MK Tiwary | Delhi Daredevils | 2008 | 104
+1012 | TM Dilshan | Delhi Daredevils | 2008 | 104
+1013 | CL White | Deccan Chargers | 2011 | 104
+1014 | YV Takawale | Royal Challengers Bangalore | 2014 | 104
+1015 | KV Sharma | Sunrisers Hyderabad | 2015 | 104
+1016 | N Rana | Mumbai Indians | 2016 | 104
+1017 | MS Dhoni | Chennai Super Kings | 2023 | 104
+1018 | DB Das | Kolkata Knight Riders | 2008 | 103
+1019 | NK Patel | Rajasthan Royals | 2008 | 103
+1020 | RJ Quiney | Rajasthan Royals | 2009 | 103
+1021 | Harbhajan Singh | Mumbai Indians | 2011 | 103
+1022 | SS Tiwary | Mumbai Indians | 2020 | 103
+1023 | R Powell | Rajasthan Royals | 2024 | 103
+1024 | UBT Chand | Mumbai Indians | 2015 | 102
+1025 | R Ashwin | Kings XI Punjab | 2018 | 102
+1026 | Rashid Khan | Gujarat Titans | 2024 | 102
+1027 | BJ Hodge | Rajasthan Royals | 2014 | 101
+1028 | V Shankar | Sunrisers Hyderabad | 2017 | 101
+1029 | Ishan Kishan | Mumbai Indians | 2019 | 101
+1030 | DJ Hooda | Kings XI Punjab | 2020 | 101
+1031 | Washington Sundar | Sunrisers Hyderabad | 2022 | 101
+1032 | BJ Hodge | Kolkata Knight Riders | 2010 | 99
+1033 | R Bhatia | Kolkata Knight Riders | 2013 | 99
+1034 | V Sehwag | Kings XI Punjab | 2015 | 99
+1035 | DJ Bravo | Gujarat Lions | 2016 | 99
+1036 | MP Stoinis | Kings XI Punjab | 2018 | 99
+1037 | SA Asnodkar | Rajasthan Royals | 2009 | 98
+1038 | DJ Hussey | Kolkata Knight Riders | 2009 | 98
+1039 | DA Miller | Kings XI Punjab | 2012 | 98
+1040 | MJ Clarke | Pune Warriors | 2012 | 98
+1041 | Yuvraj Singh | Mumbai Indians | 2019 | 98
+1042 | Gurkeerat Singh | Royal Challengers Bangalore | 2019 | 98
+1043 | Abhishek Sharma | Sunrisers Hyderabad | 2021 | 98
+1044 | Anuj Rawat | Royal Challengers Bengaluru | 2024 | 98
+1045 | JA Morkel | Chennai Super Kings | 2009 | 97
+1046 | V Shankar | Sunrisers Hyderabad | 2020 | 97
+1047 | SM Katich | Kings XI Punjab | 2008 | 96
+1048 | BCJ Cutting | Mumbai Indians | 2018 | 96
+1049 | AB de Villiers | Delhi Daredevils | 2008 | 95
+1050 | SM Curran | Kings XI Punjab | 2019 | 95
+1051 | DJ Hussey | Kolkata Knight Riders | 2010 | 94
+1052 | MK Lomror | Rajasthan Royals | 2021 | 94
+1053 | KP Pietersen | Royal Challengers Bangalore | 2009 | 93
+1054 | R Parag | Rajasthan Royals | 2021 | 93
+1055 | PJ Cummins | Kolkata Knight Riders | 2021 | 93
+1056 | PN Mankad | Lucknow Super Giants | 2023 | 93
+1057 | DJ Jacobs | Mumbai Indians | 2011 | 92
+1058 | CA Pujara | Royal Challengers Bangalore | 2013 | 92
+1059 | Harbhajan Singh | Mumbai Indians | 2016 | 92
+1060 | Shakib Al Hasan | Kolkata Knight Riders | 2012 | 91
+1061 | PA Reddy | Sunrisers Hyderabad | 2013 | 91
+1062 | AT Rayudu | Mumbai Indians | 2017 | 91
+1063 | Rashid Khan | Gujarat Titans | 2022 | 91
+1064 | SN Khan | Delhi Capitals | 2022 | 91
+1065 | Anuj Rawat | Royal Challengers Bangalore | 2023 | 91
+1066 | PP Chawla | Kings XI Punjab | 2008 | 90
+1067 | R McLaren | Kings XI Punjab | 2011 | 90
+1068 | STR Binny | Rajasthan Royals | 2012 | 90
+1069 | SO Hetmyer | Royal Challengers Bangalore | 2019 | 90
+1070 | A Mishra | Sunrisers Hyderabad | 2013 | 89
+1071 | RA Jadeja | Chennai Super Kings | 2018 | 89
+1072 | MP Stoinis | Delhi Capitals | 2021 | 89
+1073 | N Jagadeesan | Kolkata Knight Riders | 2023 | 89
+1074 | JDP Oram | Chennai Super Kings | 2009 | 88
+1075 | LRPL Taylor | Royal Challengers Bangalore | 2010 | 88
+1076 | SW Billings | Delhi Daredevils | 2016 | 88
+1077 | MK Pandey | Lucknow Super Giants | 2022 | 88
+1078 | AP Majumdar | Pune Warriors | 2012 | 87
+1079 | DJ Hooda | Sunrisers Hyderabad | 2018 | 87
+1080 | R Tewatia | Gujarat Titans | 2023 | 87
+1081 | Gurkeerat Singh | Kings XI Punjab | 2012 | 86
+1082 | JA Morkel | Delhi Daredevils | 2015 | 86
+1083 | WP Saha | Sunrisers Hyderabad | 2019 | 86
+1084 | R Parag | Rajasthan Royals | 2020 | 86
+1085 | AJ Finch | Kolkata Knight Riders | 2022 | 86
+1086 | MK Lomror | Royal Challengers Bangalore | 2022 | 86
+1087 | R Ashwin | Rajasthan Royals | 2024 | 86
+1088 | KV Sharma | Sunrisers Hyderabad | 2013 | 85
+1089 | RN ten Doeschate | Kolkata Knight Riders | 2013 | 85
+1090 | MA Starc | Royal Challengers Bangalore | 2014 | 85
+1091 | G Gambhir | Delhi Daredevils | 2018 | 85
+1092 | N Pooran | Punjab Kings | 2021 | 85
+1093 | JO Holder | Sunrisers Hyderabad | 2021 | 85
+1094 | Harbhajan Singh | Mumbai Indians | 2009 | 84
+1095 | GJ Bailey | Rising Pune Supergiants | 2016 | 84
+1096 | C Munro | Delhi Capitals | 2019 | 84
+1097 | DJ Hooda | Lucknow Super Giants | 2023 | 84
+1098 | LR Shukla | Kolkata Knight Riders | 2009 | 83
+1099 | S Anirudha | Chennai Super Kings | 2011 | 83
+1100 | RE Levi | Mumbai Indians | 2012 | 83
+1101 | CR Brathwaite | Delhi Daredevils | 2016 | 83
+1102 | DA Miller | Kings XI Punjab | 2017 | 83
+1103 | TK Curran | Rajasthan Royals | 2020 | 83
+1104 | Rashid Khan | Sunrisers Hyderabad | 2021 | 83
+1105 | V Shankar | Gujarat Titans | 2024 | 83
+1106 | SP Goswami | Royal Challengers Bangalore | 2008 | 82
+1107 | R Dhawan | Kings XI Punjab | 2014 | 82
+1108 | M Vohra | Kings XI Punjab | 2015 | 82
+1109 | Shahid Afridi | Deccan Chargers | 2008 | 81
+1110 | LA Carseldine | Rajasthan Royals | 2009 | 81
+1111 | HH Gibbs | Mumbai Indians | 2012 | 81
+1112 | SE Marsh | Kings XI Punjab | 2015 | 81
+1113 | MJ Guptill | Sunrisers Hyderabad | 2019 | 81
+1114 | AR Patel | Kings XI Punjab | 2018 | 80
+1115 | DJ Bravo | Chennai Super Kings | 2019 | 80
+1116 | DT Christian | Rising Pune Supergiant | 2017 | 79
+1117 | NV Ojha | Sunrisers Hyderabad | 2017 | 79
+1118 | AS Raut | Rajasthan Royals | 2009 | 78
+1119 | DJ Hooda | Sunrisers Hyderabad | 2017 | 78
+1120 | STR Binny | Royal Challengers Bangalore | 2017 | 78
+1121 | JR Philippe | Royal Challengers Bangalore | 2020 | 78
+1122 | R Parag | Rajasthan Royals | 2023 | 78
+1123 | Arshad Khan | Lucknow Super Giants | 2024 | 78
+1124 | MEK Hussey | Chennai Super Kings | 2015 | 77
+1125 | JP Faulkner | Gujarat Lions | 2016 | 77
+1126 | PJ Cummins | Delhi Daredevils | 2017 | 77
+1127 | MM Ali | Royal Challengers Bangalore | 2018 | 77
+1128 | RD Chahar | Punjab Kings | 2022 | 77
+1129 | K Goel | Kings XI Punjab | 2008 | 76
+1130 | KM Jadhav | Delhi Daredevils | 2010 | 76
+1131 | TM Dilshan | Royal Challengers Bangalore | 2013 | 76
+1132 | CH Morris | Rajasthan Royals | 2015 | 76
+1133 | Harpreet Singh | Punjab Kings | 2023 | 76
+1134 | M Manhas | Delhi Daredevils | 2009 | 75
+1135 | TR Birt | Delhi Daredevils | 2011 | 75
+1136 | LR Shukla | Kolkata Knight Riders | 2012 | 75
+1137 | DB Das | Kolkata Knight Riders | 2013 | 75
+1138 | CR Brathwaite | Sunrisers Hyderabad | 2018 | 75
+1139 | Harpreet Brar | Punjab Kings | 2024 | 75
+1140 | STR Binny | Rajasthan Royals | 2015 | 74
+1141 | DA Miller | Kings XI Punjab | 2018 | 74
+1142 | RR Sarwan | Kings XI Punjab | 2008 | 73
+1143 | M Klinger | Kochi Tuskers Kerala | 2011 | 73
+1144 | PA Reddy | Deccan Chargers | 2012 | 73
+1145 | S Rana | Royal Challengers Bangalore | 2014 | 73
+1146 | A Ashish Reddy | Sunrisers Hyderabad | 2015 | 73
+1147 | KP Pietersen | Rising Pune Supergiants | 2016 | 73
+1148 | SE Rutherford | Delhi Capitals | 2019 | 73
+1149 | E Lewis | Lucknow Super Giants | 2022 | 73
+1150 | WP Saha | Kolkata Knight Riders | 2009 | 72
+1151 | PA Patel | Chennai Super Kings | 2010 | 72
+1152 | MS Bisla | Kolkata Knight Riders | 2011 | 72
+1153 | Bipul Sharma | Kings XI Punjab | 2012 | 72
+1154 | PK Garg | Sunrisers Hyderabad | 2021 | 72
+1155 | Y Venugopal Rao | Sunrisers Hyderabad | 2014 | 71
+1156 | SR Watson | Royal Challengers Bangalore | 2017 | 71
+1157 | Gurkeerat Singh | Royal Challengers Bangalore | 2020 | 71
+1158 | Abhishek Sharma | Sunrisers Hyderabad | 2020 | 71
+1159 | RM Patidar | Royal Challengers Bangalore | 2021 | 71
+1160 | SP Narine | Kolkata Knight Riders | 2022 | 71
+1161 | PBB Rajapaksa | Punjab Kings | 2023 | 71
+1162 | SK Warne | Rajasthan Royals | 2008 | 70
+1163 | YV Takawale | Mumbai Indians | 2008 | 70
+1164 | R Vinay Kumar | Royal Challengers Bangalore | 2013 | 70
+1165 | WP Saha | Chennai Super Kings | 2013 | 70
+1166 | SE Marsh | Kings XI Punjab | 2014 | 70
+1167 | LS Livingstone | Rajasthan Royals | 2019 | 70
+1168 | STR Binny | Rajasthan Royals | 2019 | 70
+1169 | SP Goswami | Rajasthan Royals | 2012 | 69
+1170 | Shashank Singh | Sunrisers Hyderabad | 2022 | 69
+1171 | Vivrant Sharma | Sunrisers Hyderabad | 2023 | 69
+1172 | D Brevis | Mumbai Indians | 2024 | 69
+1173 | A Mishra | Deccan Chargers | 2011 | 68
+1174 | WP Saha | Chennai Super Kings | 2011 | 68
+1175 | R Vinay Kumar | Royal Challengers Bangalore | 2012 | 68
+1176 | Lalit Yadav | Delhi Capitals | 2021 | 68
+1177 | AA Bilakhia | Deccan Chargers | 2009 | 67
+1178 | WP Saha | Kolkata Knight Riders | 2010 | 67
+1179 | MD Mishra | Pune Warriors | 2011 | 67
+1180 | MA Agarwal | Royal Challengers Bangalore | 2013 | 67
+1181 | R Bhatia | Rajasthan Royals | 2014 | 67
+1182 | JC Archer | Rajasthan Royals | 2019 | 67
+1183 | CH Morris | Rajasthan Royals | 2021 | 67
+1184 | SS Prabhudessai | Royal Challengers Bangalore | 2022 | 67
+1185 | R Ashwin | Rajasthan Royals | 2023 | 67
+1186 | AB Agarkar | Kolkata Knight Riders | 2009 | 66
+1187 | R McLaren | Mumbai Indians | 2010 | 66
+1188 | SD Chitnis | Kings XI Punjab | 2012 | 66
+1189 | AM Nayar | Pune Warriors | 2013 | 66
+1190 | SN Khan | Royal Challengers Bangalore | 2016 | 66
+1191 | JO Holder | Sunrisers Hyderabad | 2020 | 66
+1192 | Lalit Yadav | Delhi Capitals | 2023 | 66
+1193 | P Kumar | Royal Challengers Bangalore | 2009 | 65
+1194 | DB Ravi Teja | Deccan Chargers | 2009 | 65
+1195 | AB McDonald | Delhi Daredevils | 2010 | 65
+1196 | TL Suman | Mumbai Indians | 2011 | 65
+1197 | BCJ Cutting | Sunrisers Hyderabad | 2016 | 65
+1198 | EJG Morgan | Kings XI Punjab | 2017 | 65
+1199 | Yuvraj Singh | Kings XI Punjab | 2018 | 65
+1200 | Washington Sundar | Royal Challengers Bangalore | 2018 | 65
+1201 | KA Jamieson | Royal Challengers Bangalore | 2021 | 65
+1202 | Mohammad Hafeez | Kolkata Knight Riders | 2008 | 64
+1203 | VVS Laxman | Deccan Chargers | 2010 | 64
+1204 | DJ Hussey | Kings XI Punjab | 2011 | 64
+1205 | PP Chawla | Kings XI Punjab | 2013 | 64
+1206 | DJ Hooda | Sunrisers Hyderabad | 2019 | 64
+1207 | M Vijay | Chennai Super Kings | 2019 | 64
+1208 | Harpreet Brar | Punjab Kings | 2021 | 64
+1209 | MA Agarwal | Sunrisers Hyderabad | 2024 | 64
+1210 | Anirudh Singh | Deccan Chargers | 2010 | 63
+1211 | LRPL Taylor | Pune Warriors | 2013 | 63
+1212 | STR Binny | Royal Challengers Bangalore | 2016 | 63
+1213 | C Munro | Delhi Daredevils | 2018 | 63
+1214 | Abhishek Sharma | Delhi Daredevils | 2018 | 63
+1215 | S Gopal | Rajasthan Royals | 2019 | 63
+1216 | PJ Cummins | Kolkata Knight Riders | 2022 | 63
+1217 | A Flintoff | Chennai Super Kings | 2009 | 62
+1218 | PP Chawla | Kings XI Punjab | 2010 | 62
+1219 | AR Patel | Kings XI Punjab | 2014 | 62
+1220 | KM Jadhav | Chennai Super Kings | 2020 | 62
+1221 | SP Narine | Kolkata Knight Riders | 2021 | 62
+1222 | Rahmanullah Gurbaz | Kolkata Knight Riders | 2024 | 62
+1223 | DJ Bravo | Mumbai Indians | 2010 | 61
+1224 | AM Nayar | Kings XI Punjab | 2011 | 61
+1225 | RN ten Doeschate | Kolkata Knight Riders | 2015 | 61
+1226 | AD Nath | Royal Challengers Bangalore | 2019 | 61
+1227 | K Gowtham | Lucknow Super Giants | 2023 | 61
+1228 | MR Marsh | Delhi Capitals | 2024 | 61
+1229 | Atharva Taide | Punjab Kings | 2024 | 61
+1230 | M Vijay | Chennai Super Kings | 2009 | 60
+1231 | AS Raut | Rajasthan Royals | 2011 | 60
+1232 | HV Patel | Delhi Daredevils | 2018 | 60
+1233 | Washington Sundar | Sunrisers Hyderabad | 2023 | 60
+1234 | LRPL Taylor | Delhi Daredevils | 2014 | 59
+1235 | JJ Roy | Gujarat Lions | 2017 | 59
+1236 | Rashid Khan | Sunrisers Hyderabad | 2018 | 59
+1237 | MK Lomror | Rajasthan Royals | 2020 | 59
+1238 | Shahbaz Ahmed | Royal Challengers Bangalore | 2021 | 59
+1239 | HV Patel | Royal Challengers Bangalore | 2021 | 59
+1240 | JD Unadkat | Mumbai Indians | 2022 | 59
+1241 | AM Nayar | Mumbai Indians | 2010 | 58
+1242 | J Botha | Rajasthan Royals | 2012 | 58
+1243 | LA Pomersbach | Kings XI Punjab | 2013 | 58
+1244 | CA Lynn | Kolkata Knight Riders | 2014 | 58
+1245 | V Shankar | Sunrisers Hyderabad | 2021 | 58
+1246 | R Shepherd | Sunrisers Hyderabad | 2022 | 58
+1247 | JO Holder | Lucknow Super Giants | 2022 | 58
+1248 | MG Bracewell | Royal Challengers Bangalore | 2023 | 58
+1249 | M Morkel | Delhi Daredevils | 2013 | 57
+1250 | JP Faulkner | Rajasthan Royals | 2013 | 57
+1251 | MK Tiwary | Delhi Daredevils | 2015 | 57
+1252 | P Negi | Delhi Daredevils | 2016 | 57
+1253 | MJ Guptill | Mumbai Indians | 2016 | 57
+1254 | H Klaasen | Rajasthan Royals | 2018 | 57
+1255 | R Shepherd | Mumbai Indians | 2024 | 57
+1256 | JD Ryder | Royal Challengers Bangalore | 2009 | 56
+1257 | AS Raut | Rajasthan Royals | 2010 | 56
+1258 | MG Johnson | Kings XI Punjab | 2014 | 56
+1259 | K Rabada | Delhi Capitals | 2020 | 56
+1260 | SM Curran | Chennai Super Kings | 2021 | 56
+1261 | AJ Finch | Delhi Daredevils | 2012 | 55
+1262 | SL Malinga | Mumbai Indians | 2012 | 55
+1263 | IK Pathan | Sunrisers Hyderabad | 2014 | 55
+1264 | K Rabada | Delhi Daredevils | 2017 | 55
+1265 | M Vohra | Royal Challengers Bangalore | 2018 | 55
+1266 | KM Jadhav | Sunrisers Hyderabad | 2021 | 55
+1267 | UT Yadav | Kolkata Knight Riders | 2022 | 55
+1268 | AB Agarkar | Kolkata Knight Riders | 2008 | 54
+1269 | PP Chawla | Kolkata Knight Riders | 2015 | 54
+1270 | TM Head | Royal Challengers Bangalore | 2016 | 54
+1271 | JP Faulkner | Gujarat Lions | 2017 | 54
+1272 | PR Shah | Mumbai Indians | 2009 | 53
+1273 | SP Goswami | Royal Challengers Bangalore | 2009 | 53
+1274 | DW Steyn | Sunrisers Hyderabad | 2013 | 53
+1275 | AJ Tye | Gujarat Lions | 2017 | 53
+1276 | SN Khan | Delhi Capitals | 2023 | 53
+1277 | Shoaib Malik | Delhi Daredevils | 2008 | 52
+1278 | RT Ponting | Mumbai Indians | 2013 | 52
+1279 | B Kumar | Pune Warriors | 2013 | 52
+1280 | TL Suman | Pune Warriors | 2013 | 52
+1281 | RN ten Doeschate | Kolkata Knight Riders | 2014 | 52
+1282 | R Ashwin | Chennai Super Kings | 2015 | 52
+1283 | SS Tiwary | Mumbai Indians | 2017 | 52
+1284 | TG Southee | Royal Challengers Bangalore | 2018 | 52
+1285 | SP Goswami | Sunrisers Hyderabad | 2018 | 52
+1286 | Harpreet Brar | Punjab Kings | 2023 | 52
+1287 | GJ Maxwell | Royal Challengers Bengaluru | 2024 | 52
+1288 | LA Pomersbach | Royal Challengers Bangalore | 2011 | 51
+1289 | Bipul Sharma | Sunrisers Hyderabad | 2016 | 51
+1290 | BCJ Cutting | Sunrisers Hyderabad | 2017 | 51
+1291 | MM Sharma | Kings XI Punjab | 2017 | 51
+1292 | SN Khan | Royal Challengers Bangalore | 2018 | 51
+1293 | OF Smith | Punjab Kings | 2022 | 51
+1294 | Sameer Rizvi | Chennai Super Kings | 2024 | 51
+1295 | AP Tare | Mumbai Indians | 2010 | 50
+1296 | R Vinay Kumar | Kochi Tuskers Kerala | 2011 | 50
+1297 | MR Marsh | Pune Warriors | 2011 | 50
+1298 | SC Ganguly | Pune Warriors | 2011 | 50
+1299 | CJ Ferguson | Pune Warriors | 2012 | 50
+1300 | DL Chahar | Chennai Super Kings | 2018 | 50
+1301 | R Tewatia | Delhi Daredevils | 2018 | 50
+1302 | S Gopal | Rajasthan Royals | 2018 | 50
+1303 | AS Yadav | Deccan Chargers | 2008 | 49
+1304 | AG Paunikar | Rajasthan Royals | 2011 | 49
+1305 | A Mishra | Delhi Daredevils | 2017 | 49
+1306 | KV Sharma | Mumbai Indians | 2017 | 49
+1307 | JD Unadkat | Rajasthan Royals | 2018 | 49
+1308 | CA Lynn | Mumbai Indians | 2021 | 49
+1309 | RV Patel | Delhi Capitals | 2023 | 49
+1310 | CL White | Royal Challengers Bangalore | 2010 | 48
+1311 | PP Chawla | Kings XI Punjab | 2011 | 48
+1312 | CJ Ferguson | Pune Warriors | 2011 | 48
+1313 | J Suchith | Mumbai Indians | 2015 | 48
+1314 | E Lewis | Mumbai Indians | 2019 | 48
+1315 | K Rabada | Punjab Kings | 2022 | 48
+1316 | Kuldeep Yadav | Delhi Capitals | 2022 | 48
+1317 | T Kohler-Cadmore | Rajasthan Royals | 2024 | 48
+1318 | SB Bangar | Deccan Chargers | 2008 | 47
+1319 | R Vinay Kumar | Royal Challengers Bangalore | 2009 | 47
+1320 | Yashpal Singh | Kolkata Knight Riders | 2009 | 47
+1321 | J Botha | Rajasthan Royals | 2009 | 47
+1322 | AJ Finch | Delhi Daredevils | 2011 | 47
+1323 | Mandeep Singh | Kings XI Punjab | 2011 | 47
+1324 | AB McDonald | Royal Challengers Bangalore | 2012 | 47
+1325 | AD Russell | Delhi Daredevils | 2012 | 47
+1326 | P Kumar | Kings XI Punjab | 2013 | 47
+1327 | A Ashish Reddy | Sunrisers Hyderabad | 2016 | 47
+1328 | MK Tiwary | Kings XI Punjab | 2018 | 47
+1329 | Shakib Al Hasan | Kolkata Knight Riders | 2021 | 47
+1330 | DJ Bravo | Chennai Super Kings | 2021 | 47
+1331 | Kuldeep Yadav | Delhi Capitals | 2024 | 47
+1332 | B Akhil | Royal Challengers Bangalore | 2008 | 46
+1333 | RV Gomez | Kochi Tuskers Kerala | 2011 | 46
+1334 | JA Morkel | Chennai Super Kings | 2013 | 46
+1335 | CR Woakes | Kolkata Knight Riders | 2017 | 46
+1336 | CH Morris | Delhi Daredevils | 2018 | 46
+1337 | C de Grandhomme | Royal Challengers Bangalore | 2019 | 46
+1338 | PK Garg | Sunrisers Hyderabad | 2022 | 46
+1339 | DR Smith | Mumbai Indians | 2008 | 45
+1340 | GJ Bailey | Chennai Super Kings | 2009 | 45
+1341 | RJ Harris | Deccan Chargers | 2010 | 45
+1342 | AM Nayar | Kings XI Punjab | 2012 | 45
+1343 | MS Gony | Kings XI Punjab | 2013 | 45
+1344 | R Ashwin | Chennai Super Kings | 2014 | 45
+1345 | JA Morkel | Royal Challengers Bangalore | 2014 | 45
+1346 | Ramandeep Singh | Mumbai Indians | 2022 | 45
+1347 | GC Smith | Rajasthan Royals | 2010 | 44
+1348 | TM Dilshan | Delhi Daredevils | 2010 | 44
+1349 | VVS Laxman | Kochi Tuskers Kerala | 2011 | 44
+1350 | CM Gautam | Delhi Daredevils | 2013 | 44
+1351 | HH Pandya | Mumbai Indians | 2016 | 44
+1352 | STR Binny | Rajasthan Royals | 2018 | 44
+1353 | R Ashwin | Delhi Capitals | 2021 | 44
+1354 | D Pretorius | Chennai Super Kings | 2022 | 44
+1355 | Sunny Singh | Kings XI Punjab | 2011 | 43
+1356 | J Botha | Delhi Daredevils | 2013 | 43
+1357 | AM Nayar | Rajasthan Royals | 2014 | 43
+1358 | B Kumar | Sunrisers Hyderabad | 2016 | 43
+1359 | LH Ferguson | Kolkata Knight Riders | 2020 | 43
+1360 | PVD Chameera | Lucknow Super Giants | 2022 | 43
+1361 | HV Patel | Royal Challengers Bangalore | 2022 | 43
+1362 | HR Shokeen | Mumbai Indians | 2022 | 43
+1363 | Sikandar Raza | Punjab Kings | 2024 | 43
+1364 | A Chopra | Kolkata Knight Riders | 2008 | 42
+1365 | AB Barath | Kings XI Punjab | 2010 | 42
+1366 | GC Smith | Pune Warriors | 2011 | 42
+1367 | B Lee | Kolkata Knight Riders | 2012 | 42
+1368 | KV Sharma | Sunrisers Hyderabad | 2014 | 42
+1369 | JDS Neesham | Delhi Daredevils | 2014 | 42
+1370 | Ishan Kishan | Gujarat Lions | 2016 | 42
+1371 | KM Jadhav | Royal Challengers Bangalore | 2016 | 42
+1372 | PP Chawla | Kolkata Knight Riders | 2019 | 42
+1373 | R Ashwin | Kings XI Punjab | 2019 | 42
+1374 | K Gowtham | Kings XI Punjab | 2020 | 42
+1375 | M Vohra | Rajasthan Royals | 2021 | 42
+1376 | LS Livingstone | Rajasthan Royals | 2021 | 42
+1377 | B Kumar | Sunrisers Hyderabad | 2023 | 42
+1378 | Shahbaz Ahmed | Royal Challengers Bangalore | 2023 | 42
+1379 | N Rana | Kolkata Knight Riders | 2024 | 42
+1380 | Azmatullah Omarzai | Gujarat Titans | 2024 | 42
+1381 | MK Pandey | Kolkata Knight Riders | 2024 | 42
+1382 | LA Pomersbach | Kings XI Punjab | 2009 | 41
+1383 | M Kaif | Royal Challengers Bangalore | 2011 | 41
+1384 | KB Arun Karthik | Royal Challengers Bangalore | 2013 | 41
+1385 | R Ashwin | Rising Pune Supergiants | 2016 | 41
+1386 | JD Unadkat | Rajasthan Royals | 2021 | 41
+1387 | LPC Silva | Deccan Chargers | 2008 | 40
+1388 | S Dhawan | Mumbai Indians | 2009 | 40
+1389 | AB Agarkar | Kolkata Knight Riders | 2010 | 40
+1390 | M Morkel | Delhi Daredevils | 2011 | 40
+1391 | B Kumar | Pune Warriors | 2012 | 40
+1392 | BR Dunk | Mumbai Indians | 2014 | 40
+1393 | S Dube | Royal Challengers Bangalore | 2019 | 40
+1394 | YK Pathan | Sunrisers Hyderabad | 2019 | 40
+1395 | YBK Jaiswal | Rajasthan Royals | 2020 | 40
+1396 | AR Patel | Delhi Capitals | 2021 | 40
+1397 | TA Boult | Rajasthan Royals | 2022 | 40
+1398 | N Jagadeesan | Chennai Super Kings | 2022 | 40
+1399 | RT Ponting | Kolkata Knight Riders | 2008 | 39
+1400 | DJ Thornely | Mumbai Indians | 2008 | 39
+1401 | Umar Gul | Kolkata Knight Riders | 2008 | 39
+1402 | AD Mascarenhas | Rajasthan Royals | 2009 | 39
+1403 | A Mishra | Delhi Daredevils | 2010 | 39
+1404 | KK Cooper | Rajasthan Royals | 2013 | 39
+1405 | MG Johnson | Mumbai Indians | 2013 | 39
+1406 | RR Rossouw | Royal Challengers Bangalore | 2014 | 39
+1407 | KK Cooper | Rajasthan Royals | 2014 | 39
+1408 | GH Vihari | Sunrisers Hyderabad | 2015 | 39
+1409 | GD Phillips | Sunrisers Hyderabad | 2023 | 39
+1410 | M Jansen | Sunrisers Hyderabad | 2023 | 39
+1411 | MC Henriques | Kolkata Knight Riders | 2009 | 38
+1412 | KK Cooper | Rajasthan Royals | 2012 | 38
+1413 | UT Yadav | Delhi Daredevils | 2013 | 38
+1414 | R Rampaul | Royal Challengers Bangalore | 2013 | 38
+1415 | SP Jackson | Kolkata Knight Riders | 2017 | 38
+1416 | DR Sams | Mumbai Indians | 2022 | 38
+1417 | PWH de Silva | Royal Challengers Bangalore | 2022 | 38
+1418 | D Padikkal | Lucknow Super Giants | 2024 | 38
+1419 | A Mishra | Delhi Daredevils | 2008 | 37
+1420 | MEK Hussey | Chennai Super Kings | 2010 | 37
+1421 | WD Parnell | Pune Warriors | 2011 | 37
+1422 | STR Binny | Rajasthan Royals | 2011 | 37
+1423 | B Chipli | Deccan Chargers | 2012 | 37
+1424 | MS Bisla | Royal Challengers Bangalore | 2015 | 37
+1425 | Iqbal Abdulla | Royal Challengers Bangalore | 2016 | 37
+1426 | RK Singh | Kolkata Knight Riders | 2019 | 37
+1427 | R Ashwin | Delhi Capitals | 2020 | 37
+1428 | S Gopal | Rajasthan Royals | 2020 | 37
+1429 | R Dhawan | Punjab Kings | 2022 | 37
+1430 | A Nortje | Delhi Capitals | 2023 | 37
+1431 | Vishnu Vinod | Mumbai Indians | 2023 | 37
+1432 | Swapnil Singh | Royal Challengers Bengaluru | 2024 | 37
+1433 | Sohail Tanvir | Rajasthan Royals | 2008 | 36
+1434 | LR Shukla | Kolkata Knight Riders | 2010 | 36
+1435 | DW Steyn | Deccan Chargers | 2011 | 36
+1436 | P Negi | Delhi Daredevils | 2012 | 36
+1437 | UBT Chand | Delhi Daredevils | 2012 | 36
+1438 | GJ Maxwell | Mumbai Indians | 2013 | 36
+1439 | Shakib Al Hasan | Kolkata Knight Riders | 2015 | 36
+1440 | R Dhawan | Kings XI Punjab | 2015 | 36
+1441 | KV Sharma | Sunrisers Hyderabad | 2016 | 36
+1442 | Mohammed Shami | Delhi Daredevils | 2017 | 36
+1443 | JP Duminy | Mumbai Indians | 2018 | 36
+1444 | MS Gony | Chennai Super Kings | 2008 | 35
+1445 | EJG Morgan | Royal Challengers Bangalore | 2010 | 35
+1446 | B Sumanth | Deccan Chargers | 2010 | 35
+1447 | R Bhatia | Kolkata Knight Riders | 2012 | 35
+1448 | P Kumar | Kings XI Punjab | 2012 | 35
+1449 | A Ashish Reddy | Deccan Chargers | 2012 | 35
+1450 | R Ashwin | Chennai Super Kings | 2013 | 35
+1451 | M Manhas | Chennai Super Kings | 2014 | 35
+1452 | DS Kulkarni | Rajasthan Royals | 2014 | 35
+1453 | VR Aaron | Royal Challengers Bangalore | 2014 | 35
+1454 | Gurkeerat Singh | Kings XI Punjab | 2015 | 35
+1455 | Rashid Khan | Sunrisers Hyderabad | 2020 | 35
+1456 | DJ Willey | Royal Challengers Bangalore | 2023 | 35
+1457 | SS Prabhudessai | Royal Challengers Bangalore | 2023 | 35
+1458 | Mohammad Nabi | Mumbai Indians | 2024 | 35
+1459 | Z Khan | Royal Challengers Bangalore | 2008 | 34
+1460 | M Rawat | Rajasthan Royals | 2008 | 34
+1461 | L Ronchi | Mumbai Indians | 2008 | 34
+1462 | PR Shah | Mumbai Indians | 2008 | 34
+1463 | R Bhatia | Delhi Daredevils | 2008 | 34
+1464 | DL Vettori | Delhi Daredevils | 2009 | 34
+1465 | Y Venugopal Rao | Deccan Chargers | 2010 | 34
+1466 | AP Dole | Rajasthan Royals | 2010 | 34
+1467 | CA Pujara | Royal Challengers Bangalore | 2011 | 34
+1468 | KW Richardson | Pune Warriors | 2013 | 34
+1469 | Ankit Sharma | Rajasthan Royals | 2014 | 34
+1470 | MJ McClenaghan | Mumbai Indians | 2016 | 34
+1471 | R Bhatia | Rising Pune Supergiants | 2016 | 34
+1472 | Rashid Khan | Sunrisers Hyderabad | 2019 | 34
+1473 | CH Morris | Royal Challengers Bangalore | 2020 | 34
+1474 | Mohammad Nabi | Sunrisers Hyderabad | 2021 | 34
+1475 | B Kumar | Sunrisers Hyderabad | 2021 | 34
+1476 | J Yadav | Mumbai Indians | 2021 | 34
+1477 | D Salunkhe | Rajasthan Royals | 2008 | 33
+1478 | MM Patel | Rajasthan Royals | 2009 | 33
+1479 | ST Jayasuriya | Mumbai Indians | 2010 | 33
+1480 | DL Vettori | Delhi Daredevils | 2010 | 33
+1481 | AUK Pathan | Royal Challengers Bangalore | 2011 | 33
+1482 | IR Jaggi | Kolkata Knight Riders | 2017 | 33
+1483 | SN Khan | Kings XI Punjab | 2020 | 33
+1484 | N Jagadeesan | Chennai Super Kings | 2020 | 33
+1485 | SE Rutherford | Royal Challengers Bangalore | 2022 | 33
+1486 | DJ Mitchell | Rajasthan Royals | 2022 | 33
+1487 | Abishek Porel | Delhi Capitals | 2023 | 33
+1488 | PWH de Silva | Royal Challengers Bangalore | 2023 | 33
+1489 | SB Dubey | Rajasthan Royals | 2024 | 33
+1490 | RJ Peterson | Mumbai Indians | 2012 | 32
+1491 | MM Sharma | Kings XI Punjab | 2016 | 32
+1492 | S Aravind | Royal Challengers Bangalore | 2017 | 32
+1493 | AD Mathews | Delhi Daredevils | 2017 | 32
+1494 | AJ Tye | Kings XI Punjab | 2018 | 32
+1495 | CH Morris | Delhi Capitals | 2019 | 32
+1496 | MJ Santner | Chennai Super Kings | 2019 | 32
+1497 | M Vijay | Chennai Super Kings | 2020 | 32
+1498 | AT Carey | Delhi Capitals | 2020 | 32
+1499 | CJ Jordan | Punjab Kings | 2021 | 32
+1500 | T Taibu | Kolkata Knight Riders | 2008 | 31
+1501 | PP Chawla | Kings XI Punjab | 2009 | 31
+1502 | MF Maharoof | Delhi Daredevils | 2010 | 31
+1503 | RJ Harris | Kings XI Punjab | 2011 | 31
+1504 | DL Vettori | Royal Challengers Bangalore | 2012 | 31
+1505 | PP Chawla | Kolkata Knight Riders | 2014 | 31
+1506 | LR Shukla | Delhi Daredevils | 2014 | 31
+1507 | MG Johnson | Kings XI Punjab | 2015 | 31
+1508 | KS Williamson | Sunrisers Hyderabad | 2015 | 31
+1509 | J Botha | Kolkata Knight Riders | 2015 | 31
+1510 | Bipul Sharma | Sunrisers Hyderabad | 2017 | 31
+1511 | Washington Sundar | Royal Challengers Bangalore | 2021 | 31
+1512 | MC Henriques | Punjab Kings | 2021 | 31
+1513 | JDS Neesham | Rajasthan Royals | 2022 | 31
+1514 | Kuldeep Yadav | Delhi Capitals | 2023 | 31
+1515 | KV Sharma | Royal Challengers Bengaluru | 2024 | 31
+1516 | Harbhajan Singh | Mumbai Indians | 2008 | 30
+1517 | M Kartik | Kolkata Knight Riders | 2008 | 30
+1518 | WA Mota | Kings XI Punjab | 2009 | 30
+1519 | WPUJC Vaas | Deccan Chargers | 2009 | 30
+1520 | WPUJC Vaas | Deccan Chargers | 2010 | 30
+1521 | R Ashwin | Chennai Super Kings | 2010 | 30
+1522 | S Anirudha | Chennai Super Kings | 2010 | 30
+1523 | PC Valthaty | Kings XI Punjab | 2012 | 30
+1524 | SS Iyer | Delhi Daredevils | 2016 | 30
+1525 | C Munro | Kolkata Knight Riders | 2016 | 30
+1526 | TG Southee | Mumbai Indians | 2016 | 30
+1527 | Mohammed Siraj | Royal Challengers Bangalore | 2022 | 30
+1528 | R Sharma | Deccan Chargers | 2010 | 29
+1529 | Shakib Al Hasan | Kolkata Knight Riders | 2011 | 29
+1530 | SP Goswami | Kolkata Knight Riders | 2011 | 29
+1531 | VH Zol | Royal Challengers Bangalore | 2014 | 29
+1532 | UT Yadav | Kolkata Knight Riders | 2015 | 29
+1533 | MN Samuels | Delhi Daredevils | 2017 | 29
+1534 | Harbhajan Singh | Chennai Super Kings | 2018 | 29
+1535 | RK Singh | Kolkata Knight Riders | 2018 | 29
+1536 | CJ Jordan | Kings XI Punjab | 2020 | 29
+1537 | RR Powar | Kings XI Punjab | 2008 | 28
+1538 | B Lee | Kings XI Punjab | 2009 | 28
+1539 | M Kaif | Kings XI Punjab | 2010 | 28
+1540 | MR Marsh | Deccan Chargers | 2010 | 28
+1541 | IR Jaggi | Deccan Chargers | 2011 | 28
+1542 | Harbhajan Singh | Mumbai Indians | 2014 | 28
+1543 | MM Sharma | Chennai Super Kings | 2015 | 28
+1544 | Basil Thampi | Gujarat Lions | 2017 | 28
+1545 | Rasikh Salam | Delhi Capitals | 2024 | 28
+1546 | RP Singh | Deccan Chargers | 2008 | 27
+1547 | S Sreesanth | Kings XI Punjab | 2010 | 27
+1548 | R Vinay Kumar | Royal Challengers Bangalore | 2010 | 27
+1549 | S Sriram | Royal Challengers Bangalore | 2010 | 27
+1550 | P Kumar | Kings XI Punjab | 2011 | 27
+1551 | A Mithun | Royal Challengers Bangalore | 2011 | 27
+1552 | MA Agarwal | Delhi Daredevils | 2016 | 27
+1553 | DS Kulkarni | Gujarat Lions | 2016 | 27
+1554 | PP Chawla | Kolkata Knight Riders | 2016 | 27
+1555 | PP Chawla | Kolkata Knight Riders | 2018 | 27
+1556 | Navdeep Saini | Royal Challengers Bangalore | 2020 | 27
+1557 | KS Williamson | Gujarat Titans | 2024 | 27
+1558 | Harpreet Singh | Punjab Kings | 2024 | 27
+1559 | WA Mota | Kings XI Punjab | 2008 | 26
+1560 | SS Tiwary | Mumbai Indians | 2008 | 26
+1561 | A Mishra | Delhi Daredevils | 2009 | 26
+1562 | JM Kemp | Chennai Super Kings | 2010 | 26
+1563 | NL McCullum | Pune Warriors | 2011 | 26
+1564 | OA Shah | Kochi Tuskers Kerala | 2011 | 26
+1565 | M Kartik | Pune Warriors | 2012 | 26
+1566 | MA Agarwal | Rising Pune Supergiant | 2017 | 26
+1567 | DT Christian | Delhi Daredevils | 2018 | 26
+1568 | R Tewatia | Delhi Capitals | 2019 | 26
+1569 | DJ Malan | Punjab Kings | 2021 | 26
+1570 | GD Phillips | Rajasthan Royals | 2021 | 26
+1571 | MD Shanaka | Gujarat Titans | 2023 | 26
+1572 | S Chanderpaul | Royal Challengers Bangalore | 2008 | 25
+1573 | R Vinay Kumar | Royal Challengers Bangalore | 2008 | 25
+1574 | R Bhatia | Kolkata Knight Riders | 2011 | 25
+1575 | R Sathish | Mumbai Indians | 2011 | 25
+1576 | DH Yagnik | Rajasthan Royals | 2012 | 25
+1577 | OA Shah | Rajasthan Royals | 2013 | 25
+1578 | CA Lynn | Kolkata Knight Riders | 2016 | 25
+1579 | A Choudhary | Royal Challengers Bangalore | 2017 | 25
+1580 | Ankit Sharma | Rising Pune Supergiant | 2017 | 25
+1581 | Mohammed Siraj | Royal Challengers Bangalore | 2018 | 25
+1582 | UT Yadav | Royal Challengers Bangalore | 2019 | 25
+1583 | NM Coulter-Nile | Mumbai Indians | 2020 | 25
+1584 | Shivam Mavi | Kolkata Knight Riders | 2021 | 25
+1585 | RV Patel | Delhi Capitals | 2021 | 25
+1586 | T Stubbs | Mumbai Indians | 2023 | 25
+1587 | PP Chawla | Mumbai Indians | 2023 | 25
+1588 | MA Khote | Mumbai Indians | 2008 | 24
+1589 | R Bhatia | Delhi Daredevils | 2010 | 24
+1590 | Z Khan | Mumbai Indians | 2010 | 24
+1591 | R Sharma | Pune Warriors | 2011 | 24
+1592 | AA Jhunjhunwala | Deccan Chargers | 2012 | 24
+1593 | Mandeep Singh | Kings XI Punjab | 2014 | 24
+1594 | P Kumar | Gujarat Lions | 2016 | 24
+1595 | R Sathish | Kolkata Knight Riders | 2016 | 24
+1596 | ER Dwivedi | Gujarat Lions | 2016 | 24
+1597 | KM Jadhav | Chennai Super Kings | 2018 | 24
+1598 | TL Seifert | Delhi Capitals | 2022 | 24
+1599 | B Kumar | Sunrisers Hyderabad | 2022 | 24
+1600 | JD Unadkat | Sunrisers Hyderabad | 2024 | 24
+1601 | Tanush Kotian | Rajasthan Royals | 2024 | 24
+1602 | SS Prabhudessai | Royal Challengers Bengaluru | 2024 | 24
+1603 | J Arunkumar | Royal Challengers Bangalore | 2008 | 23
+1604 | RR Powar | Kings XI Punjab | 2009 | 23
+1605 | A Nehra | Delhi Daredevils | 2010 | 23
+1606 | DL Vettori | Royal Challengers Bangalore | 2011 | 23
+1607 | NLTC Perera | Kochi Tuskers Kerala | 2011 | 23
+1608 | Bipul Sharma | Kings XI Punjab | 2011 | 23
+1609 | BMAJ Mendis | Delhi Daredevils | 2013 | 23
+1610 | S Narwal | Kolkata Knight Riders | 2013 | 23
+1611 | AJ Finch | Mumbai Indians | 2015 | 23
+1612 | NS Naik | Kings XI Punjab | 2016 | 23
+1613 | TK Curran | Kolkata Knight Riders | 2018 | 23
+1614 | SP Jackson | Kolkata Knight Riders | 2022 | 23
+1615 | DJ Bravo | Chennai Super Kings | 2022 | 23
+1616 | Mohsin Khan | Lucknow Super Giants | 2022 | 23
+1617 | AS Roy | Kolkata Knight Riders | 2023 | 23
+1618 | HR Shokeen | Mumbai Indians | 2023 | 23
+1619 | B Kumar | Sunrisers Hyderabad | 2024 | 23
+1620 | M Kartik | Kolkata Knight Riders | 2010 | 22
+1621 | DR Smith | Deccan Chargers | 2010 | 22
+1622 | MS Wade | Delhi Daredevils | 2011 | 22
+1623 | RE van der Merwe | Delhi Daredevils | 2013 | 22
+1624 | DW Steyn | Sunrisers Hyderabad | 2014 | 22
+1625 | JO Holder | Kolkata Knight Riders | 2016 | 22
+1626 | KL Nagarkoti | Kolkata Knight Riders | 2020 | 22
+1627 | Harpreet Brar | Punjab Kings | 2022 | 22
+1628 | HE van der Dussen | Rajasthan Royals | 2022 | 22
+1629 | Avesh Khan | Lucknow Super Giants | 2022 | 22
+1630 | MJ Santner | Chennai Super Kings | 2022 | 22
+1631 | AU Rashid | Sunrisers Hyderabad | 2023 | 22
+1632 | PK Garg | Delhi Capitals | 2023 | 22
+1633 | WPUJC Vaas | Deccan Chargers | 2008 | 21
+1634 | M Kartik | Kolkata Knight Riders | 2009 | 21
+1635 | RJ Harris | Deccan Chargers | 2009 | 21
+1636 | MF Maharoof | Delhi Daredevils | 2009 | 21
+1637 | AJ Finch | Rajasthan Royals | 2010 | 21
+1638 | Z Khan | Royal Challengers Bangalore | 2011 | 21
+1639 | CA Ingram | Delhi Daredevils | 2011 | 21
+1640 | RN ten Doeschate | Kolkata Knight Riders | 2012 | 21
+1641 | B Lee | Kolkata Knight Riders | 2013 | 21
+1642 | SP Narine | Kolkata Knight Riders | 2013 | 21
+1643 | R Dhawan | Mumbai Indians | 2013 | 21
+1644 | M Markande | Mumbai Indians | 2018 | 21
+1645 | A Mishra | Delhi Capitals | 2019 | 21
+1646 | TU Deshpande | Delhi Capitals | 2020 | 21
+1647 | HV Patel | Delhi Capitals | 2020 | 21
+1648 | TK Curran | Delhi Capitals | 2021 | 21
+1649 | Arshdeep Singh | Punjab Kings | 2022 | 21
+1650 | B Indrajith | Kolkata Knight Riders | 2022 | 21
+1651 | SP Narine | Kolkata Knight Riders | 2023 | 21
+1652 | M Markande | Sunrisers Hyderabad | 2023 | 21
+1653 | D Wiese | Kolkata Knight Riders | 2023 | 21
+1654 | AJ Turner | Lucknow Super Giants | 2024 | 21
+1655 | SN Thakur | Chennai Super Kings | 2024 | 21
+1656 | RD Chahar | Punjab Kings | 2024 | 21
+1657 | Yudhvir Singh | Lucknow Super Giants | 2024 | 21
+1658 | B Chipli | Royal Challengers Bangalore | 2008 | 20
+1659 | Joginder Sharma | Chennai Super Kings | 2009 | 20
+1660 | SB Jakati | Chennai Super Kings | 2009 | 20
+1661 | Y Nagar | Delhi Daredevils | 2009 | 20
+1662 | SK Trivedi | Rajasthan Royals | 2010 | 20
+1663 | KL Rahul | Royal Challengers Bangalore | 2013 | 20
+1664 | NM Coulter-Nile | Delhi Daredevils | 2015 | 20
+1665 | Iqbal Abdulla | Royal Challengers Bangalore | 2015 | 20
+1666 | DW Steyn | Sunrisers Hyderabad | 2015 | 20
+1667 | AD Nath | Gujarat Lions | 2016 | 20
+1668 | MG Johnson | Mumbai Indians | 2017 | 20
+1669 | Kuldeep Yadav | Kolkata Knight Riders | 2017 | 20
+1670 | MK Lomror | Rajasthan Royals | 2018 | 20
+1671 | Harpreet Brar | Kings XI Punjab | 2019 | 20
+1672 | Mohammed Siraj | Royal Challengers Bangalore | 2021 | 20
+1673 | Ravi Bishnoi | Lucknow Super Giants | 2023 | 20
+1674 | R Dhawan | Punjab Kings | 2023 | 20
+1675 | K Rabada | Punjab Kings | 2024 | 20
+1676 | VVS Laxman | Deccan Chargers | 2009 | 19
+1677 | R Bishnoi | Royal Challengers Bangalore | 2009 | 19
+1678 | DR Martyn | Rajasthan Royals | 2010 | 19
+1679 | FY Fazal | Rajasthan Royals | 2011 | 19
+1680 | Y Gnaneswara Rao | Kochi Tuskers Kerala | 2011 | 19
+1681 | WD Parnell | Pune Warriors | 2012 | 19
+1682 | DW Steyn | Deccan Chargers | 2012 | 19
+1683 | AC Thomas | Pune Warriors | 2012 | 19
+1684 | S Anirudha | Chennai Super Kings | 2012 | 19
+1685 | A Mukund | Royal Challengers Bangalore | 2013 | 19
+1686 | HV Patel | Royal Challengers Bangalore | 2015 | 19
+1687 | P Sahu | Kings XI Punjab | 2016 | 19
+1688 | Vishnu Vinod | Royal Challengers Bangalore | 2017 | 19
+1689 | R Tewatia | Kings XI Punjab | 2017 | 19
+1690 | P Ray Barman | Royal Challengers Bangalore | 2019 | 19
+1691 | JDS Neesham | Kings XI Punjab | 2020 | 19
+1692 | P Simran Singh | Punjab Kings | 2021 | 19
+1693 | V Shankar | Gujarat Titans | 2022 | 19
+1694 | M Vohra | Lucknow Super Giants | 2022 | 19
+1695 | Umran Malik | Sunrisers Hyderabad | 2023 | 19
+1696 | UT Yadav | Kolkata Knight Riders | 2023 | 19
+1697 | A Mishra | Lucknow Super Giants | 2023 | 19
+1698 | Gulbadin Naib | Delhi Capitals | 2024 | 19
+1699 | JDP Oram | Chennai Super Kings | 2008 | 18
+1700 | DS Lehmann | Rajasthan Royals | 2008 | 18
+1701 | SD Chitnis | Mumbai Indians | 2008 | 18
+1702 | NK Patel | Rajasthan Royals | 2009 | 18
+1703 | YV Takawale | Mumbai Indians | 2009 | 18
+1704 | L Balaji | Chennai Super Kings | 2010 | 18
+1705 | GJ Bailey | Chennai Super Kings | 2010 | 18
+1706 | K Goel | Kings XI Punjab | 2010 | 18
+1707 | DE Bollinger | Chennai Super Kings | 2010 | 18
+1708 | JJ van der Wath | Royal Challengers Bangalore | 2011 | 18
+1709 | KM Jadhav | Kochi Tuskers Kerala | 2011 | 18
+1710 | BJ Haddin | Kolkata Knight Riders | 2011 | 18
+1711 | S Rana | Pune Warriors | 2011 | 18
+1712 | AN Ahmed | Mumbai Indians | 2011 | 18
+1713 | R Ashwin | Chennai Super Kings | 2012 | 18
+1714 | Ankit Sharma | Deccan Chargers | 2012 | 18
+1715 | RJ Harris | Kings XI Punjab | 2012 | 18
+1716 | R Shukla | Delhi Daredevils | 2014 | 18
+1717 | Anureet Singh | Kings XI Punjab | 2015 | 18
+1718 | AP Tare | Delhi Daredevils | 2017 | 18
+1719 | Mohammad Nabi | Sunrisers Hyderabad | 2018 | 18
+1720 | KMA Paul | Delhi Capitals | 2019 | 18
+1721 | BCJ Cutting | Mumbai Indians | 2019 | 18
+1722 | K Gowtham | Rajasthan Royals | 2019 | 18
+1723 | T Banton | Kolkata Knight Riders | 2020 | 18
+1724 | NT Ellis | Punjab Kings | 2021 | 18
+1725 | LH Ferguson | Kolkata Knight Riders | 2021 | 18
+1726 | Mandeep Singh | Delhi Capitals | 2022 | 18
+1727 | DJ Willey | Royal Challengers Bangalore | 2022 | 18
+1728 | JR Hazlewood | Royal Challengers Bangalore | 2022 | 18
+1729 | Arshad Khan | Mumbai Indians | 2023 | 18
+1730 | Sumit Kumar | Delhi Capitals | 2024 | 18
+1731 | M Jansen | Sunrisers Hyderabad | 2024 | 18
+1732 | Saurav Chauhan | Royal Challengers Bengaluru | 2024 | 18
+1733 | B Lee | Kings XI Punjab | 2008 | 17
+1734 | B Akhil | Royal Challengers Bangalore | 2009 | 17
+1735 | CA Pujara | Royal Challengers Bangalore | 2012 | 17
+1736 | P Kumar | Sunrisers Hyderabad | 2015 | 17
+1737 | B Kumar | Sunrisers Hyderabad | 2015 | 17
+1738 | MP Stoinis | Kings XI Punjab | 2017 | 17
+1739 | CR Woakes | Royal Challengers Bangalore | 2018 | 17
+1740 | CJ Anderson | Royal Challengers Bangalore | 2018 | 17
+1741 | Mohammed Siraj | Royal Challengers Bangalore | 2020 | 17
+1742 | Akash Deep | Royal Challengers Bangalore | 2023 | 17
+1743 | Joginder Sharma | Chennai Super Kings | 2008 | 16
+1744 | CK Kapugedera | Chennai Super Kings | 2008 | 16
+1745 | M Rawat | Rajasthan Royals | 2009 | 16
+1746 | I Sharma | Kolkata Knight Riders | 2009 | 16
+1747 | A Kumble | Royal Challengers Bangalore | 2009 | 16
+1748 | AD Mathews | Kolkata Knight Riders | 2009 | 16
+1749 | DH Yagnik | Rajasthan Royals | 2011 | 16
+1750 | A Mishra | Deccan Chargers | 2012 | 16
+1751 | B Chipli | Delhi Daredevils | 2013 | 16
+1752 | NJ Maddinson | Royal Challengers Bangalore | 2014 | 16
+1753 | R Tewatia | Rajasthan Royals | 2014 | 16
+1754 | JO Holder | Sunrisers Hyderabad | 2014 | 16
+1755 | JA Morkel | Rising Pune Supergiants | 2016 | 16
+1756 | Harbhajan Singh | Mumbai Indians | 2017 | 16
+1757 | R Bhatia | Rising Pune Supergiant | 2017 | 16
+1758 | MJ McClenaghan | Mumbai Indians | 2017 | 16
+1759 | JJ Bumrah | Mumbai Indians | 2017 | 16
+1760 | MG Johnson | Kolkata Knight Riders | 2018 | 16
+1761 | P Simran Singh | Kings XI Punjab | 2019 | 16
+1762 | KK Nair | Kings XI Punjab | 2020 | 16
+1763 | JJ Bumrah | Mumbai Indians | 2021 | 16
+1764 | C Sakariya | Rajasthan Royals | 2021 | 16
+1765 | AF Milne | Mumbai Indians | 2021 | 16
+1766 | Anmolpreet Singh | Mumbai Indians | 2021 | 16
+1767 | KK Nair | Rajasthan Royals | 2022 | 16
+1768 | YV Dhull | Delhi Capitals | 2023 | 16
+1769 | TA Boult | Rajasthan Royals | 2023 | 16
+1770 | AJ Hosein | Sunrisers Hyderabad | 2023 | 16
+1771 | Naveen-ul-Haq | Lucknow Super Giants | 2023 | 16
+1772 | P Dubey | Delhi Capitals | 2023 | 16
+1773 | VY Mahesh | Delhi Daredevils | 2008 | 15
+1774 | GR Napier | Mumbai Indians | 2009 | 15
+1775 | W Jaffer | Royal Challengers Bangalore | 2009 | 15
+1776 | C Madan | Mumbai Indians | 2010 | 15
+1777 | Iqbal Abdulla | Kolkata Knight Riders | 2011 | 15
+1778 | J Syed Mohammad | Royal Challengers Bangalore | 2011 | 15
+1779 | Harmeet Singh | Kings XI Punjab | 2012 | 15
+1780 | HV Patel | Royal Challengers Bangalore | 2012 | 15
+1781 | TL Suman | Mumbai Indians | 2012 | 15
+1782 | GB Hogg | Rajasthan Royals | 2012 | 15
+1783 | P Dogra | Kings XI Punjab | 2012 | 15
+1784 | IR Jaggi | Deccan Chargers | 2012 | 15
+1785 | SA Abbott | Royal Challengers Bangalore | 2015 | 15
+1786 | Sachin Baby | Royal Challengers Bangalore | 2017 | 15
+1787 | Anureet Singh | Kings XI Punjab | 2017 | 15
+1788 | JC Archer | Rajasthan Royals | 2018 | 15
+1789 | SN Thakur | Chennai Super Kings | 2018 | 15
+1790 | SD Lad | Mumbai Indians | 2019 | 15
+1791 | AS Joseph | Mumbai Indians | 2019 | 15
+1792 | JL Pattinson | Mumbai Indians | 2020 | 15
+1793 | I Udana | Royal Challengers Bangalore | 2020 | 15
+1794 | P Simran Singh | Kings XI Punjab | 2020 | 15
+1795 | JA Richardson | Punjab Kings | 2021 | 15
+1796 | CR Woakes | Delhi Capitals | 2021 | 15
+1797 | M Ashwin | Punjab Kings | 2021 | 15
+1798 | Virat Singh | Sunrisers Hyderabad | 2021 | 15
+1799 | Mandeep Singh | Punjab Kings | 2021 | 15
+1800 | BA Stokes | Chennai Super Kings | 2023 | 15
+1801 | PP Chawla | Mumbai Indians | 2024 | 15
+1802 | SB Styris | Deccan Chargers | 2009 | 14
+1803 | S Narwal | Rajasthan Royals | 2010 | 14
+1804 | LR Shukla | Kolkata Knight Riders | 2011 | 14
+1805 | RE van der Merwe | Delhi Daredevils | 2011 | 14
+1806 | Harpreet Singh | Pune Warriors | 2011 | 14
+1807 | JP Faulkner | Kings XI Punjab | 2012 | 14
+1808 | AD Mascarenhas | Kings XI Punjab | 2012 | 14
+1809 | M Kaif | Royal Challengers Bangalore | 2012 | 14
+1810 | S Aravind | Royal Challengers Bangalore | 2012 | 14
+1811 | S Nadeem | Delhi Daredevils | 2013 | 14
+1812 | DB Ravi Teja | Sunrisers Hyderabad | 2013 | 14
+1813 | MDKJ Perera | Rajasthan Royals | 2013 | 14
+1814 | CH Morris | Chennai Super Kings | 2013 | 14
+1815 | AP Tare | Mumbai Indians | 2015 | 14
+1816 | RR Rossouw | Royal Challengers Bangalore | 2015 | 14
+1817 | R Dhawan | Kings XI Punjab | 2016 | 14
+1818 | F Behardien | Kings XI Punjab | 2016 | 14
+1819 | DL Chahar | Rising Pune Supergiant | 2017 | 14
+1820 | NM Coulter-Nile | Kolkata Knight Riders | 2017 | 14
+1821 | K Rabada | Delhi Capitals | 2019 | 14
+1822 | SN Thakur | Chennai Super Kings | 2019 | 14
+1823 | DT Christian | Royal Challengers Bangalore | 2021 | 14
+1824 | RD Chahar | Mumbai Indians | 2021 | 14
+1825 | J Suchith | Sunrisers Hyderabad | 2021 | 14
+1826 | P Simran Singh | Punjab Kings | 2022 | 14
+1827 | Mandeep Singh | Kolkata Knight Riders | 2023 | 14
+1828 | G Coetzee | Mumbai Indians | 2024 | 14
+1829 | TA Boult | Rajasthan Royals | 2024 | 14
+1830 | MJ Santner | Chennai Super Kings | 2024 | 14
+1831 | Sanvir Singh | Sunrisers Hyderabad | 2024 | 14
+1832 | DT Patil | Royal Challengers Bangalore | 2008 | 13
+1833 | A Kumble | Royal Challengers Bangalore | 2008 | 13
+1834 | MS Gony | Chennai Super Kings | 2009 | 13
+1835 | SS Tiwary | Mumbai Indians | 2009 | 13
+1836 | MV Boucher | Royal Challengers Bangalore | 2010 | 13
+1837 | DW Steyn | Royal Challengers Bangalore | 2010 | 13
+1838 | S Aravind | Royal Challengers Bangalore | 2011 | 13
+1839 | B Akhil | Kochi Tuskers Kerala | 2011 | 13
+1840 | M Manhas | Pune Warriors | 2013 | 13
+1841 | R Rampaul | Royal Challengers Bangalore | 2014 | 13
+1842 | HV Patel | Royal Challengers Bangalore | 2014 | 13
+1843 | DJG Sammy | Royal Challengers Bangalore | 2015 | 13
+1844 | TG Southee | Rajasthan Royals | 2015 | 13
+1845 | MJ McClenaghan | Mumbai Indians | 2015 | 13
+1846 | R Vinay Kumar | Mumbai Indians | 2016 | 13
+1847 | KJ Abbott | Kings XI Punjab | 2016 | 13
+1848 | KC Cariappa | Kings XI Punjab | 2016 | 13
+1849 | YS Chahal | Royal Challengers Bangalore | 2017 | 13
+1850 | S Badree | Royal Challengers Bangalore | 2017 | 13
+1851 | Shivam Mavi | Kolkata Knight Riders | 2018 | 13
+1852 | B Kumar | Sunrisers Hyderabad | 2018 | 13
+1853 | Kuldeep Yadav | Kolkata Knight Riders | 2020 | 13
+1854 | Imran Tahir | Chennai Super Kings | 2020 | 13
+1855 | K Rabada | Delhi Capitals | 2021 | 13
+1856 | Mohammed Shami | Punjab Kings | 2021 | 13
+1857 | Anmolpreet Singh | Mumbai Indians | 2022 | 13
+1858 | Vijaykumar Vyshak | Royal Challengers Bangalore | 2023 | 13
+1859 | Arjun Tendulkar | Mumbai Indians | 2023 | 13
+1860 | HV Patel | Punjab Kings | 2024 | 13
+1861 | R Sai Kishore | Gujarat Titans | 2024 | 13
+1862 | BJ Hodge | Kolkata Knight Riders | 2008 | 12
+1863 | RR Raje | Mumbai Indians | 2009 | 12
+1864 | AD Mascarenhas | Rajasthan Royals | 2010 | 12
+1865 | SW Tait | Rajasthan Royals | 2010 | 12
+1866 | M Kartik | Pune Warriors | 2011 | 12
+1867 | DAJ Bracewell | Delhi Daredevils | 2012 | 12
+1868 | Z Khan | Royal Challengers Bangalore | 2012 | 12
+1869 | AB Agarkar | Delhi Daredevils | 2013 | 12
+1870 | NLTC Perera | Kings XI Punjab | 2015 | 12
+1871 | CR Brathwaite | Delhi Daredevils | 2017 | 12
+1872 | AR Bawne | Delhi Daredevils | 2017 | 12
+1873 | Swapnil Singh | Kings XI Punjab | 2017 | 12
+1874 | M Vijay | Chennai Super Kings | 2018 | 12
+1875 | Kuldeep Yadav | Kolkata Knight Riders | 2018 | 12
+1876 | Kuldeep Yadav | Kolkata Knight Riders | 2019 | 12
+1877 | RD Chahar | Mumbai Indians | 2019 | 12
+1878 | B Kumar | Sunrisers Hyderabad | 2019 | 12
+1879 | Sandeep Sharma | Sunrisers Hyderabad | 2020 | 12
+1880 | MM Ali | Royal Challengers Bangalore | 2020 | 12
+1881 | SN Thakur | Chennai Super Kings | 2020 | 12
+1882 | CV Varun | Kolkata Knight Riders | 2022 | 12
+1883 | M Ashwin | Mumbai Indians | 2022 | 12
+1884 | JO Holder | Rajasthan Royals | 2023 | 12
+1885 | KS Sharma | Lucknow Super Giants | 2023 | 12
+1886 | KM Jadhav | Royal Challengers Bangalore | 2023 | 12
+1887 | JJ Bumrah | Mumbai Indians | 2024 | 12
+1888 | UT Yadav | Gujarat Titans | 2024 | 12
+1889 | Mohammed Siraj | Royal Challengers Bengaluru | 2024 | 12
+1890 | DG Nalkande | Gujarat Titans | 2024 | 12
+1891 | I Sharma | Kolkata Knight Riders | 2008 | 11
+1892 | DNT Zoysa | Deccan Chargers | 2008 | 11
+1893 | M Ntini | Chennai Super Kings | 2008 | 11
+1894 | T Henderson | Rajasthan Royals | 2009 | 11
+1895 | A Chopra | Kolkata Knight Riders | 2009 | 11
+1896 | MC Henriques | Delhi Daredevils | 2010 | 11
+1897 | B Lee | Kings XI Punjab | 2010 | 11
+1898 | RR Powar | Kochi Tuskers Kerala | 2011 | 11
+1899 | DJ Bravo | Chennai Super Kings | 2011 | 11
+1900 | AA Chavan | Rajasthan Royals | 2012 | 11
+1901 | A Nehra | Pune Warriors | 2012 | 11
+1902 | K Upadhyay | Pune Warriors | 2012 | 11
+1903 | AD Russell | Delhi Daredevils | 2013 | 11
+1904 | R Sharma | Pune Warriors | 2013 | 11
+1905 | S Gopal | Mumbai Indians | 2014 | 11
+1906 | Karanveer Singh | Kings XI Punjab | 2015 | 11
+1907 | MA Starc | Royal Challengers Bangalore | 2015 | 11
+1908 | IK Pathan | Rising Pune Supergiants | 2016 | 11
+1909 | Rashid Khan | Sunrisers Hyderabad | 2017 | 11
+1910 | MJ McClenaghan | Mumbai Indians | 2018 | 11
+1911 | AS Rajpoot | Kings XI Punjab | 2018 | 11
+1912 | MJ McClenaghan | Mumbai Indians | 2019 | 11
+1913 | CR Brathwaite | Kolkata Knight Riders | 2019 | 11
+1914 | RK Singh | Kolkata Knight Riders | 2020 | 11
+1915 | Mohammad Nabi | Sunrisers Hyderabad | 2020 | 11
+1916 | RA Bawa | Punjab Kings | 2022 | 11
+1917 | CJ Jordan | Chennai Super Kings | 2022 | 11
+1918 | MA Wood | Lucknow Super Giants | 2023 | 11
+1919 | Sanvir Singh | Sunrisers Hyderabad | 2023 | 11
+1920 | T Kohli | Rajasthan Royals | 2008 | 10
+1921 | D du Preez | Royal Challengers Bangalore | 2009 | 10
+1922 | SK Warne | Rajasthan Royals | 2010 | 10
+1923 | PJ Sangwan | Delhi Daredevils | 2010 | 10
+1924 | T Thushara | Chennai Super Kings | 2010 | 10
+1925 | KAJ Roach | Deccan Chargers | 2010 | 10
+1926 | SK Warne | Rajasthan Royals | 2011 | 10
+1927 | SW Tait | Rajasthan Royals | 2011 | 10
+1928 | TD Paine | Pune Warriors | 2011 | 10
+1929 | AA Jhunjhunwala | Pune Warriors | 2011 | 10
+1930 | DS Kulkarni | Mumbai Indians | 2012 | 10
+1931 | SMSM Senanayake | Kolkata Knight Riders | 2013 | 10
+1932 | J Syed Mohammad | Royal Challengers Bangalore | 2013 | 10
+1933 | X Thalaivan Sargunam | Sunrisers Hyderabad | 2013 | 10
+1934 | SP Narine | Kolkata Knight Riders | 2014 | 10
+1935 | AN Ahmed | Royal Challengers Bangalore | 2015 | 10
+1936 | Parvez Rasool | Royal Challengers Bangalore | 2016 | 10
+1937 | UT Yadav | Kolkata Knight Riders | 2017 | 10
+1938 | JJ Bumrah | Mumbai Indians | 2018 | 10
+1939 | MM Sharma | Kings XI Punjab | 2018 | 10
+1940 | Mujeeb Ur Rahman | Kings XI Punjab | 2018 | 10
+1941 | I Sharma | Delhi Capitals | 2019 | 10
+1942 | Shivam Mavi | Kolkata Knight Riders | 2020 | 10
+1943 | CV Varun | Kolkata Knight Riders | 2020 | 10
+1944 | YS Chahal | Royal Challengers Bangalore | 2021 | 10
+1945 | A Zampa | Rajasthan Royals | 2023 | 10
+1946 | M Vohra | Lucknow Super Giants | 2023 | 10
+1947 | JE Root | Rajasthan Royals | 2023 | 10
+1948 | Lalit Yadav | Delhi Capitals | 2024 | 10
+1949 | Avesh Khan | Rajasthan Royals | 2024 | 10
+1950 | AA Noffke | Royal Challengers Bangalore | 2008 | 9
+1951 | AD Mascarenhas | Rajasthan Royals | 2008 | 9
+1952 | MK Tiwary | Delhi Daredevils | 2009 | 9
+1953 | SK Trivedi | Rajasthan Royals | 2009 | 9
+1954 | SM Harwood | Rajasthan Royals | 2009 | 9
+1955 | DS Kulkarni | Mumbai Indians | 2009 | 9
+1956 | M Morkel | Rajasthan Royals | 2010 | 9
+1957 | RP Singh | Deccan Chargers | 2010 | 9
+1958 | Bipul Sharma | Kings XI Punjab | 2010 | 9
+1959 | SA Asnodkar | Rajasthan Royals | 2011 | 9
+1960 | SD Chitnis | Kings XI Punjab | 2011 | 9
+1961 | SP Narine | Kolkata Knight Riders | 2012 | 9
+1962 | NV Ojha | Delhi Daredevils | 2013 | 9
+1963 | KK Nair | Royal Challengers Bangalore | 2013 | 9
+1964 | AB Dinda | Pune Warriors | 2013 | 9
+1965 | SL Malinga | Mumbai Indians | 2013 | 9
+1966 | L Balaji | Kolkata Knight Riders | 2013 | 9
+1967 | NM Coulter-Nile | Mumbai Indians | 2013 | 9
+1968 | MC Henriques | Sunrisers Hyderabad | 2014 | 9
+1969 | Sandeep Sharma | Kings XI Punjab | 2015 | 9
+1970 | NM Coulter-Nile | Delhi Daredevils | 2016 | 9
+1971 | UT Yadav | Kolkata Knight Riders | 2016 | 9
+1972 | Washington Sundar | Rising Pune Supergiant | 2017 | 9
+1973 | AD Nath | Kings XI Punjab | 2018 | 9
+1974 | TG Southee | Royal Challengers Bangalore | 2019 | 9
+1975 | P Negi | Royal Challengers Bangalore | 2019 | 9
+1976 | Abhishek Sharma | Sunrisers Hyderabad | 2019 | 9
+1977 | KC Cariappa | Kolkata Knight Riders | 2019 | 9
+1978 | Shakib Al Hasan | Sunrisers Hyderabad | 2019 | 9
+1979 | H Klaasen | Royal Challengers Bangalore | 2019 | 9
+1980 | JD Unadkat | Rajasthan Royals | 2020 | 9
+1981 | AS Rajpoot | Rajasthan Royals | 2020 | 9
+1982 | M Jansen | Sunrisers Hyderabad | 2022 | 9
+1983 | S Gopal | Sunrisers Hyderabad | 2022 | 9
+1984 | JD Unadkat | Lucknow Super Giants | 2023 | 9
+1985 | MA Starc | Kolkata Knight Riders | 2024 | 9
+1986 | A Manohar | Gujarat Titans | 2024 | 9
+1987 | L Wood | Mumbai Indians | 2024 | 9
+1988 | AA Kulkarni | Lucknow Super Giants | 2024 | 9
+1989 | TM Srivastava | Kings XI Punjab | 2008 | 8
+1990 | RR Raje | Mumbai Indians | 2008 | 8
+1991 | Z Khan | Mumbai Indians | 2009 | 8
+1992 | M Muralitharan | Chennai Super Kings | 2009 | 8
+1993 | RP Singh | Deccan Chargers | 2009 | 8
+1994 | R Bhatia | Delhi Daredevils | 2009 | 8
+1995 | M Morkel | Rajasthan Royals | 2009 | 8
+1996 | R Ashwin | Chennai Super Kings | 2009 | 8
+1997 | Jaskaran Singh | Deccan Chargers | 2010 | 8
+1998 | SP Goswami | Royal Challengers Bangalore | 2010 | 8
+1999 | STR Binny | Mumbai Indians | 2010 | 8
+2000 | SL Malinga | Mumbai Indians | 2011 | 8
+2001 | AB McDonald | Delhi Daredevils | 2011 | 8
+2002 | CK Langeveldt | Royal Challengers Bangalore | 2011 | 8
+2003 | CJ McKay | Mumbai Indians | 2012 | 8
+2004 | MN Samuels | Pune Warriors | 2013 | 8
+2005 | Iqbal Abdulla | Kolkata Knight Riders | 2013 | 8
+2006 | DJ Bravo | Chennai Super Kings | 2014 | 8
+2007 | Z Khan | Mumbai Indians | 2014 | 8
+2008 | BCJ Cutting | Rajasthan Royals | 2014 | 8
+2009 | Imran Tahir | Delhi Daredevils | 2014 | 8
+2010 | A Mishra | Delhi Daredevils | 2015 | 8
+2011 | LMP Simmons | Mumbai Indians | 2016 | 8
+2012 | Sandeep Sharma | Kings XI Punjab | 2016 | 8
+2013 | AP Tare | Sunrisers Hyderabad | 2016 | 8
+2014 | JJ Bumrah | Mumbai Indians | 2016 | 8
+2015 | TS Mills | Royal Challengers Bangalore | 2017 | 8
+2016 | P Kumar | Gujarat Lions | 2017 | 8
+2017 | F du Plessis | Rising Pune Supergiant | 2017 | 8
+2018 | I Sharma | Kings XI Punjab | 2017 | 8
+2019 | DR Shorey | Chennai Super Kings | 2018 | 8
+2020 | P Chopra | Rajasthan Royals | 2018 | 8
+2021 | JPR Scantlebury-Searles | Kolkata Knight Riders | 2018 | 8
+2022 | MK Lomror | Rajasthan Royals | 2019 | 8
+2023 | AM Rahane | Delhi Capitals | 2021 | 8
+2024 | Mustafizur Rahman | Rajasthan Royals | 2021 | 8
+2025 | Sandeep Sharma | Sunrisers Hyderabad | 2021 | 8
+2026 | S Kaul | Sunrisers Hyderabad | 2021 | 8
+2027 | FA Allen | Mumbai Indians | 2022 | 8
+2028 | KS Bharat | Delhi Capitals | 2022 | 8
+2029 | OC McCoy | Rajasthan Royals | 2022 | 8
+2030 | Noor Ahmad | Gujarat Titans | 2023 | 8
+2031 | D Ferreira | Rajasthan Royals | 2024 | 8
+2032 | AN Ghosh | Kolkata Knight Riders | 2009 | 7
+2033 | I Malhotra | Deccan Chargers | 2011 | 7
+2034 | AB Agarkar | Delhi Daredevils | 2011 | 7
+2035 | KB Arun Karthik | Royal Challengers Bangalore | 2011 | 7
+2036 | SB Jakati | Chennai Super Kings | 2012 | 7
+2037 | J Theron | Deccan Chargers | 2012 | 7
+2038 | UA Birla | Pune Warriors | 2013 | 7
+2039 | S Kaul | Delhi Daredevils | 2013 | 7
+2040 | S Nadeem | Delhi Daredevils | 2014 | 7
+2041 | GB Hogg | Kolkata Knight Riders | 2015 | 7
+2042 | SN Thakur | Kings XI Punjab | 2015 | 7
+2043 | Ankit Sharma | Rajasthan Royals | 2015 | 7
+2044 | MR Marsh | Rising Pune Supergiants | 2016 | 7
+2045 | SP Narine | Kolkata Knight Riders | 2016 | 7
+2046 | PV Tambe | Gujarat Lions | 2016 | 7
+2047 | TG Southee | Mumbai Indians | 2017 | 7
+2048 | AB Dinda | Rising Pune Supergiant | 2017 | 7
+2049 | Sandeep Sharma | Kings XI Punjab | 2017 | 7
+2050 | AF Milne | Royal Challengers Bangalore | 2017 | 7
+2051 | Ankit Soni | Gujarat Lions | 2017 | 7
+2052 | SL Malinga | Mumbai Indians | 2017 | 7
+2053 | Mohammed Shami | Delhi Daredevils | 2018 | 7
+2054 | NS Naik | Kolkata Knight Riders | 2019 | 7
+2055 | DL Chahar | Chennai Super Kings | 2019 | 7
+2056 | RK Bhui | Sunrisers Hyderabad | 2019 | 7
+2057 | TA Boult | Delhi Capitals | 2019 | 7
+2058 | A Nortje | Delhi Capitals | 2020 | 7
+2059 | Ravi Bishnoi | Kings XI Punjab | 2020 | 7
+2060 | DL Chahar | Chennai Super Kings | 2020 | 7
+2061 | DJ Bravo | Chennai Super Kings | 2020 | 7
+2062 | S Nadeem | Sunrisers Hyderabad | 2020 | 7
+2063 | P Dubey | Delhi Capitals | 2020 | 7
+2064 | S Gopal | Rajasthan Royals | 2021 | 7
+2065 | Sachin Baby | Royal Challengers Bangalore | 2021 | 7
+2066 | Rasikh Salam | Kolkata Knight Riders | 2022 | 7
+2067 | Simarjeet Singh | Chennai Super Kings | 2022 | 7
+2068 | M Theekshana | Chennai Super Kings | 2022 | 7
+2069 | SA Abbott | Sunrisers Hyderabad | 2022 | 7
+2070 | Kartik Tyagi | Sunrisers Hyderabad | 2022 | 7
+2071 | R Powell | Delhi Capitals | 2023 | 7
+2072 | Mukesh Kumar | Delhi Capitals | 2023 | 7
+2073 | AS Joseph | Gujarat Titans | 2023 | 7
+2074 | V Viyaskanth | Sunrisers Hyderabad | 2024 | 7
+2075 | SB Joshi | Royal Challengers Bangalore | 2008 | 6
+2076 | PC Valthaty | Rajasthan Royals | 2009 | 6
+2077 | PJ Sangwan | Delhi Daredevils | 2009 | 6
+2078 | SD Chitnis | Rajasthan Royals | 2009 | 6
+2079 | SS Shaikh | Kolkata Knight Riders | 2009 | 6
+2080 | I Sharma | Kolkata Knight Riders | 2010 | 6
+2081 | A Kumble | Royal Challengers Bangalore | 2010 | 6
+2082 | VS Malik | Kings XI Punjab | 2010 | 6
+2083 | MV Boucher | Kolkata Knight Riders | 2011 | 6
+2084 | GJ Maxwell | Delhi Daredevils | 2012 | 6
+2085 | BA Bhatt | Kings XI Punjab | 2012 | 6
+2086 | M Muralitharan | Royal Challengers Bangalore | 2012 | 6
+2087 | RP Singh | Mumbai Indians | 2012 | 6
+2088 | WP Saha | Chennai Super Kings | 2012 | 6
+2089 | AUK Pathan | Royal Challengers Bangalore | 2012 | 6
+2090 | CA Lynn | Deccan Chargers | 2012 | 6
+2091 | Harpreet Singh | Pune Warriors | 2012 | 6
+2092 | DT Christian | Royal Challengers Bangalore | 2013 | 6
+2093 | Q de Kock | Sunrisers Hyderabad | 2013 | 6
+2094 | PC Valthaty | Kings XI Punjab | 2013 | 6
+2095 | BB McCullum | Kolkata Knight Riders | 2013 | 6
+2096 | VR Aaron | Royal Challengers Bangalore | 2015 | 6
+2097 | SL Malinga | Mumbai Indians | 2015 | 6
+2098 | Azhar Mahmood | Kolkata Knight Riders | 2015 | 6
+2099 | Z Khan | Delhi Daredevils | 2016 | 6
+2100 | PSP Handscomb | Rising Pune Supergiants | 2016 | 6
+2101 | J Yadav | Delhi Daredevils | 2016 | 6
+2102 | DM Bravo | Kolkata Knight Riders | 2017 | 6
+2103 | R Vinay Kumar | Kolkata Knight Riders | 2018 | 6
+2104 | DS Kulkarni | Rajasthan Royals | 2018 | 6
+2105 | S Nadeem | Delhi Daredevils | 2018 | 6
+2106 | YS Chahal | Royal Challengers Bangalore | 2019 | 6
+2107 | M Markande | Mumbai Indians | 2019 | 6
+2108 | Sandeep Sharma | Sunrisers Hyderabad | 2019 | 6
+2109 | J Suchith | Delhi Capitals | 2019 | 6
+2110 | IS Sodhi | Rajasthan Royals | 2019 | 6
+2111 | AJ Tye | Rajasthan Royals | 2020 | 6
+2112 | FA Allen | Punjab Kings | 2021 | 6
+2113 | DR Sams | Royal Challengers Bangalore | 2021 | 6
+2114 | Mukesh Choudhary | Chennai Super Kings | 2022 | 6
+2115 | M Prasidh Krishna | Rajasthan Royals | 2022 | 6
+2116 | RV Patel | Delhi Capitals | 2022 | 6
+2117 | HV Patel | Royal Challengers Bangalore | 2023 | 6
+2118 | JP Behrendorff | Mumbai Indians | 2023 | 6
+2119 | CJ Jordan | Mumbai Indians | 2023 | 6
+2120 | K Kartikeya | Mumbai Indians | 2023 | 6
+2121 | SH Johnson | Gujarat Titans | 2024 | 6
+2122 | SK Trivedi | Rajasthan Royals | 2008 | 5
+2123 | Pankaj Singh | Rajasthan Royals | 2008 | 5
+2124 | S Sreesanth | Kings XI Punjab | 2009 | 5
+2125 | RR Powar | Kings XI Punjab | 2010 | 5
+2126 | SA Asnodkar | Rajasthan Royals | 2010 | 5
+2127 | A Mithun | Royal Challengers Bangalore | 2010 | 5
+2128 | SB Styris | Chennai Super Kings | 2011 | 5
+2129 | B Lee | Kolkata Knight Riders | 2011 | 5
+2130 | M Muralitharan | Kochi Tuskers Kerala | 2011 | 5
+2131 | PR Shah | Rajasthan Royals | 2011 | 5
+2132 | SK Trivedi | Rajasthan Royals | 2012 | 5
+2133 | KMDN Kulasekara | Chennai Super Kings | 2012 | 5
+2134 | Mohammed Shami | Kolkata Knight Riders | 2013 | 5
+2135 | AD Mascarenhas | Kings XI Punjab | 2013 | 5
+2136 | AG Murtaza | Pune Warriors | 2013 | 5
+2137 | M Rawat | Pune Warriors | 2013 | 5
+2138 | WD Parnell | Pune Warriors | 2013 | 5
+2139 | Parvez Rasool | Pune Warriors | 2013 | 5
+2140 | P Dogra | Kolkata Knight Riders | 2013 | 5
+2141 | PV Tambe | Rajasthan Royals | 2014 | 5
+2142 | Shivam Sharma | Kings XI Punjab | 2014 | 5
+2143 | Imran Tahir | Delhi Daredevils | 2015 | 5
+2144 | MG Johnson | Kings XI Punjab | 2016 | 5
+2145 | D Wiese | Royal Challengers Bangalore | 2016 | 5
+2146 | Imran Tahir | Delhi Daredevils | 2016 | 5
+2147 | Iqbal Abdulla | Royal Challengers Bangalore | 2017 | 5
+2148 | A Zampa | Rising Pune Supergiant | 2017 | 5
+2149 | TA Boult | Kolkata Knight Riders | 2017 | 5
+2150 | B Stanlake | Sunrisers Hyderabad | 2018 | 5
+2151 | Rasikh Salam | Mumbai Indians | 2019 | 5
+2152 | DS Kulkarni | Rajasthan Royals | 2019 | 5
+2153 | KK Nair | Kings XI Punjab | 2019 | 5
+2154 | DR Shorey | Chennai Super Kings | 2019 | 5
+2155 | JJ Bumrah | Mumbai Indians | 2020 | 5
+2156 | SN Thakur | Chennai Super Kings | 2021 | 5
+2157 | Avesh Khan | Delhi Capitals | 2021 | 5
+2158 | VG Arora | Punjab Kings | 2022 | 5
+2159 | YS Chahal | Rajasthan Royals | 2022 | 5
+2160 | Aman Hakim Khan | Kolkata Knight Riders | 2022 | 5
+2161 | AS Joseph | Gujarat Titans | 2022 | 5
+2162 | LH Ferguson | Gujarat Titans | 2022 | 5
+2163 | Mohammed Shami | Gujarat Titans | 2023 | 5
+2164 | Noor Ahmad | Gujarat Titans | 2024 | 5
+2165 | Arshad Khan (2) | Lucknow Super Giants | 2024 | 5
+2166 | Anmolpreet Singh | Sunrisers Hyderabad | 2024 | 5
+2167 | S Sohal | Kings XI Punjab | 2008 | 4
+2168 | VRV Singh | Kings XI Punjab | 2008 | 4
+2169 | AM Rahane | Mumbai Indians | 2008 | 4
+2170 | GD McGrath | Delhi Daredevils | 2008 | 4
+2171 | FH Edwards | Deccan Chargers | 2009 | 4
+2172 | L Balaji | Chennai Super Kings | 2009 | 4
+2173 | A Uniyal | Rajasthan Royals | 2010 | 4
+2174 | P Kumar | Royal Challengers Bangalore | 2010 | 4
+2175 | DP Nannes | Delhi Daredevils | 2010 | 4
+2176 | MM Patel | Rajasthan Royals | 2010 | 4
+2177 | Mandeep Singh | Kolkata Knight Riders | 2010 | 4
+2178 | AN Ahmed | Mumbai Indians | 2010 | 4
+2179 | RS Sodhi | Kings XI Punjab | 2010 | 4
+2180 | I Sharma | Deccan Chargers | 2011 | 4
+2181 | L Balaji | Kolkata Knight Riders | 2011 | 4
+2182 | SJ Srivastava | Kings XI Punjab | 2011 | 4
+2183 | S Sriram | Delhi Daredevils | 2011 | 4
+2184 | PP Ojha | Mumbai Indians | 2012 | 4
+2185 | MS Gony | Deccan Chargers | 2012 | 4
+2186 | DB Ravi Teja | Deccan Chargers | 2012 | 4
+2187 | NLTC Perera | Mumbai Indians | 2012 | 4
+2188 | J Syed Mohammad | Royal Challengers Bangalore | 2012 | 4
+2189 | MD Mishra | Pune Warriors | 2012 | 4
+2190 | P Awana | Kings XI Punjab | 2012 | 4
+2191 | B Laughlin | Chennai Super Kings | 2013 | 4
+2192 | PJ Sangwan | Kolkata Knight Riders | 2013 | 4
+2193 | A Chandila | Rajasthan Royals | 2013 | 4
+2194 | RV Gomez | Pune Warriors | 2013 | 4
+2195 | PP Ojha | Mumbai Indians | 2014 | 4
+2196 | A Mishra | Sunrisers Hyderabad | 2014 | 4
+2197 | TG Southee | Rajasthan Royals | 2014 | 4
+2198 | R Vinay Kumar | Kolkata Knight Riders | 2014 | 4
+2199 | AB Dinda | Royal Challengers Bangalore | 2014 | 4
+2200 | M Morkel | Kolkata Knight Riders | 2014 | 4
+2201 | DH Yagnik | Rajasthan Royals | 2014 | 4
+2202 | AN Ahmed | Royal Challengers Bangalore | 2014 | 4
+2203 | CM Gautam | Delhi Daredevils | 2015 | 4
+2204 | DS Kulkarni | Rajasthan Royals | 2015 | 4
+2205 | NJ Maddinson | Royal Challengers Bangalore | 2015 | 4
+2206 | M Morkel | Kolkata Knight Riders | 2015 | 4
+2207 | A Mishra | Delhi Daredevils | 2016 | 4
+2208 | BB Sran | Sunrisers Hyderabad | 2016 | 4
+2209 | Z Khan | Delhi Daredevils | 2017 | 4
+2210 | B Kumar | Sunrisers Hyderabad | 2017 | 4
+2211 | VR Aaron | Kings XI Punjab | 2017 | 4
+2212 | AS Rajpoot | Kolkata Knight Riders | 2017 | 4
+2213 | A Dananjaya | Mumbai Indians | 2018 | 4
+2214 | Mohammed Siraj | Royal Challengers Bangalore | 2019 | 4
+2215 | GH Vihari | Delhi Capitals | 2019 | 4
+2216 | Avesh Khan | Delhi Capitals | 2019 | 4
+2217 | M Ashwin | Kings XI Punjab | 2020 | 4
+2218 | Kartik Tyagi | Rajasthan Royals | 2020 | 4
+2219 | Harbhajan Singh | Kolkata Knight Riders | 2021 | 4
+2220 | NM Coulter-Nile | Mumbai Indians | 2021 | 4
+2221 | Abdul Samad | Sunrisers Hyderabad | 2022 | 4
+2222 | Umran Malik | Sunrisers Hyderabad | 2022 | 4
+2223 | KS Sharma | Lucknow Super Giants | 2022 | 4
+2224 | A Tomar | Kolkata Knight Riders | 2022 | 4
+2225 | PN Mankad | Punjab Kings | 2022 | 4
+2226 | C Sakariya | Delhi Capitals | 2023 | 4
+2227 | Liton Das | Kolkata Knight Riders | 2023 | 4
+2228 | JC Archer | Mumbai Indians | 2023 | 4
+2229 | Ravi Bishnoi | Lucknow Super Giants | 2024 | 4
+2230 | Akash Madhwal | Mumbai Indians | 2024 | 4
+2231 | A Nortje | Delhi Capitals | 2024 | 4
+2232 | MS Wade | Gujarat Titans | 2024 | 4
+2233 | Arshdeep Singh | Punjab Kings | 2024 | 4
+2234 | A Nehra | Mumbai Indians | 2008 | 3
+2235 | MK Pandey | Mumbai Indians | 2008 | 3
+2236 | D Kalyankrishna | Deccan Chargers | 2008 | 3
+2237 | Mohammad Asif | Delhi Daredevils | 2008 | 3
+2238 | Younis Khan | Rajasthan Royals | 2008 | 3
+2239 | Kamran Khan | Rajasthan Royals | 2009 | 3
+2240 | AB McDonald | Delhi Daredevils | 2009 | 3
+2241 | S Tyagi | Chennai Super Kings | 2010 | 3
+2242 | UT Yadav | Delhi Daredevils | 2010 | 3
+2243 | KB Arun Karthik | Chennai Super Kings | 2010 | 3
+2244 | PP Ojha | Deccan Chargers | 2010 | 3
+2245 | R Ninan | Royal Challengers Bangalore | 2011 | 3
+2246 | JE Taylor | Pune Warriors | 2011 | 3
+2247 | DE Bollinger | Chennai Super Kings | 2012 | 3
+2248 | M Morkel | Delhi Daredevils | 2012 | 3
+2249 | AG Murtaza | Pune Warriors | 2012 | 3
+2250 | LR Shukla | Kolkata Knight Riders | 2013 | 3
+2251 | R McLaren | Kolkata Knight Riders | 2013 | 3
+2252 | SK Trivedi | Rajasthan Royals | 2013 | 3
+2253 | Harmeet Singh | Kings XI Punjab | 2013 | 3
+2254 | Sachin Baby | Rajasthan Royals | 2013 | 3
+2255 | PV Tambe | Rajasthan Royals | 2013 | 3
+2256 | Mohammed Shami | Delhi Daredevils | 2014 | 3
+2257 | MS Bisla | Kolkata Knight Riders | 2014 | 3
+2258 | S Anirudha | Sunrisers Hyderabad | 2014 | 3
+2259 | PV Tambe | Rajasthan Royals | 2015 | 3
+2260 | Ankit Sharma | Rising Pune Supergiants | 2016 | 3
+2261 | CJ Jordan | Royal Challengers Bangalore | 2016 | 3
+2262 | RD Chahar | Rising Pune Supergiant | 2017 | 3
+2263 | S Kaul | Sunrisers Hyderabad | 2018 | 3
+2264 | P Negi | Royal Challengers Bangalore | 2018 | 3
+2265 | UT Yadav | Royal Challengers Bangalore | 2018 | 3
+2266 | BB Sran | Kings XI Punjab | 2018 | 3
+2267 | Basil Thampi | Sunrisers Hyderabad | 2018 | 3
+2268 | Anureet Singh | Rajasthan Royals | 2018 | 3
+2269 | GC Viljoen | Kings XI Punjab | 2019 | 3
+2270 | M Ashwin | Kings XI Punjab | 2019 | 3
+2271 | AJ Turner | Rajasthan Royals | 2019 | 3
+2272 | BB Sran | Mumbai Indians | 2019 | 3
+2273 | VR Aaron | Rajasthan Royals | 2019 | 3
+2274 | DS Kulkarni | Mumbai Indians | 2020 | 3
+2275 | T Natarajan | Sunrisers Hyderabad | 2020 | 3
+2276 | TG Southee | Kolkata Knight Riders | 2021 | 3
+2277 | Mustafizur Rahman | Delhi Capitals | 2022 | 3
+2278 | Shivam Mavi | Kolkata Knight Riders | 2022 | 3
+2279 | K Kartikeya | Mumbai Indians | 2022 | 3
+2280 | KV Sharma | Royal Challengers Bangalore | 2023 | 3
+2281 | VG Arora | Kolkata Knight Riders | 2023 | 3
+2282 | RK Bhui | Delhi Capitals | 2024 | 3
+2283 | RJW Topley | Royal Challengers Bengaluru | 2024 | 3
+2284 | Kumar Kushagra | Delhi Capitals | 2024 | 3
+2285 | AS Roy | Kolkata Knight Riders | 2024 | 3
+2286 | Mukesh Kumar | Delhi Capitals | 2024 | 3
+2287 | DS Kulkarni | Mumbai Indians | 2008 | 2
+2288 | DW Steyn | Royal Challengers Bangalore | 2008 | 2
+2289 | AB Dinda | Kolkata Knight Riders | 2008 | 2
+2290 | PJ Sangwan | Delhi Daredevils | 2008 | 2
+2291 | PP Ojha | Deccan Chargers | 2008 | 2
+2292 | Shoaib Akhtar | Kolkata Knight Riders | 2008 | 2
+2293 | H Das | Deccan Chargers | 2008 | 2
+2294 | CRD Fernando | Mumbai Indians | 2008 | 2
+2295 | VS Yeligati | Mumbai Indians | 2008 | 2
+2296 | T Thushara | Chennai Super Kings | 2009 | 2
+2297 | AB Dinda | Kolkata Knight Riders | 2009 | 2
+2298 | SB Bangar | Kolkata Knight Riders | 2009 | 2
+2299 | Mashrafe Mortaza | Kolkata Knight Riders | 2009 | 2
+2300 | Mohammad Ashraful | Mumbai Indians | 2009 | 2
+2301 | RS Gavaskar | Kolkata Knight Riders | 2010 | 2
+2302 | J Theron | Kings XI Punjab | 2010 | 2
+2303 | MS Gony | Chennai Super Kings | 2010 | 2
+2304 | KP Appanna | Royal Challengers Bangalore | 2010 | 2
+2305 | AA Bilakhia | Deccan Chargers | 2010 | 2
+2306 | CRD Fernando | Mumbai Indians | 2010 | 2
+2307 | UBT Chand | Delhi Daredevils | 2011 | 2
+2308 | RP Singh | Kochi Tuskers Kerala | 2011 | 2
+2309 | SB Wagh | Pune Warriors | 2011 | 2
+2310 | R Ashwin | Chennai Super Kings | 2011 | 2
+2311 | S Randiv | Chennai Super Kings | 2011 | 2
+2312 | AG Murtaza | Mumbai Indians | 2011 | 2
+2313 | DS Kulkarni | Mumbai Indians | 2011 | 2
+2314 | Iqbal Abdulla | Kolkata Knight Riders | 2012 | 2
+2315 | MM Patel | Mumbai Indians | 2012 | 2
+2316 | R Sharma | Pune Warriors | 2012 | 2
+2317 | AB Dinda | Pune Warriors | 2012 | 2
+2318 | BB Samantray | Deccan Chargers | 2012 | 2
+2319 | UT Yadav | Delhi Daredevils | 2012 | 2
+2320 | AS Rajpoot | Chennai Super Kings | 2013 | 2
+2321 | M Kartik | Royal Challengers Bangalore | 2013 | 2
+2322 | JD Unadkat | Royal Challengers Bangalore | 2013 | 2
+2323 | RJ Harris | Kings XI Punjab | 2013 | 2
+2324 | PP Ojha | Mumbai Indians | 2013 | 2
+2325 | BAW Mendis | Pune Warriors | 2013 | 2
+2326 | A Mithun | Royal Challengers Bangalore | 2013 | 2
+2327 | SL Malinga | Mumbai Indians | 2014 | 2
+2328 | Sandeep Sharma | Kings XI Punjab | 2014 | 2
+2329 | UT Yadav | Kolkata Knight Riders | 2014 | 2
+2330 | AD Russell | Kolkata Knight Riders | 2014 | 2
+2331 | S Kaul | Delhi Daredevils | 2014 | 2
+2332 | UBT Chand | Rajasthan Royals | 2014 | 2
+2333 | WD Parnell | Delhi Daredevils | 2014 | 2
+2334 | Parvez Rasool | Sunrisers Hyderabad | 2015 | 2
+2335 | RG More | Chennai Super Kings | 2015 | 2
+2336 | S Nadeem | Delhi Daredevils | 2015 | 2
+2337 | S Gopal | Mumbai Indians | 2016 | 2
+2338 | Mohammed Shami | Delhi Daredevils | 2016 | 2
+2339 | S Nadeem | Delhi Daredevils | 2017 | 2
+2340 | KC Cariappa | Kings XI Punjab | 2017 | 2
+2341 | JD Unadkat | Rising Pune Supergiant | 2017 | 2
+2342 | Mohammad Nabi | Sunrisers Hyderabad | 2017 | 2
+2343 | IK Pathan | Gujarat Lions | 2017 | 2
+2344 | PJ Sangwan | Gujarat Lions | 2017 | 2
+2345 | PP Chawla | Kolkata Knight Riders | 2017 | 2
+2346 | Imran Tahir | Chennai Super Kings | 2018 | 2
+2347 | Navdeep Saini | Royal Challengers Bangalore | 2019 | 2
+2348 | RD Chahar | Mumbai Indians | 2020 | 2
+2349 | Mohammed Shami | Kings XI Punjab | 2020 | 2
+2350 | M Prasidh Krishna | Kolkata Knight Riders | 2020 | 2
+2351 | CV Varun | Kolkata Knight Riders | 2021 | 2
+2352 | Arshdeep Singh | Punjab Kings | 2021 | 2
+2353 | Navdeep Saini | Royal Challengers Bangalore | 2021 | 2
+2354 | GHS Garton | Royal Challengers Bangalore | 2021 | 2
+2355 | T Shamsi | Rajasthan Royals | 2021 | 2
+2356 | TL Seifert | Kolkata Knight Riders | 2021 | 2
+2357 | Kartik Tyagi | Rajasthan Royals | 2021 | 2
+2358 | TG Southee | Kolkata Knight Riders | 2022 | 2
+2359 | Navdeep Saini | Rajasthan Royals | 2022 | 2
+2360 | Harshit Rana | Kolkata Knight Riders | 2022 | 2
+2361 | PJ Sangwan | Gujarat Titans | 2022 | 2
+2362 | J Suchith | Sunrisers Hyderabad | 2022 | 2
+2363 | Fazalhaq Farooqi | Sunrisers Hyderabad | 2022 | 2
+2364 | T Stubbs | Mumbai Indians | 2022 | 2
+2365 | MJ Santner | Chennai Super Kings | 2023 | 2
+2366 | WD Parnell | Royal Challengers Bangalore | 2023 | 2
+2367 | Arshdeep Singh | Punjab Kings | 2023 | 2
+2368 | Sandeep Sharma | Rajasthan Royals | 2023 | 2
+2369 | Swapnil Singh | Lucknow Super Giants | 2023 | 2
+2370 | Mohsin Khan | Lucknow Super Giants | 2024 | 2
+2371 | JA Richardson | Delhi Capitals | 2024 | 2
+2372 | BR Sharath | Gujarat Titans | 2024 | 2
+2373 | Akash Deep | Royal Challengers Bengaluru | 2024 | 2
+2374 | MM Sharma | Gujarat Titans | 2024 | 2
+2375 | RJ Gleeson | Chennai Super Kings | 2024 | 2
+2376 | A Kamboj | Mumbai Indians | 2024 | 2
+2377 | Naveen-ul-Haq | Lucknow Super Giants | 2024 | 2
+2378 | Shivam Singh | Punjab Kings | 2024 | 2
+2379 | S Anirudha | Chennai Super Kings | 2008 | 1
+2380 | Iqbal Abdulla | Kolkata Knight Riders | 2008 | 1
+2381 | PM Sarvesh Kumar | Deccan Chargers | 2008 | 1
+2382 | DP Vijaykumar | Deccan Chargers | 2008 | 1
+2383 | T Kohli | Kings XI Punjab | 2009 | 1
+2384 | KV Sharma | Royal Challengers Bangalore | 2009 | 1
+2385 | Pankaj Singh | Royal Challengers Bangalore | 2009 | 1
+2386 | PP Ojha | Deccan Chargers | 2009 | 1
+2387 | Shoaib Ahmed | Deccan Chargers | 2009 | 1
+2388 | A Nehra | Delhi Daredevils | 2009 | 1
+2389 | A Singh | Rajasthan Royals | 2009 | 1
+2390 | RE van der Merwe | Royal Challengers Bangalore | 2010 | 1
+2391 | M Muralitharan | Chennai Super Kings | 2010 | 1
+2392 | SE Bond | Kolkata Knight Riders | 2010 | 1
+2393 | Y Nagar | Delhi Daredevils | 2010 | 1
+2394 | SJ Srivastava | Kings XI Punjab | 2010 | 1
+2395 | BAW Mendis | Kolkata Knight Riders | 2010 | 1
+2396 | Pankaj Singh | Royal Challengers Bangalore | 2010 | 1
+2397 | SL Malinga | Mumbai Indians | 2010 | 1
+2398 | UT Yadav | Delhi Daredevils | 2011 | 1
+2399 | NJ Rimmington | Kings XI Punjab | 2011 | 1
+2400 | S Sreesanth | Kochi Tuskers Kerala | 2011 | 1
+2401 | A Singh | Rajasthan Royals | 2011 | 1
+2402 | AC Thomas | Pune Warriors | 2011 | 1
+2403 | P Parameswaran | Kochi Tuskers Kerala | 2011 | 1
+2404 | AA Chavan | Rajasthan Royals | 2011 | 1
+2405 | B Kumar | Pune Warriors | 2011 | 1
+2406 | VR Aaron | Delhi Daredevils | 2012 | 1
+2407 | A Nehra | Delhi Daredevils | 2013 | 1
+2408 | AL Menaria | Rajasthan Royals | 2013 | 1
+2409 | R Shukla | Rajasthan Royals | 2013 | 1
+2410 | S Sreesanth | Rajasthan Royals | 2013 | 1
+2411 | P Awana | Kings XI Punjab | 2013 | 1
+2412 | SW Tait | Rajasthan Royals | 2013 | 1
+2413 | K Upadhyay | Pune Warriors | 2013 | 1
+2414 | JJ Bumrah | Mumbai Indians | 2014 | 1
+2415 | JD Unadkat | Delhi Daredevils | 2014 | 1
+2416 | B Kumar | Sunrisers Hyderabad | 2014 | 1
+2417 | L Balaji | Kings XI Punjab | 2014 | 1
+2418 | KW Richardson | Rajasthan Royals | 2014 | 1
+2419 | YS Chahal | Royal Challengers Bangalore | 2014 | 1
+2420 | M de Lange | Mumbai Indians | 2014 | 1
+2421 | VS Malik | Rajasthan Royals | 2014 | 1
+2422 | Karanveer Singh | Kings XI Punjab | 2014 | 1
+2423 | P Kumar | Mumbai Indians | 2014 | 1
+2424 | MM Sharma | Chennai Super Kings | 2014 | 1
+2425 | YS Chahal | Royal Challengers Bangalore | 2015 | 1
+2426 | S Gopal | Mumbai Indians | 2015 | 1
+2427 | A Nehra | Chennai Super Kings | 2015 | 1
+2428 | DJ Muthuswami | Delhi Daredevils | 2015 | 1
+2429 | J Theron | Rajasthan Royals | 2015 | 1
+2430 | Bipul Sharma | Sunrisers Hyderabad | 2015 | 1
+2431 | BE Hendricks | Kings XI Punjab | 2015 | 1
+2432 | KW Richardson | Royal Challengers Bangalore | 2016 | 1
+2433 | DW Steyn | Gujarat Lions | 2016 | 1
+2434 | A Nehra | Sunrisers Hyderabad | 2016 | 1
+2435 | S Nadeem | Delhi Daredevils | 2016 | 1
+2436 | M Morkel | Kolkata Knight Riders | 2016 | 1
+2437 | SB Jakati | Gujarat Lions | 2016 | 1
+2438 | DS Kulkarni | Gujarat Lions | 2017 | 1
+2439 | LH Ferguson | Rising Pune Supergiant | 2017 | 1
+2440 | Shakib Al Hasan | Kolkata Knight Riders | 2017 | 1
+2441 | MA Wood | Chennai Super Kings | 2018 | 1
+2442 | B Laughlin | Rajasthan Royals | 2018 | 1
+2443 | LE Plunkett | Delhi Daredevils | 2018 | 1
+2444 | A Mishra | Delhi Daredevils | 2018 | 1
+2445 | Mustafizur Rahman | Mumbai Indians | 2018 | 1
+2446 | M Ashwin | Royal Challengers Bangalore | 2018 | 1
+2447 | NV Ojha | Delhi Daredevils | 2018 | 1
+2448 | M Prasidh Krishna | Kolkata Knight Riders | 2018 | 1
+2449 | IS Sodhi | Rajasthan Royals | 2018 | 1
+2450 | JD Unadkat | Rajasthan Royals | 2019 | 1
+2451 | Mohammed Shami | Kings XI Punjab | 2019 | 1
+2452 | HF Gurney | Kolkata Knight Riders | 2019 | 1
+2453 | Harbhajan Singh | Chennai Super Kings | 2019 | 1
+2454 | Washington Sundar | Royal Challengers Bangalore | 2019 | 1
+2455 | Basil Thampi | Sunrisers Hyderabad | 2019 | 1
+2456 | VR Aaron | Rajasthan Royals | 2020 | 1
+2457 | Shahbaz Ahmed | Royal Challengers Bangalore | 2020 | 1
+2458 | NS Naik | Kolkata Knight Riders | 2020 | 1
+2459 | DW Steyn | Royal Challengers Bangalore | 2020 | 1
+2460 | YS Chahal | Royal Challengers Bangalore | 2020 | 1
+2461 | Mujeeb Ur Rahman | Kings XI Punjab | 2020 | 1
+2462 | KK Ahmed | Sunrisers Hyderabad | 2021 | 1
+2463 | Mujeeb Ur Rahman | Sunrisers Hyderabad | 2021 | 1
+2464 | TA Boult | Mumbai Indians | 2021 | 1
+2465 | Ravi Bishnoi | Punjab Kings | 2021 | 1
+2466 | PWH de Silva | Royal Challengers Bangalore | 2021 | 1
+2467 | DL Chahar | Chennai Super Kings | 2021 | 1
+2468 | TH David | Royal Challengers Bangalore | 2021 | 1
+2469 | NM Coulter-Nile | Rajasthan Royals | 2022 | 1
+2470 | A Nortje | Delhi Capitals | 2022 | 1
+2471 | NT Ellis | Punjab Kings | 2023 | 1
+2472 | Mohit Rathee | Punjab Kings | 2023 | 1
+2473 | Mustafizur Rahman | Delhi Capitals | 2023 | 1
+2474 | Yudhvir Singh | Lucknow Super Giants | 2023 | 1
+2475 | CV Varun | Kolkata Knight Riders | 2023 | 1
+2476 | Mohammed Siraj | Royal Challengers Bangalore | 2023 | 1
+2477 | Abdul Basith | Rajasthan Royals | 2023 | 1
+2478 | I Sharma | Delhi Capitals | 2023 | 1
+2479 | JR Hazlewood | Royal Challengers Bangalore | 2023 | 1
+2480 | DL Chahar | Chennai Super Kings | 2023 | 1
+2481 | Fazalhaq Farooqi | Sunrisers Hyderabad | 2023 | 1
+2482 | SZ Mulani | Mumbai Indians | 2024 | 1
+2483 | I Sharma | Delhi Capitals | 2024 | 1
+2484 | VG Arora | Kolkata Knight Riders | 2024 | 1
+2485 | Vijaykumar Vyshak | Royal Challengers Bengaluru | 2024 | 1
+2486 | KA Maharaj | Rajasthan Royals | 2024 | 1
+2487 | LH Ferguson | Royal Challengers Bengaluru | 2024 | 1
+2488 | LB Williams | Delhi Capitals | 2024 | 1
+2489 | MJ Suthar | Gujarat Titans | 2024 | 1
+2490 | S Sreesanth | Kings XI Punjab | 2008 | 0
+2491 | M Muralitharan | Chennai Super Kings | 2008 | 0
+2492 | MM Patel | Rajasthan Royals | 2008 | 0
+2493 | U Kaul | Kings XI Punjab | 2008 | 0
+2494 | Abdur Razzak | Royal Challengers Bangalore | 2008 | 0
+2495 | L Balaji | Chennai Super Kings | 2008 | 0
+2496 | A Mukund | Chennai Super Kings | 2008 | 0
+2497 | DW Steyn | Royal Challengers Bangalore | 2009 | 0
+2498 | BAW Mendis | Kolkata Knight Riders | 2009 | 0
+2499 | KP Appanna | Royal Challengers Bangalore | 2009 | 0
+2500 | TM Srivastava | Kings XI Punjab | 2009 | 0
+2501 | L Ronchi | Mumbai Indians | 2009 | 0
+2502 | C Nanda | Mumbai Indians | 2009 | 0
+2503 | SL Malinga | Mumbai Indians | 2009 | 0
+2504 | YA Abdulla | Kings XI Punjab | 2010 | 0
+2505 | S Ladda | Delhi Daredevils | 2010 | 0
+2506 | CK Langeveldt | Kolkata Knight Riders | 2010 | 0
+2507 | AB Dinda | Kolkata Knight Riders | 2010 | 0
+2508 | Iqbal Abdulla | Kolkata Knight Riders | 2010 | 0
+2509 | AG Paunikar | Rajasthan Royals | 2010 | 0
+2510 | Harmeet Singh | Deccan Chargers | 2010 | 0
+2511 | AB Dinda | Delhi Daredevils | 2011 | 0
+2512 | MS Gony | Deccan Chargers | 2011 | 0
+2513 | SK Trivedi | Rajasthan Royals | 2011 | 0
+2514 | Joginder Sharma | Chennai Super Kings | 2011 | 0
+2515 | DE Bollinger | Chennai Super Kings | 2011 | 0
+2516 | L Ablish | Kings XI Punjab | 2011 | 0
+2517 | S Nadeem | Delhi Daredevils | 2011 | 0
+2518 | MM Patel | Mumbai Indians | 2011 | 0
+2519 | MJ Lumb | Deccan Chargers | 2011 | 0
+2520 | VR Aaron | Delhi Daredevils | 2011 | 0
+2521 | JDP Oram | Rajasthan Royals | 2011 | 0
+2522 | ND Doshi | Rajasthan Royals | 2011 | 0
+2523 | BA Bhatt | Kings XI Punjab | 2011 | 0
+2524 | SA Yadav | Mumbai Indians | 2012 | 0
+2525 | A Singh | Rajasthan Royals | 2012 | 0
+2526 | RR Bhatkal | Royal Challengers Bangalore | 2012 | 0
+2527 | DJ Jacobs | Mumbai Indians | 2012 | 0
+2528 | AC Blizzard | Mumbai Indians | 2012 | 0
+2529 | V Pratap Singh | Deccan Chargers | 2012 | 0
+2530 | S Nadeem | Delhi Daredevils | 2012 | 0
+2531 | A Chandila | Rajasthan Royals | 2012 | 0
+2532 | P Parameswaran | Royal Challengers Bangalore | 2012 | 0
+2533 | Sunny Gupta | Delhi Daredevils | 2012 | 0
+2534 | S Anirudha | Chennai Super Kings | 2013 | 0
+2535 | AB McDonald | Royal Challengers Bangalore | 2013 | 0
+2536 | IC Pandey | Pune Warriors | 2013 | 0
+2537 | MM Sharma | Chennai Super Kings | 2013 | 0
+2538 | Sandeep Sharma | Kings XI Punjab | 2013 | 0
+2539 | BE Hendricks | Kings XI Punjab | 2014 | 0
+2540 | R Vinay Kumar | Mumbai Indians | 2015 | 0
+2541 | PJ Cummins | Kolkata Knight Riders | 2015 | 0
+2542 | SP Narine | Kolkata Knight Riders | 2015 | 0
+2543 | R Bhatia | Rajasthan Royals | 2015 | 0
+2544 | S Aravind | Royal Challengers Bangalore | 2015 | 0
+2545 | M Ashwin | Rising Pune Supergiants | 2016 | 0
+2546 | Swapnil Singh | Kings XI Punjab | 2016 | 0
+2547 | A Zampa | Rising Pune Supergiants | 2016 | 0
+2548 | UBT Chand | Mumbai Indians | 2016 | 0
+2549 | S Kaushik | Gujarat Lions | 2016 | 0
+2550 | Imran Tahir | Rising Pune Supergiant | 2017 | 0
+2551 | SN Thakur | Rising Pune Supergiant | 2017 | 0
+2552 | AD Nath | Gujarat Lions | 2017 | 0
+2553 | S Kaul | Sunrisers Hyderabad | 2017 | 0
+2554 | MM Patel | Gujarat Lions | 2017 | 0
+2555 | CJ Jordan | Sunrisers Hyderabad | 2017 | 0
+2556 | PJ Sangwan | Mumbai Indians | 2018 | 0
+2557 | Sandeep Sharma | Sunrisers Hyderabad | 2018 | 0
+2558 | TA Boult | Delhi Daredevils | 2018 | 0
+2559 | RK Bhui | Sunrisers Hyderabad | 2018 | 0
+2560 | YS Chahal | Royal Challengers Bangalore | 2018 | 0
+2561 | JJ Bumrah | Mumbai Indians | 2019 | 0
+2562 | HV Patel | Delhi Capitals | 2019 | 0
+2563 | S Lamichhane | Delhi Capitals | 2019 | 0
+2564 | MM Sharma | Chennai Super Kings | 2019 | 0
+2565 | S Kaul | Sunrisers Hyderabad | 2019 | 0
+2566 | M Prasidh Krishna | Kolkata Knight Riders | 2019 | 0
+2567 | JL Denly | Kolkata Knight Riders | 2019 | 0
+2568 | KK Ahmed | Sunrisers Hyderabad | 2019 | 0
+2569 | Mujeeb Ur Rahman | Kings XI Punjab | 2019 | 0
+2570 | SW Billings | Chennai Super Kings | 2019 | 0
+2571 | Y Prithvi Raj | Kolkata Knight Riders | 2019 | 0
+2572 | AJ Tye | Kings XI Punjab | 2019 | 0
+2573 | TA Boult | Mumbai Indians | 2020 | 0
+2574 | KK Ahmed | Sunrisers Hyderabad | 2020 | 0
+2575 | UT Yadav | Royal Challengers Bangalore | 2020 | 0
+2576 | B Kumar | Sunrisers Hyderabad | 2020 | 0
+2577 | MR Marsh | Sunrisers Hyderabad | 2020 | 0
+2578 | SS Cottrell | Kings XI Punjab | 2020 | 0
+2579 | Arshdeep Singh | Kings XI Punjab | 2020 | 0
+2580 | DR Sams | Delhi Capitals | 2020 | 0
+2581 | SP Goswami | Sunrisers Hyderabad | 2020 | 0
+2582 | M Jansen | Mumbai Indians | 2021 | 0
+2583 | BA Stokes | Rajasthan Royals | 2021 | 0
+2584 | S Nadeem | Sunrisers Hyderabad | 2021 | 0
+2585 | KL Nagarkoti | Kolkata Knight Riders | 2021 | 0
+2586 | M Prasidh Krishna | Kolkata Knight Riders | 2021 | 0
+2587 | JDS Neesham | Mumbai Indians | 2021 | 0
+2588 | PP Chawla | Mumbai Indians | 2021 | 0
+2589 | SN Khan | Punjab Kings | 2021 | 0
+2590 | K Yadav | Rajasthan Royals | 2021 | 0
+2591 | Anuj Rawat | Rajasthan Royals | 2021 | 0
+2592 | JJ Bumrah | Mumbai Indians | 2022 | 0
+2593 | KK Ahmed | Delhi Capitals | 2022 | 0
+2594 | K Gowtham | Lucknow Super Giants | 2022 | 0
+2595 | Akash Deep | Royal Challengers Bangalore | 2022 | 0
+2596 | TS Mills | Mumbai Indians | 2022 | 0
+2597 | KR Sen | Rajasthan Royals | 2022 | 0
+2598 | Ravi Bishnoi | Lucknow Super Giants | 2022 | 0
+2599 | NT Ellis | Punjab Kings | 2022 | 0
+2600 | Yash Dayal | Gujarat Titans | 2022 | 0
+2601 | AS Roy | Kolkata Knight Riders | 2022 | 0
+2602 | RP Meredith | Mumbai Indians | 2022 | 0
+2603 | R Sanjay Yadav | Mumbai Indians | 2022 | 0
+2604 | R Shepherd | Lucknow Super Giants | 2023 | 0
+2605 | RD Chahar | Punjab Kings | 2023 | 0
+2606 | Avesh Khan | Lucknow Super Giants | 2023 | 0
+2607 | K Rabada | Punjab Kings | 2023 | 0
+2608 | RP Meredith | Mumbai Indians | 2023 | 0
+2609 | Harshit Rana | Kolkata Knight Riders | 2023 | 0
+2610 | TU Deshpande | Chennai Super Kings | 2023 | 0
+2611 | KM Asif | Rajasthan Royals | 2023 | 0
+2612 | MM Sharma | Gujarat Titans | 2023 | 0
+2613 | DG Nalkande | Gujarat Titans | 2023 | 0
+2614 | Mohsin Khan | Lucknow Super Giants | 2023 | 0
+2615 | Washington Sundar | Sunrisers Hyderabad | 2024 | 0
+2616 | Mayank Dagar | Royal Challengers Bengaluru | 2024 | 0
+2617 | TU Deshpande | Chennai Super Kings | 2024 | 0
+----------------------------------------------------------------------------------------------------
+Records loaded / displayed: 2617 / 2617
+Total batting runs across records: 329798
+Highest runs: 973 | Lowest runs: 0
+Key comparisons: 25857 | Merge operations: 2616
+Sorting time (excluding file I/O and printing): 2.916 ms
+Time: O(N log N) | Auxiliary memory: O(N)

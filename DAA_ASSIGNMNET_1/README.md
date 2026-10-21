@@ -1,35 +1,28 @@
-# DAA Assignment 1: Merge Sort on IPL 2025 Batters Data
+# DAA Assignment 1: Merge Sort - all IPL batting records
 
-## Description
-This assignment involves implementing the **Merge Sort** algorithm in C++ to sort a dataset of IPL 2025 batters. The data is read from a CSV file (`IPL2025Batters.csv`), which contains the player's name, their team, and the number of runs scored. The program parses the file, populates a list of `Player` structures, and sorts them in descending order based on the runs scored. 
+Reads IPLBatters.csv and prints every player-team-season row in descending runs order. The 2,617 records cover 2008-2024. The same player can legitimately occur in several seasons or teams. Merge Sort is stable; comparisons, merge count, total runs and sorting-only time are printed.
 
-Finally, it displays every player in the CSV, sorted by runs in descending order, followed by the total record count and the execution time of the sorting call. There is no top-10 display limit.
+## Compile and run (PowerShell)
 
-## Features
-- **File I/O:** Parses data from a comma-separated values (CSV) file.
-- **Merge Sort Algorithm:** Efficiently sorts the players with a time complexity of `O(N log N)`.
-- **Execution Timing:** Measures the time taken to sort the dataset using `std::chrono`.
-- **Data Structures:** Utilizes `std::vector` and custom `struct Player`.
+```powershell
+g++ -std=c++11 "DAA_Assignment_1.cpp" -o Assignment1.exe
+.\Assignment1.exe
+```
 
-## How to Run
-1. Ensure the `IPL2025Batters.csv` file is present in the same directory.
-2. Compile the code using a C++ compiler:
-   ```bash
-   g++ DAA_Assignment_1.cpp -o Assignment1
-   ```
-3. Run the executable:
-   ```bash
-   ./Assignment1
-   ```
+## Input
 
-## Input file
-`input.txt` contains the CSV records for the 10 players visible in the saved
-output. The same records are restored as `IPL2025Batters.csv`, which the
-existing C++ code reads automatically; it has no keyboard-input prompts.
-This is a reconstructed sample, not the unavailable original full dataset.
-Keep the CSV beside the program and run from this folder. Runtime varies.
+CSV columns: name,team,runs,season. No keyboard input. input.txt mirrors the full CSV as a reference; the executable reads IPLBatters.csv.
 
-The currently committed CSV contains 10 players. To sort and display a larger
-dataset, replace it with the complete CSV using the same `name,team,runs`
-columns. The program displays all records without any code changes. The
-saved output reflects the current 10-record sample, not a full-season dataset.
+## Output
+
+`Assignmnet_1_Output.txt` is the actual captured output of the current program and saved input. The PDF includes theory, pseudocode, input details and the full output; C++ source stays separate. Sorting runtimes vary by machine and run.
+
+## Complexity
+
+O(N log N) time and O(N) peak auxiliary memory.
+
+## Viva notes and scope
+
+The original warehouse statement uses inventory quantities ascending; this program demonstrates the same algorithm with IPL runs descending. No million-row performance claim is made.
+
+See [DATASET_SOURCE.md](DATASET_SOURCE.md) for the Kaggle source, exact preparation and archive checksum. Every CSV record is displayed; there is no top-ten cutoff.

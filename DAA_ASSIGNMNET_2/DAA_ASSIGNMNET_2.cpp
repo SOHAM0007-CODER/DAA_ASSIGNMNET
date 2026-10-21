@@ -1,125 +1,82 @@
 #include <iostream>
+#include <fstream>
 #include <vector>
 #include <string>
-#include <fstream>
-#include <sstream>
+#include <iomanip>
 #include <chrono>
+#include <stdexcept>
 #include <algorithm>
-
 using namespace std;
-using namespace std::chrono;
+struct Movie { string title; double rating; int year; double popularity; };
+string sortKey; long long comparisons = 0, swaps = 0;
 
-struct Movie {
-    string title;
-    float rating;
-    int release_year;
-    int popularity;
-
-    void display() const {
-        cout << title << " | Rating: " << rating
-             << " | Year: " << release_year
-             << " | Popularity: " << popularity << endl;
+// Read quoted CSV fields, including commas and doubled quotes inside titles.
+vector<string> csvFields(const string& line) {
+    vector<string> fields; string field; bool quoted = false;
+    for (size_t i = 0; i < line.size(); i++) {
+        char c = line[i];
+        if (c == '"') {
+            if (quoted && i + 1 < line.size() && line[i + 1] == '"') {
+                field += '"'; i++;
+            } else quoted = !quoted;
+        } else if (c == ',' && !quoted) { fields.push_back(field); field.clear(); }
+        else if (c != '\r') field += c;
     }
-};
+    if (quoted) throw runtime_error("Unclosed CSV quote");
+    fields.push_back(field); return fields;
+}
 
-// QuickSort with comparator
-void quickSort(vector<Movie> &movies, int low, int high, bool (*compare)(const Movie &, const Movie &)) {
-    if (low < high) {
-        int pivotIndex = low;
-        Movie pivot = movies[high];
-        for (int i = low; i < high; i++) {
-            if (compare(movies[i], pivot)) {
-                swap(movies[i], movies[pivotIndex]);
-                pivotIndex++;
-            }
+double key(const Movie& m) {
+    if (sortKey == "year") return m.year;
+    if (sortKey == "popularity") return m.popularity;
+    return m.rating;
+}
+bool before(const Movie& a, const Movie& b) { comparisons++; return key(a) > key(b); }
+// Middle pivot, two-way partition. Recurse on the smaller side to bound stack depth.
+void quickSort(vector<Movie>& a, int left, int right) {
+    while (left < right) {
+        Movie pivot = a[left + (right - left) / 2]; int i = left, j = right;
+        while (i <= j) {
+            while (i <= right && before(a[i], pivot)) i++;
+            while (j >= left && before(pivot, a[j])) j--;
+            if (i <= j) { swap(a[i], a[j]); swaps++; i++; j--; }
         }
-        swap(movies[pivotIndex], movies[high]);
-        quickSort(movies, low, pivotIndex - 1, compare);
-        quickSort(movies, pivotIndex + 1, high, compare);
+        if (j - left < right - i) { if (left < j) quickSort(a, left, j); left = i; }
+        else { if (i < right) quickSort(a, i, right); right = j; }
     }
 }
-
-// Comparators
-bool compareByRating(const Movie &a, const Movie &b) {
-    return a.rating < b.rating;
-}
-bool compareByYear(const Movie &a, const Movie &b) {
-    return a.release_year < b.release_year;
-}
-bool compareByPopularity(const Movie &a, const Movie &b) {
-    return a.popularity < b.popularity;
-}
-
-// Load movies from CSV
-vector<Movie> loadMoviesFromCSV(const string &filename) {
-    vector<Movie> movies;
-    ifstream file(filename);
-    if (!file.is_open()) {
-        cerr << "Error opening file: " << filename << endl;
-        return movies;
-    }
-
-    string line;
-    getline(file, line); // Skip header
-
+int main(int argc, char* argv[]) {
+    string filename = argc > 1 ? argv[1] : "movies.csv";
+    ifstream file(filename); if (!file) { cerr << "Cannot open " << filename << '\n'; return 1; }
+    vector<Movie> a; string line; getline(file, line); int row = 1;
     while (getline(file, line)) {
-        stringstream ss(line);
-        string title, ratingStr, yearStr, popStr;
-
-        getline(ss, title, ',');
-        getline(ss, ratingStr, ',');
-        getline(ss, yearStr, ',');
-        getline(ss, popStr, ',');
-
-        if (!title.empty()) {
-            Movie m;
-            m.title = title;
-            m.rating = stof(ratingStr);
-            m.release_year = stoi(yearStr);
-            m.popularity = stoi(popStr);
-            movies.push_back(m);
-        }
+        row++; if (line.empty() || line == "\r") continue;
+        try {
+            vector<string> f = csvFields(line);
+            if (f.size() != 4) throw runtime_error("Expected title,rating,release_year,popularity");
+            Movie m = {f[0], stod(f[1]), stoi(f[2]), stod(f[3])};
+            if (m.title.empty() || !(m.rating >= 0 && m.rating <= 10) || !(m.popularity >= 0)) throw runtime_error("Invalid movie");
+            a.push_back(m);
+        } catch (const exception& e) { cerr << "CSV row " << row << ": " << e.what() << '\n'; return 1; }
     }
-    return movies;
+    cout << "ASSIGNMENT 2: MOVIE RANKING - QUICK SORT\nSort movies by (rating/year/popularity):\n";
+    if (!(cin >> sortKey) || (sortKey != "rating" && sortKey != "year" && sortKey != "popularity")) {
+        cerr << "Choose rating, year or popularity.\n"; return 1;
+    }
+    auto start = chrono::steady_clock::now();
+    if (!a.empty()) quickSort(a, 0, static_cast<int>(a.size()) - 1);
+    auto finish = chrono::steady_clock::now();
+    cout << "Dataset: " << filename << "\nSort parameter: " << sortKey
+         << " | Order: Descending | Display: ALL records\nRating scale: 0-10; year 0 = missing date\n\n"
+         << "Rank | Movie | Rating | Year | TMDB popularity\n" << string(100, '-') << '\n';
+    cout << fixed << setprecision(3);
+    for (size_t i = 0; i < a.size(); i++) cout << i + 1 << " | " << a[i].title << " | " << a[i].rating
+        << " | " << a[i].year << " | " << a[i].popularity << '\n';
+    cout << string(100, '-') << "\nRecords loaded / displayed: " << a.size() << " / " << a.size();
+    if (!a.empty()) cout << "\nHighest selected value: " << key(a.front()) << " | Lowest: " << key(a.back());
+    cout << "\nKey comparisons: " << comparisons << " | Swaps: " << swaps
+         << "\nSorting time (excluding file I/O and printing): "
+         << chrono::duration<double, milli>(finish - start).count() << " ms\n"
+         << "Average time: O(N log N); worst: O(N^2) | Recursion stack: O(log N)\n"
+         << "Equal ratings may appear in any order (Quick Sort is not stable).\n";
 }
-
-int main() {
-    string filename = "movies.csv";
-    vector<Movie> movies = loadMoviesFromCSV(filename);
-
-    if (movies.empty()) {
-        cout << "No movies loaded.\n";
-        return 1;
-    }
-
-    cout << "Sort movies by (rating/year/popularity): ";
-    string sort_by;
-    cin >> sort_by;
-
-    bool (*compare)(const Movie &, const Movie &);
-    if (sort_by == "rating")
-        compare = compareByRating;
-    else if (sort_by == "year")
-        compare = compareByYear;
-    else if (sort_by == "popularity")
-        compare = compareByPopularity;
-    else {
-        cout << "Invalid choice. Defaulting to rating.\n";
-        compare = compareByRating;
-    }
-
-    auto start = high_resolution_clock::now();
-    quickSort(movies, 0, movies.size() - 1, compare);
-    auto end = high_resolution_clock::now();
-    duration<double> diff = end - start;
-
-    cout << "\nTop 10 movies sorted by " << sort_by << ":\n";
-    for (int i = movies.size() - 1; i >= static_cast<int>(movies.size()) - 10; --i) {
-        movies[i].display();
-    }
-
-    cout << "\nSorted " << movies.size() << " movies in " << diff.count() << " seconds.\n";
-
-    return 0;
-}
-

@@ -1,57 +1,47 @@
-# DAA Assignment 7: Simple Exam Timetable
+# DAA Assignment 7: Graph Coloring - named exam colors
 
-If a student takes two courses, those exams cannot share a slot. Model courses
-as vertices and shared-student conflicts as edges. Greedy coloring assigns each
-course the first slot not already used by a scheduled conflicting course.
+Prints course conflicts, assigned color names, courses grouped by color and PASS/FAIL for each conflict pair. Sample: Red = DAA, CN, Maths; Blue = DBMS, AI; Green = OS.
 
-## Files
-- `ExamScheduler.cpp`: simplified C++ source.
-- `input.txt`: sample values.
-- `Output.txt`: captured timetable.
-- `DAA_Assignment_No_7_Soham_Kulkarni.pdf`: report, without C++ code.
-
-## Compile and Run
+## Compile and run (PowerShell)
 
 ```powershell
-g++ -std=c++11 ExamScheduler.cpp -o ExamScheduler.exe
-.\ExamScheduler.exe
+g++ -std=c++11 "ExamScheduler.cpp" -o Assignment7.exe
+.\Assignment7.exe
 ```
 
-## Sample Input
+Use the saved input:
+
+```powershell
+Get-Content input.txt | .\Assignment7.exe
+```
+
+## Input
+
+Read course count; one-word course names in ID order; conflict-pair count; each conflicting pair of course IDs (1-based). Every shared-student conflict must be supplied.
+
+## Output
+
+`Output.txt` is the actual captured output of the current program and saved input. The PDF includes theory, pseudocode, input details and the full output; C++ source stays separate. Sorting runtimes vary by machine and run.
+
+## Complexity
+
+O(V^2+E), including slot-flag clearing and grouped output; O(V+E) storage.
+
+## Viva notes and scope
+
+A color denotes one time slot. First colors: Red, Blue, Green, Yellow, Orange, Purple, etc.; slots above 12 use unique Color_13, Color_14, etc. Labels never repeat. Greedy does not generally minimize colors; rooms, student-enrollment parsing and DSATUR/Welsh-Powell implementations are not included.
+
+## Saved sample input
 
 ```text
-4
-DAA DBMS OS CN
-4
+6
+DAA DBMS OS CN AI Maths
+7
 1 2
 1 3
 2 3
 3 4
+4 5
+2 6
+5 6
 ```
-
-Four courses have IDs 1=DAA, 2=DBMS, 3=OS, 4=CN. The second 4 is the number
-of conflict pairs. Pair `1 2` means DAA and DBMS share a student and need
-different slots. Enter every shared-student conflict. Course names are single words.
-
-## Expected Result
-| Course | Slot |
-| --- | --- |
-| DAA | 1 |
-| DBMS | 2 |
-| OS | 3 |
-| CN | 1 |
-
-DAA and CN have no conflict, so they share slot 1. DAA, DBMS and OS all
-conflict with one another, requiring three slots in this example. On other
-graphs, Greedy may use more slots than necessary; it guarantees validity,
-not a general minimum.
-
-## Performance and Scope
-Adjacency lists and a fresh used-slot array per course give O(V squared + E)
-time and O(V + E) memory. The program accepts up to 5000 courses. Invalid
-IDs and self-conflicts are rejected. Repeated pairs are harmless but duplicate
-storage. Each course gets an exam slot.
-
-The PDF discusses DSATUR, Welsh-Powell and classroom capacity extensions.
-This uploaded simple program focuses on Greedy coloring with manually entered
-conflict pairs; it does not infer conflicts from student records or allocate rooms.

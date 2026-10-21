@@ -1,0 +1,68 @@
+ASSIGNMENT 4: EMERGENCY ROUTING - DIJKSTRA
+Enter nodes (1-1000) and connections:
+Enter undirected roads: from to nonnegativeCost (node IDs start at 0)
+
+ROAD TABLE
+From | To | Cost
+0 | 1 | 4
+0 | 2 | 2
+1 | 2 | 1
+1 | 3 | 5
+2 | 3 | 8
+2 | 4 | 10
+3 | 4 | 2
+Enter source and destination:
+
+DIJKSTRA TRACE
+Step | Finalized node | Minimum distance | Successful relaxations
+1 | 0 | 0 | 1=4, 2=2
+2 | 2 | 2 | 1=3, 3=10, 4=12
+3 | 1 | 3 | 3=8
+4 | 3 | 8 | 4=10
+5 | 4 | 10 | None
+
+DISTANCE TABLE FROM SOURCE 0
+Node | Shortest cost | Parent
+0 | 0 | -1
+1 | 3 | 2
+2 | 2 | 0
+3 | 8 | 1
+4 | 10 | 3
+
+Optimal path: 0 -> 2 -> 1 -> 3 -> 4
+Leg | From -> To | Road cost | Cumulative cost
+1 | 0 -> 2 | 2 | 2
+2 | 2 -> 1 | 1 | 3
+3 | 1 -> 3 | 5 | 8
+4 | 3 -> 4 | 2 | 10
+Minimum cost: 10
+Roads used: 4
+Update a road? (Y/N):
+Enter from to newCost:
+Road updated: 2 <-> 3 cost 1. Recomputing.
+
+DIJKSTRA TRACE
+Step | Finalized node | Minimum distance | Successful relaxations
+1 | 0 | 0 | 1=4, 2=2
+2 | 2 | 2 | 1=3, 3=3, 4=12
+3 | 1 | 3 | None
+4 | 3 | 3 | 4=5
+5 | 4 | 5 | None
+
+DISTANCE TABLE FROM SOURCE 0
+Node | Shortest cost | Parent
+0 | 0 | -1
+1 | 3 | 2
+2 | 2 | 0
+3 | 3 | 2
+4 | 5 | 3
+
+Optimal path: 0 -> 2 -> 3 -> 4
+Leg | From -> To | Road cost | Cumulative cost
+1 | 0 -> 2 | 2 | 2
+2 | 2 -> 3 | 1 | 3
+3 | 3 -> 4 | 2 | 5
+Minimum cost: 5
+Roads used: 3
+Update another road? (Y/N):
+Time per run: O(V^2) | Matrix storage: O(V^2)

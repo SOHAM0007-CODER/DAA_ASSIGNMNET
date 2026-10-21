@@ -1,4 +1,6 @@
-3 5
-Medicine 2 30
-Food 3 40
-Blankets 4 50
+5 15
+Blankets 5 30
+Food 6 48
+BabyFood 3 35
+Medicine 4 60
+Water 7 28
