@@ -2,7 +2,7 @@
 
 **Soham Kulkarni | PRN 124B1F056 | PCCoE Pune | Batch A3**
 
-Eight C++ programs with matching inputs, detailed captured text outputs and PDF reports. C++ code is separate from the PDFs. The PDFs include their complete saved outputs, so Assignments 1 and 2 have longer landscape output appendices.
+Eight C++ programs with matching inputs, detailed captured text outputs and PDF reports. C++ code is separate from the PDFs. The PDFs contain the assignment write-ups and pseudocode. Complete program results are kept separately in the GitHub text output files.
 
 | No. | Assignment | Result |
 | --- | --- | --- |

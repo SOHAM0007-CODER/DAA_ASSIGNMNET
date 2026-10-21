@@ -21,7 +21,7 @@ First line: itemCount boatCapacity. Then one row per supply: name weight utility
 
 ## Output
 
-`output.txt` is the actual captured output of the current program and saved input. The PDF includes theory, pseudocode, input details and the full output; C++ source stays separate. Sorting runtimes vary by machine and run.
+`output.txt` is the actual captured output of the current program and saved input. The PDF contains the assignment write-up and pseudocode. Detailed program results are kept in the text output file on GitHub; C++ source stays separate. Sorting runtimes vary by machine and run.
 
 ## Complexity
 

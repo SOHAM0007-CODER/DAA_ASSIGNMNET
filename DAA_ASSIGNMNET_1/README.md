@@ -15,7 +15,7 @@ CSV columns: name,team,runs,season. No keyboard input. input.txt mirrors the ful
 
 ## Output
 
-`Assignmnet_1_Output.txt` is the actual captured output of the current program and saved input. The PDF includes theory, pseudocode, input details and the full output; C++ source stays separate. Sorting runtimes vary by machine and run.
+`Assignmnet_1_Output.txt` is the actual captured output of the current program and saved input. The PDF contains the assignment write-up and pseudocode. Detailed program results are kept in the text output file on GitHub; C++ source stays separate. Sorting runtimes vary by machine and run.
 
 ## Complexity
 
