@@ -92,19 +92,21 @@ int main()
 
     file.close();
 
-    mergeSort(players, 0, players.size() - 1);
+    auto start = chrono::high_resolution_clock::now();
+    if (!players.empty())
+        mergeSort(players, 0, static_cast<int>(players.size()) - 1);
+    auto end = chrono::high_resolution_clock::now();
 
     cout << "IPL 2025 Players Sorted By Runs\n";
 
-    for (int i = 0; i < 10; i++)
-{
-    cout << players[i].name << " | " << players[i].team << " | "<< players[i].runs << " runs\n";
-}
-	auto start = chrono::high_resolution_clock::now();
-mergeSort(players, 0, players.size() - 1);
-auto end = chrono::high_resolution_clock::now();
+    for (const Player& player : players)
+    {
+        cout << player.name << " | " << player.team << " | "
+             << player.runs << " runs\n";
+    }
 
-chrono::duration<double, milli> elapsed = end - start;
-cout << elapsed.count() << " ms\n";
+    cout << "Total players: " << players.size() << "\n";
+    chrono::duration<double, milli> elapsed = end - start;
+    cout << "Merge Sort time: " << elapsed.count() << " ms\n";
     return 0;
 }

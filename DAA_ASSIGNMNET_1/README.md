@@ -3,7 +3,7 @@
 ## Description
 This assignment involves implementing the **Merge Sort** algorithm in C++ to sort a dataset of IPL 2025 batters. The data is read from a CSV file (`IPL2025Batters.csv`), which contains the player's name, their team, and the number of runs scored. The program parses the file, populates a list of `Player` structures, and sorts them in descending order based on the runs scored. 
 
-Finally, it displays the top 10 players and computes the execution time of the merge sort algorithm.
+Finally, it displays every player in the CSV, sorted by runs in descending order, followed by the total record count and the execution time of the sorting call. There is no top-10 display limit.
 
 ## Features
 - **File I/O:** Parses data from a comma-separated values (CSV) file.
@@ -28,3 +28,8 @@ output. The same records are restored as `IPL2025Batters.csv`, which the
 existing C++ code reads automatically; it has no keyboard-input prompts.
 This is a reconstructed sample, not the unavailable original full dataset.
 Keep the CSV beside the program and run from this folder. Runtime varies.
+
+The currently committed CSV contains 10 players. To sort and display a larger
+dataset, replace it with the complete CSV using the same `name,team,runs`
+columns. The program displays all records without any code changes. The
+saved output reflects the current 10-record sample, not a full-season dataset.
